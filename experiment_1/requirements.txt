@@ -1,0 +1,6 @@
+llama-cpp-python==0.3.8
+openai==1.78.0
+pandas==2.2.3
+spot==0.1a
+tqdm
+huggingface_hub

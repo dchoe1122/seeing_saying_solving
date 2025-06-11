@@ -20,12 +20,14 @@ class GridWorld:
     '''
     foundation_model = "deepseek/deepseek-r1:free"
     
-    def __init__(self, grid_size=12, num_chunks=4, seed=21, num_dynamic_const=1):
+    def __init__(self, grid_size=12, num_chunks=4, seed=21, num_dynamic_const=1,grid_size_rows=None, grid_size_cols=None):
         self.robots = {}
         
         # World setup
         self.grid_size = grid_size
         self.num_chunks = num_chunks
+        self.grid_size_rows = grid_size_rows
+        self.grid_size_cols = grid_size_cols
         self.seed = seed
         self.num_dynamic_const = num_dynamic_const
         if grid_size >6:
@@ -79,6 +81,49 @@ class GridWorld:
 
     
     def _create_grid_world(self):
+        """Create grid world from configuration file"""
+        try:
+            with open("grid_configuration.txt", 'r') as f:
+                # First line contains dimensions
+                rows, cols = map(int, f.readline().strip().split(','))
+                # Update grid dimensions
+                self.grid_size_rows = rows
+                self.grid_size_cols = cols
+                
+                # Initialize grid and obstacle set
+                grid = [[0 for _ in range(cols)] for _ in range(rows)]
+                obstacle_cells = set()
+                
+                # Read obstacle coordinates
+                for line in f:
+                    row,col = map(int, line.strip().split(','))
+                    obstacle_cells.add((row, col))
+                    grid[row][col] = 1
+
+            # Generate free cells explicitly excluding obstacle cells
+            free_cells = [(i, j)
+                        for i in range(rows)
+                        for j in range(cols)
+                        if (i, j) not in obstacle_cells]
+
+            # Select conflict cell from free cells
+            random.seed(self.seed)
+            conflict_cell = random.sample(free_cells, self.num_dynamic_const)[0]
+
+            vlm_scene_desc = ("Floor-level obstructions: The loose wooden pallet on the floor "
+                            "and a cluster of boxes/pallets appear to partially block the aisle, "
+                            "forcing any mobile robot or additional vehicles to navigate around them")
+
+            dynamic_conflict = {conflict_cell: vlm_scene_desc}
+
+            return free_cells, obstacle_cells, conflict_cell, dynamic_conflict
+        
+        except FileNotFoundError:
+            # Fallback to original grid creation if configuration file doesn't exist
+            return self._create_grid_world_original()
+        
+    def _create_grid_world_original(self):
+        """Original grid world creation logic as fallback"""
         random.seed(self.seed)
 
         grid = [[0 for _ in range(self.grid_size)] for _ in range(self.grid_size)]

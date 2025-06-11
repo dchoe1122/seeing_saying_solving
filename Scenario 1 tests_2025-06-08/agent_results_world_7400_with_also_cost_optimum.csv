@@ -1,0 +1,5 @@
+World Seed,7400
+Requester STL,2,12.0,,
+Agent ID,Method,Feasibility Status,Completion Time,t_h,t_star,total_cost,Gurobi Solve Time,World Seed,Distance from help site,Additional Solve Time Required,Had Pallets on Forks?
+1,Original,2,23.0,,,,0.6935110092163086,7400,3.1622776601683795,0,0
+1,cost_optimal,2,29.0,4,6.0,10.0,2.9264919757843018,7400,3.1622776601683795,2.232980966567993,0

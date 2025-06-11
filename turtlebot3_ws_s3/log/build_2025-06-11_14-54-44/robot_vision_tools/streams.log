@@ -1,0 +1,22 @@
+[0.662s] Invoking command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/robot_vision_tools': PYTHONPATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/robot_vision_tools/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/robot_vision_tools/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/robot_vision_tools/build --no-deps symlink_data
+[0.804s] running develop
+[0.896s] running egg_info
+[0.896s] creating robot_vision_tools.egg-info
+[0.898s] writing robot_vision_tools.egg-info/PKG-INFO
+[0.899s] writing dependency_links to robot_vision_tools.egg-info/dependency_links.txt
+[0.899s] writing entry points to robot_vision_tools.egg-info/entry_points.txt
+[0.899s] writing requirements to robot_vision_tools.egg-info/requires.txt
+[0.899s] writing top-level names to robot_vision_tools.egg-info/top_level.txt
+[0.899s] writing manifest file 'robot_vision_tools.egg-info/SOURCES.txt'
+[0.900s] reading manifest file 'robot_vision_tools.egg-info/SOURCES.txt'
+[0.900s] writing manifest file 'robot_vision_tools.egg-info/SOURCES.txt'
+[0.900s] running build_ext
+[0.900s] Creating /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/robot_vision_tools/lib/python3.10/site-packages/robot-vision-tools.egg-link (link to .)
+[0.901s] Installing camera_image_saver script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/robot_vision_tools/lib/robot_vision_tools
+[0.901s] Installing nav2_state_monitor script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/robot_vision_tools/lib/robot_vision_tools
+[0.901s] Installing simplified_demo script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/robot_vision_tools/lib/robot_vision_tools
+[0.901s] 
+[0.901s] Installed /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/robot_vision_tools
+[0.901s] running symlink_data
+[0.901s] symbolically linking /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/robot_vision_tools/package.xml -> /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/robot_vision_tools/share/robot_vision_tools
+[0.916s] Invoked command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/robot_vision_tools' returned '0': PYTHONPATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/robot_vision_tools/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/robot_vision_tools/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/robot_vision_tools/build --no-deps symlink_data

@@ -1,0 +1,57 @@
+[0.014s] Invoking command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/src/turtlebot3/turtlebot3_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description
+[0.157s] -- The C compiler identification is GNU 11.4.0
+[0.157s] -- The CXX compiler identification is GNU 11.4.0
+[0.157s] -- Detecting C compiler ABI info
+[0.171s] -- Detecting C compiler ABI info - done
+[0.175s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.175s] -- Detecting C compile features
+[0.175s] -- Detecting C compile features - done
+[0.177s] -- Detecting CXX compiler ABI info
+[0.223s] -- Detecting CXX compiler ABI info - done
+[0.227s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.227s] -- Detecting CXX compile features
+[0.227s] -- Detecting CXX compile features - done
+[0.228s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.321s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.353s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.368s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[0.450s] -- Configuring done
+[0.451s] -- Generating done
+[0.452s] -- Build files have been written to: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_description
+[0.457s] Invoked command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/src/turtlebot3/turtlebot3_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description
+[0.458s] Invoking command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_description -- -j32 -l32
+[0.479s] Invoked command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_description -- -j32 -l32
+[0.481s] Invoking command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_description
+[0.485s] -- Install configuration: ""
+[0.486s] -- Execute custom install script
+[0.486s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/burger_base.stl
+[0.492s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/waffle_base.stl
+[0.498s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/waffle_pi_base.stl
+[0.502s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/astra.dae
+[0.508s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/astra.jpg
+[0.514s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/lds.stl
+[0.520s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/r200.dae
+[0.526s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/r200.jpg
+[0.530s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels/left_tire.stl
+[0.535s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels/right_tire.stl
+[0.540s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/rviz/model.rviz
+[0.544s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/urdf/common_properties.urdf
+[0.548s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_burger.urdf
+[0.552s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_waffle.urdf
+[0.557s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_waffle_pi.urdf
+[0.561s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/ament_index/resource_index/package_run_dependencies/turtlebot3_description
+[0.568s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/ament_index/resource_index/parent_prefix_path/turtlebot3_description
+[0.575s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/environment/ament_prefix_path.sh
+[0.579s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/environment/ament_prefix_path.dsv
+[0.586s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/environment/path.sh
+[0.590s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/environment/path.dsv
+[0.594s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/local_setup.bash
+[0.601s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/local_setup.sh
+[0.607s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/local_setup.zsh
+[0.611s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/local_setup.dsv
+[0.617s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/package.dsv
+[0.622s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/ament_index/resource_index/packages/turtlebot3_description
+[0.629s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/cmake/turtlebot3_descriptionConfig.cmake
+[0.635s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/cmake/turtlebot3_descriptionConfig-version.cmake
+[0.642s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_description/share/turtlebot3_description/package.xml
+[0.651s] Invoked command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_description

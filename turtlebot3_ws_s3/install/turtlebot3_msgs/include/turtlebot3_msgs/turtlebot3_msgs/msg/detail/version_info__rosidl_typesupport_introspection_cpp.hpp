@@ -1,0 +1,1 @@
+/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_msgs/rosidl_typesupport_introspection_cpp/turtlebot3_msgs/msg/detail/version_info__rosidl_typesupport_introspection_cpp.hpp

@@ -1,0 +1,27 @@
+running develop
+running egg_info
+creating turtlebot3_example.egg-info
+writing turtlebot3_example.egg-info/PKG-INFO
+writing dependency_links to turtlebot3_example.egg-info/dependency_links.txt
+writing entry points to turtlebot3_example.egg-info/entry_points.txt
+writing requirements to turtlebot3_example.egg-info/requires.txt
+writing top-level names to turtlebot3_example.egg-info/top_level.txt
+writing manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+reading manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+writing manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3-example.egg-link (link to .)
+Installing turtlebot3_absolute_move script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/lib/turtlebot3_example
+Installing turtlebot3_interactive_marker script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/lib/turtlebot3_example
+Installing turtlebot3_obstacle_detection script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/lib/turtlebot3_example
+Installing turtlebot3_patrol_client script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/lib/turtlebot3_example
+Installing turtlebot3_patrol_server script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/lib/turtlebot3_example
+Installing turtlebot3_relative_move script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/lib/turtlebot3_example
+
+Installed /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_example
+running symlink_data
+creating /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/share/ament_index
+creating /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/share/ament_index/resource_index
+creating /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/share/ament_index/resource_index/packages
+symbolically linking /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_example/resource/turtlebot3_example -> /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/share/ament_index/resource_index/packages
+symbolically linking /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_example/package.xml -> /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/share/turtlebot3_example

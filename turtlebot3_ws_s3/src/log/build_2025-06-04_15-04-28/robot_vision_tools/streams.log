@@ -1,0 +1,20 @@
+[0.799s] Invoking command in '/home/bchoe7/turtlebot3_ws/src/build/robot_vision_tools': PYTHONPATH=/home/bchoe7/turtlebot3_ws/src/build/robot_vision_tools/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bchoe7/turtlebot3_ws/src/install/robot_vision_tools/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/bchoe7/turtlebot3_ws/src/build/robot_vision_tools/build --no-deps symlink_data
+[0.989s] running develop
+[1.097s] running egg_info
+[1.097s] creating robot_vision_tools.egg-info
+[1.099s] writing robot_vision_tools.egg-info/PKG-INFO
+[1.099s] writing dependency_links to robot_vision_tools.egg-info/dependency_links.txt
+[1.099s] writing entry points to robot_vision_tools.egg-info/entry_points.txt
+[1.099s] writing requirements to robot_vision_tools.egg-info/requires.txt
+[1.099s] writing top-level names to robot_vision_tools.egg-info/top_level.txt
+[1.099s] writing manifest file 'robot_vision_tools.egg-info/SOURCES.txt'
+[1.101s] reading manifest file 'robot_vision_tools.egg-info/SOURCES.txt'
+[1.101s] writing manifest file 'robot_vision_tools.egg-info/SOURCES.txt'
+[1.102s] running build_ext
+[1.102s] Creating /home/bchoe7/turtlebot3_ws/src/install/robot_vision_tools/lib/python3.10/site-packages/robot-vision-tools.egg-link (link to .)
+[1.103s] Installing camera_image_saver script to /home/bchoe7/turtlebot3_ws/src/install/robot_vision_tools/lib/robot_vision_tools
+[1.103s] 
+[1.103s] Installed /home/bchoe7/turtlebot3_ws/src/build/robot_vision_tools
+[1.103s] running symlink_data
+[1.103s] symbolically linking /home/bchoe7/turtlebot3_ws/src/build/robot_vision_tools/package.xml -> /home/bchoe7/turtlebot3_ws/src/install/robot_vision_tools/share/robot_vision_tools
+[1.129s] Invoked command in '/home/bchoe7/turtlebot3_ws/src/build/robot_vision_tools' returned '0': PYTHONPATH=/home/bchoe7/turtlebot3_ws/src/build/robot_vision_tools/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bchoe7/turtlebot3_ws/src/install/robot_vision_tools/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/bchoe7/turtlebot3_ws/src/build/robot_vision_tools/build --no-deps symlink_data

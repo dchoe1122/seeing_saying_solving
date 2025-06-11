@@ -1,0 +1,17 @@
+[0.645s] Invoking command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_teleop': PYTHONPATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_teleop/build --no-deps symlink_data
+[0.788s] running develop
+[0.878s] running egg_info
+[0.880s] writing turtlebot3_teleop.egg-info/PKG-INFO
+[0.881s] writing dependency_links to turtlebot3_teleop.egg-info/dependency_links.txt
+[0.881s] writing entry points to turtlebot3_teleop.egg-info/entry_points.txt
+[0.881s] writing requirements to turtlebot3_teleop.egg-info/requires.txt
+[0.881s] writing top-level names to turtlebot3_teleop.egg-info/top_level.txt
+[0.882s] reading manifest file 'turtlebot3_teleop.egg-info/SOURCES.txt'
+[0.882s] writing manifest file 'turtlebot3_teleop.egg-info/SOURCES.txt'
+[0.882s] running build_ext
+[0.883s] Creating /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3-teleop.egg-link (link to .)
+[0.883s] Installing teleop_keyboard script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_teleop/lib/turtlebot3_teleop
+[0.883s] 
+[0.883s] Installed /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_teleop
+[0.883s] running symlink_data
+[0.898s] Invoked command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_teleop' returned '0': PYTHONPATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_teleop/build --no-deps symlink_data

@@ -1,0 +1,1 @@
+Conflict detected, saving image. My current path is completely blocked by the obstacle in the image, and I am a mobile robot without maniupulation capabilities.

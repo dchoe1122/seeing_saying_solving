@@ -1,0 +1,79 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "dynamixel_sdk_custom_interfaces::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "dynamixel_sdk_custom_interfaces__py::@5c3fb1e61178127079ca",
+	"name" : "dynamixel_sdk_custom_interfaces__py",
+	"paths" : 
+	{
+		"build" : "dynamixel_sdk_custom_interfaces__py",
+		"source" : "/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py/CMakeFiles/dynamixel_sdk_custom_interfaces__py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py/CMakeFiles/dynamixel_sdk_custom_interfaces__py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/dynamixel_sdk_custom_interfaces/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

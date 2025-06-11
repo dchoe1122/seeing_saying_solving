@@ -1,0 +1,1 @@
+/home/bchoe7/turtlebot3_ws/src/build/turtlebot3_msgs/ament_cmake_python/turtlebot3_msgs/turtlebot3_msgs.egg-info/top_level.txt

@@ -1,0 +1,1 @@
+/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_msgs/rosidl_generator_py/turtlebot3_msgs/action/__init__.py

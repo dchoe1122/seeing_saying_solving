@@ -1,0 +1,1 @@
+/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_msgs/rosidl_generator_c/turtlebot3_msgs/action/detail/patrol__struct.h

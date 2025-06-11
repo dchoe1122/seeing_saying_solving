@@ -1,0 +1,7 @@
+/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/SensorState.idl
+/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/Sound.idl
+/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/VersionInfo.idl
+/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Sound.idl
+/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Dqn.idl
+/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Goal.idl
+/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:action/Patrol.idl

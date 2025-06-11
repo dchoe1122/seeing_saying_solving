@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from turtlebot3_msgs/srv/Goal.srv
+// generated code does not contain a copyright notice
+
+
+module turtlebot3_msgs {
+  module srv {
+    struct Goal_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct Goal_Response {
+      float pose_x;
+
+      float pose_y;
+
+      boolean success;
+    };
+  };
+};

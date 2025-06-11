@@ -1,0 +1,1 @@
+/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_simulations/ament_cmake_environment_hooks/local_setup.zsh

@@ -1,0 +1,5 @@
+[console_scripts]
+camera_image_saver = robot_vision_tools.camera_image_saver:main
+nav2_state_monitor = robot_vision_tools.nav2_state_monitor:main
+simplified_demo = robot_vision_tools.simplified_demo:main
+

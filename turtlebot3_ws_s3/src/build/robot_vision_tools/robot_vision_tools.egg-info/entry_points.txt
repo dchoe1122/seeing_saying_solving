@@ -1,0 +1,3 @@
+[console_scripts]
+camera_image_saver = robot_vision_tools.camera_image_saver:main
+

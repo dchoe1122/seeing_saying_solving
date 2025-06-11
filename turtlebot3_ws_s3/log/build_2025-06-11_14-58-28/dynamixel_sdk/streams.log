@@ -1,0 +1,87 @@
+[0.023s] Invoking command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_teleop:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/robot_vision_tools:/opt/ros/humble /usr/bin/cmake --build /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/dynamixel_sdk -- -j32 -l32
+[0.194s] [35m[1mConsolidate compiler generated dependencies of target dynamixel_sdk[0m
+[0.194s] [  0%] Built target ament_cmake_python_symlink_dynamixel_sdk
+[0.194s] [100%] Built target dynamixel_sdk
+[0.194s] running egg_info
+[0.194s] writing dynamixel_sdk.egg-info/PKG-INFO
+[0.194s] writing dependency_links to dynamixel_sdk.egg-info/dependency_links.txt
+[0.194s] writing top-level names to dynamixel_sdk.egg-info/top_level.txt
+[0.194s] reading manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[0.195s] writing manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[0.208s] [100%] Built target ament_cmake_python_build_dynamixel_sdk_egg
+[0.343s] Invoked command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_teleop:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/robot_vision_tools:/opt/ros/humble /usr/bin/cmake --build /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/dynamixel_sdk -- -j32 -l32
+[0.349s] Invoking command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_teleop:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/robot_vision_tools:/opt/ros/humble /usr/bin/cmake --install /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/dynamixel_sdk
+[0.355s] -- Install configuration: ""
+[0.355s] -- Execute custom install script
+[0.355s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/include//dynamixel_sdk/dynamixel_sdk.h
+[0.355s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_read.h
+[0.355s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_write.h
+[0.355s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_bulk_read.h
+[0.355s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_sync_read.h
+[0.355s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/include//dynamixel_sdk/group_handler.h
+[0.356s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_read.h
+[0.356s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_write.h
+[0.356s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/include//dynamixel_sdk/packet_handler.h
+[0.356s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/include//dynamixel_sdk/port_handler.h
+[0.356s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_arduino.h
+[0.356s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_linux.h
+[0.356s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_mac.h
+[0.356s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_windows.h
+[0.356s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/include//dynamixel_sdk/protocol1_packet_handler.h
+[0.356s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/include//dynamixel_sdk/protocol2_packet_handler.h
+[0.356s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.sh
+[0.356s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.dsv
+[0.356s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-3.8.4-py3.10.egg-info/PKG-INFO
+[0.356s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-3.8.4-py3.10.egg-info/SOURCES.txt
+[0.356s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-3.8.4-py3.10.egg-info/dependency_links.txt
+[0.356s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-3.8.4-py3.10.egg-info/top_level.txt
+[0.356s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/__init__.py
+[0.357s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_read.cpp
+[0.357s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_read.py
+[0.357s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_write.cpp
+[0.357s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_write.py
+[0.357s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_fast_bulk_read.cpp
+[0.357s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_fast_sync_read.cpp
+[0.357s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_handler.cpp
+[0.357s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_read.cpp
+[0.357s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_read.py
+[0.357s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_write.cpp
+[0.358s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_write.py
+[0.358s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/packet_handler.cpp
+[0.358s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/packet_handler.py
+[0.361s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler.cpp
+[0.361s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler.py
+[0.361s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler_arduino.cpp
+[0.361s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler_linux.cpp
+[0.361s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler_mac.cpp
+[0.361s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler_windows.cpp
+[0.361s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol1_packet_handler.cpp
+[0.361s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol1_packet_handler.py
+[0.361s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol2_packet_handler.cpp
+[0.361s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol2_packet_handler.py
+[0.361s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/robotis_def.py
+[0.362s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.sh
+[0.362s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.dsv
+[0.362s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk
+[0.362s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk
+[0.362s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.sh
+[0.363s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.dsv
+[0.363s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.sh
+[0.363s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.dsv
+[0.363s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.bash
+[0.363s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.sh
+[0.364s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.zsh
+[0.364s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.dsv
+[0.364s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv
+[0.369s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/ament_index/resource_index/packages/dynamixel_sdk
+[0.369s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_targets-extras.cmake
+[0.371s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.371s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_libraries-extras.cmake
+[0.371s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig.cmake
+[0.371s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig-version.cmake
+[0.371s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/package.xml
+[0.371s] -- Up-to-date: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/lib/libdynamixel_sdk.so
+[0.384s] Listing '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk'...
+[0.393s] -- Up-to-date: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkExport.cmake
+[0.393s] -- Up-to-date: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkExport-noconfig.cmake
+[0.453s] Invoked command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_teleop:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/robot_vision_tools:/opt/ros/humble /usr/bin/cmake --install /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/dynamixel_sdk

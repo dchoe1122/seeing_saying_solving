@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "turtlebot3_msgs__py",
+		"source" : "/home/bchoe7/turtlebot3_ws/src/build/turtlebot3_msgs/turtlebot3_msgs__py"
+	}
+}

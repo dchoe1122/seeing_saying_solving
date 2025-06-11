@@ -32,5 +32,3 @@ Repository for the ICRA2025 Workshop Paper "Seeing, Saying, Solving"
 ## Running Experiment 1:
 
 
-Requirements:
-

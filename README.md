@@ -27,8 +27,9 @@ Repository for the ICRA2025 Workshop Paper "Seeing, Saying, Solving"
   * `nano .env`
   * Inside the .env:
     * OPENROUTER_API_KEY='YOUR KEY HERE'
-* Don't forget to add the .env to your .gitignore!
-* 
+* Don't forget to add the .env to your .gitignore
+
+## Running Experiment 1:
 
 
 Requirements:

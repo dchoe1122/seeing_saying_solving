@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing robot_vision_tools.egg-info/PKG-INFO
+writing dependency_links to robot_vision_tools.egg-info/dependency_links.txt
+writing entry points to robot_vision_tools.egg-info/entry_points.txt
+writing requirements to robot_vision_tools.egg-info/requires.txt
+writing top-level names to robot_vision_tools.egg-info/top_level.txt
+reading manifest file 'robot_vision_tools.egg-info/SOURCES.txt'
+writing manifest file 'robot_vision_tools.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/robot_vision_tools/lib/python3.10/site-packages/robot-vision-tools.egg-link (link to .)
+Installing camera_image_saver script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/robot_vision_tools/lib/robot_vision_tools
+Installing nav2_state_monitor script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/robot_vision_tools/lib/robot_vision_tools
+Installing simplified_demo script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/robot_vision_tools/lib/robot_vision_tools
+
+Installed /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/robot_vision_tools
+running symlink_data

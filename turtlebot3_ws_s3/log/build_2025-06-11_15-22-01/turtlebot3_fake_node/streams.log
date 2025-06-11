@@ -1,0 +1,54 @@
+[0.179s] Invoking command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_fake_node': AMENT_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_fake_node -- -j32 -l32
+[0.198s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.281s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.286s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.305s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.306s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.309s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.314s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.320s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.338s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.346s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.359s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.360s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.433s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.462s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.475s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.477s] -- Found tf2_msgs: 0.25.12 (/opt/ros/humble/share/tf2_msgs/cmake)
+[0.497s] -- Found turtlebot3_msgs: 2.4.0 (/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake)
+[0.553s] -- Configuring done
+[0.560s] -- Generating done
+[0.562s] -- Build files have been written to: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_fake_node
+[0.584s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_fake_node[0m
+[0.599s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_fake_node.dir/src/turtlebot3_fake_node.cpp.o[0m
+[6.280s] [100%] [32m[1mLinking CXX executable turtlebot3_fake_node[0m
+[6.523s] [100%] Built target turtlebot3_fake_node
+[6.531s] Invoked command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_fake_node' returned '0': AMENT_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_fake_node -- -j32 -l32
+[6.532s] Invoking command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_fake_node': AMENT_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_fake_node
+[6.537s] -- Install configuration: ""
+[6.537s] -- Execute custom install script
+[6.537s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/lib/turtlebot3_fake_node/turtlebot3_fake_node
+[6.537s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/rviz2.launch.py
+[6.537s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/turtlebot3_fake_node.launch.py
+[6.537s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/burger.yaml
+[6.538s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle.yaml
+[6.538s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle_pi.yaml
+[6.538s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/include//turtlebot3_fake_node/turtlebot3_fake_node.hpp
+[6.538s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/ament_index/resource_index/package_run_dependencies/turtlebot3_fake_node
+[6.538s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/ament_index/resource_index/parent_prefix_path/turtlebot3_fake_node
+[6.538s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.sh
+[6.538s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.dsv
+[6.538s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.sh
+[6.538s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.dsv
+[6.538s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.bash
+[6.538s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.sh
+[6.538s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.zsh
+[6.538s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.dsv
+[6.538s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.dsv
+[6.545s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/ament_index/resource_index/packages/turtlebot3_fake_node
+[6.545s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.545s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.545s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig.cmake
+[6.545s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig-version.cmake
+[6.545s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.xml
+[6.546s] Invoked command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_fake_node' returned '0': AMENT_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_fake_node

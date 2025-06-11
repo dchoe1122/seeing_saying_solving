@@ -1,0 +1,67 @@
+[0.013s] Invoking command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_node': AMENT_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/lib:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_node -- -j32 -l32
+[0.184s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.184s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.184s] -- Found dynamixel_sdk: 3.8.4 (/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+[0.184s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.185s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.185s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.185s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.185s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.185s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.194s] -- Found message_filters: 4.3.7 (/opt/ros/humble/share/message_filters/cmake)
+[0.215s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.216s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.295s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.325s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.338s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.352s] -- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)
+[0.359s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.361s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.422s] -- Found turtlebot3_msgs: 2.4.0 (/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake)
+[0.478s] -- Configuring done
+[0.492s] -- Generating done
+[0.497s] -- Build files have been written to: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_node
+[0.525s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_node_lib[0m
+[0.552s] [ 14%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/sound.cpp.o[0m
+[0.552s] [ 14%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/motor_power.cpp.o[0m
+[0.552s] [ 21%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/reset.cpp.o[0m
+[0.553s] [ 28%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/diff_drive_controller.cpp.o[0m
+[0.553s] [ 35%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/dynamixel_sdk_wrapper.cpp.o[0m
+[0.554s] [ 42%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/odometry.cpp.o[0m
+[0.555s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/turtlebot3.cpp.o[0m
+[0.556s] [ 57%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/battery_state.cpp.o[0m
+[0.557s] [ 64%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/imu.cpp.o[0m
+[0.557s] [ 71%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/joint_state.cpp.o[0m
+[0.558s] [ 78%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/sensor_state.cpp.o[0m
+[9.029s] [ 85%] [32m[1mLinking CXX static library libturtlebot3_node_lib.a[0m
+[9.278s] [ 85%] Built target turtlebot3_node_lib
+[9.286s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_ros[0m
+[9.298s] [ 92%] [32mBuilding CXX object CMakeFiles/turtlebot3_ros.dir/src/node_main.cpp.o[0m
+[10.747s] [100%] [32m[1mLinking CXX executable turtlebot3_ros[0m
+[11.577s] [100%] Built target turtlebot3_ros
+[11.586s] Invoked command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_node' returned '0': AMENT_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/lib:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_node -- -j32 -l32
+[11.587s] Invoking command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_node': AMENT_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/lib:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_node
+[11.592s] -- Install configuration: ""
+[11.593s] -- Execute custom install script
+[11.593s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/turtlebot3_node/param/burger.yaml
+[11.593s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/turtlebot3_node/param/waffle.yaml
+[11.593s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/turtlebot3_node/param/waffle_pi.yaml
+[11.593s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/lib/turtlebot3_node/turtlebot3_ros
+[11.593s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/ament_index/resource_index/package_run_dependencies/turtlebot3_node
+[11.593s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/ament_index/resource_index/parent_prefix_path/turtlebot3_node
+[11.594s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/turtlebot3_node/environment/ament_prefix_path.sh
+[11.594s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/turtlebot3_node/environment/ament_prefix_path.dsv
+[11.594s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/turtlebot3_node/environment/path.sh
+[11.594s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/turtlebot3_node/environment/path.dsv
+[11.594s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/turtlebot3_node/local_setup.bash
+[11.594s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/turtlebot3_node/local_setup.sh
+[11.594s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/turtlebot3_node/local_setup.zsh
+[11.594s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/turtlebot3_node/local_setup.dsv
+[11.594s] -- Symlinking: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/turtlebot3_node/package.dsv
+[11.599s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/ament_index/resource_index/packages/turtlebot3_node
+[11.599s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/turtlebot3_node/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.599s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/turtlebot3_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.599s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/turtlebot3_node/cmake/turtlebot3_nodeConfig.cmake
+[11.599s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/turtlebot3_node/cmake/turtlebot3_nodeConfig-version.cmake
+[11.599s] -- Up-to-date symlink: /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_node/share/turtlebot3_node/package.xml
+[11.601s] Invoked command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_node' returned '0': AMENT_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/lib:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_node

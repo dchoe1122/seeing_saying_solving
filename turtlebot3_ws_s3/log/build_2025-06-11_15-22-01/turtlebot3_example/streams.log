@@ -1,0 +1,22 @@
+[0.471s] Invoking command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_example': AMENT_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/lib/python3.10/site-packages:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_example/build --no-deps symlink_data
+[0.703s] running develop
+[0.860s] running egg_info
+[0.860s] writing turtlebot3_example.egg-info/PKG-INFO
+[0.861s] writing dependency_links to turtlebot3_example.egg-info/dependency_links.txt
+[0.861s] writing entry points to turtlebot3_example.egg-info/entry_points.txt
+[0.861s] writing requirements to turtlebot3_example.egg-info/requires.txt
+[0.861s] writing top-level names to turtlebot3_example.egg-info/top_level.txt
+[0.863s] reading manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[0.864s] writing manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[0.865s] running build_ext
+[0.865s] Creating /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3-example.egg-link (link to .)
+[0.866s] Installing turtlebot3_absolute_move script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/lib/turtlebot3_example
+[0.866s] Installing turtlebot3_interactive_marker script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/lib/turtlebot3_example
+[0.866s] Installing turtlebot3_obstacle_detection script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/lib/turtlebot3_example
+[0.866s] Installing turtlebot3_patrol_client script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/lib/turtlebot3_example
+[0.866s] Installing turtlebot3_patrol_server script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/lib/turtlebot3_example
+[0.867s] Installing turtlebot3_relative_move script to /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/lib/turtlebot3_example
+[0.867s] 
+[0.867s] Installed /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_example
+[0.867s] running symlink_data
+[0.897s] Invoked command in '/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_example' returned '0': AMENT_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_example/lib/python3.10/site-packages:/home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/bchoe7/seeing_saying_solving/turtlebot3_ws_s3/build/turtlebot3_example/build --no-deps symlink_data

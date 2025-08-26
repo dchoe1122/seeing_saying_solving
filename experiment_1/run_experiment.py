@@ -38,7 +38,6 @@ def get_openai_client():
         _openai_client = OpenAI()
     return _openai_client
 
-
 def parse_args():
     parser = argparse.ArgumentParser(description="Experiment configuration")
     parser.add_argument("--entries", type=int, required=True,
@@ -55,6 +54,7 @@ def parse_args():
 def process_dataset(jsonl_path):
     from tqdm import tqdm
     import pandas as pd  # only needed if you later load it
+    
     output_filename = "navigation_dataset.csv"
 
     with open(jsonl_path, 'r') as json_file, open(output_filename, 'w') as csv_file:
@@ -209,7 +209,7 @@ if __name__ == "__main__":
             df[ablation['name'] + '_equivalence'] = df.apply(lambda row: safe_are_equivalent(row['dataset_tl'], row[ablation['name'] + '_tl']), axis=1)
             equivalence_counts = df[ablation['name'] + '_equivalence'].value_counts()
 
-            accuracy = equivalence_counts.get(True, 0) / (num_dataset_entries - equivalence_counts.get("Invalid data entry", 0))
+            accuracy = equivalence_counts.get(True, 0) / (num_dataset_entries - equivalence_counts.get("Invalid data entry", 0) - equivalence_counts.get("Invalid LLM formula", 0))
             validity = 1 - equivalence_counts.get("Invalid LLM formula", 0) / (num_dataset_entries - equivalence_counts.get("Invalid data entry", 0))
             inference_time = total_time / num_dataset_entries
 
@@ -226,3 +226,4 @@ if __name__ == "__main__":
     summary_df = summary_df.astype(float)
     with open(f"{experiment_dir_name}/summary_stats.txt", "w") as f:
         f.write(summary_df.describe().round(4).to_string())
+

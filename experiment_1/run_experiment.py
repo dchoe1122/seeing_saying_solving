@@ -11,7 +11,22 @@ from prompt_utils import get_prompt, get_llama_bnf_spec
 
 _gemma_llm = None
 _openai_client = None
+_tokenizer = None
 
+def get_tokenizer():
+    global _tokenizer
+    if _tokenizer is None:
+        from transformers import AutoTokenizer
+        _tokenizer = AutoTokenizer.from_pretrained("google/gemma-3-27b-it")
+    return _tokenizer
+
+def get_grammar_processor(grammar_str):
+    from transformers_cfg.grammar_utils import IncrementalGrammarConstraint
+    from transformers_cfg.generation.logits_process import GrammarConstrainedLogitsProcessor
+
+    grammar = IncrementalGrammarConstraint(grammar_str, "root", get_tokenizer())
+    grammar_processor = GrammarConstrainedLogitsProcessor(grammar, adapter="llama-cpp-python")
+    return grammar_processor
 
 def get_gemma_llm_base():
     """Lazily load the Gemma Llama model."""
@@ -118,19 +133,23 @@ def nl2tl_gemma(nl_sentence, propositions, few_shot_examples, grammar_constraint
                         bnf_spec=get_llama_bnf_spec(propositions),
                         few_shot=few_shot_examples, grammar_prompt=grammar_prompt)
 
-    tl_bnf_grammar = LlamaGrammar.from_string(get_llama_bnf_spec(propositions)) if grammar_constraint else None
+    tl_bnf_grammar = LlamaGrammar.from_string(get_llama_bnf_spec(propositions))
+    grammar_str = get_llama_bnf_spec(propositions)
 
     system_prompt = [{"role": "system", "content": [{"type": "text", "text": prompt}]}]
     query = [{"role": "user", "content": [{"type": "text",
               "text": f"Natural Language Requirement - \"{nl_sentence}\"\nRelevant Propositions - {str(propositions)[1:-1]}"}]}]
 
-    out = get_gemma_llm().create_chat_completion(
+    out = get_gemma_llm_base().create_chat_completion(
         messages=system_prompt + few_shot_examples + query,
-        grammar=tl_bnf_grammar,
+        grammar = tl_bnf_grammar
+        #logits_processor = [get_grammar_processor(grammar_str)] if grammar_constraint else None
     )
 
     response = out['choices'][0]['message']['content']
     response = re.sub(r"-(?!>)", "_", response)
+    response = response.replace("&", " & ").replace("|", " | ").replace("->", " -> ").replace("U", " U ")
+    
     return response.strip()
 
 

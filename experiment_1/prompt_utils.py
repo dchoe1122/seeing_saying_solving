@@ -40,7 +40,7 @@ ltl-depth-1 ::= atomic-formula | "~(" atomic-formula ")" | atomic-formula binary
 predicate-name ::= {" | ".join(f'"{p}"' for p in propositions)}
 atomic-formula ::= predicate-name
 
-binary-op ::= " & " | " | " | " -> " | " U "
+binary-op ::= "&" | "|" | "->" | "U"
 # '&' (and): both propositions must be true
 # '|' (or): at least one predicate must be true
 # '->' (implies): if first predicate is true, then second predicate must be true 

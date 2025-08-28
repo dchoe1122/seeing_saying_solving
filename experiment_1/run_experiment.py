@@ -66,7 +66,7 @@ def process_dataset(jsonl_path):
             id = line['id']
             nl_sentence = ' '.join(line['sentence'])
             logic_ltl = ''.join(line['logic_ltl'])
-            logic_ltl = logic_ltl.replace("&", " & ").replace("|", " | ").replace("->", " -> ").replace("U", " U ")
+            # logic_ltl = logic_ltl.replace("&", " & ").replace("|", " | ").replace("->", " -> ").replace("U", " U ")
             logic_ltl = re.sub(r"-(?!>)", "~", logic_ltl)
 
             propositions = line['propositions']
@@ -112,7 +112,7 @@ def nl2tl_gemma(nl_sentence, propositions, few_shot_examples, grammar_constraint
     )
 
     response = out['choices'][0]['message']['content']
-    response = re.sub(r"-(?!>)", "_", response)
+    response = re.sub(r"-(?!>)", "_", response) # replace dashes in propositions with underscores
     return response.strip()
 
 
@@ -133,7 +133,7 @@ def nl2tl_gpt4(nl_sentence, propositions, few_shot_examples, grammar_prompt):
     )
 
     response = out.choices[0].message.content
-    response = re.sub(r"-(?!>)", "_", response)
+    response = re.sub(r"-(?!>)", "_", response) # replace dashes in propositions with underscores
     return response.strip()
 
 
@@ -155,6 +155,9 @@ def get_few_shot_examples(df, num_examples):
 
 def safe_are_equivalent(true_ltl, llm_ltl):
     import spot
+    true_ltl = true_ltl.replace("&", " & ").replace("|", " | ").replace("->", " -> ").replace("U", " U ")
+    llm_ltl = llm_ltl.replace("&", " & ").replace("|", " | ").replace("->", " -> ").replace("U", " U ")
+
     try:
         return spot.are_equivalent(true_ltl, llm_ltl)
     except Exception:

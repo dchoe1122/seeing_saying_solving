@@ -12,19 +12,27 @@ def parse_args():
 
 def analyze_constrained_loss(exp_df):
     # This function is meant to analyze the loss in accuracy due to constrained generation
-    gap_entries = exp_df[(exp_df['gemma_Pc_equivalence']) & (~exp_df['gemma_PC_equivalence'])]
+    #gap_entries = exp_df[(exp_df['gemma_Pc_equivalence']) & (~exp_df['gemma_PC_equivalence'])]
+    
+    gap_entries = exp_df[
+        (exp_df['gemma_Pc_equivalence'] == "True") &
+        (exp_df['gemma_PC_equivalence'] == "False")
+    ]
+    breakpoint()
+
     gap_entries = gap_entries[['nl_sentence', 'propositions', 'dataset_tl', 'gemma_Pc_tl', 'gemma_PC_tl']]
     print(f"Number of entries where constrained generation failed but unconstrained succeeded: {len(gap_entries)}")
 
     # Check if the unconstrained translations still meet the EBNF grammar using Lark
     for index, row in gap_entries.iterrows():
-        grammar = gbnf_to_lark(get_llama_bnf_spec(propositions=row['propositions']))
-        parser = lark.Lark(grammar, start='start', parser='earley')
-        try:
-            parser.parse(row['gemma_Pc_tl'])
-            print(f"Row {index}: Unconstrained translation is valid.\n")
-        except lark.exceptions.LarkError:
-            print(f"Row {index}: Unconstrained translation is INVALID.\nConstrainted TL: {row['gemma_Pc_tl']}\nUnconstrained TL: {row['gemma_PC_tl']}\n")
+        print(f"Unconstrained TL: {row['gemma_Pc_tl']}\nConstrained TL: {row['gemma_PC_tl']}\n")
+        #grammar = gbnf_to_lark(get_llama_bnf_spec(propositions=row['propositions']))
+        #parser = lark.Lark(grammar, start='start', parser='earley')
+        #try:
+        #    parser.parse(row['gemma_Pc_tl'])
+        #    print(f"Row {index}: Unconstrained translation is valid.\n")
+        #except lark.exceptions.LarkError:
+        #    print(f"Row {index}: Unconstrained translation is INVALID.\nUnconstrained TL: {row['gemma_Pc_tl']}\nConstrained TL: {row['gemma_PC_tl']}\n")
 
 
 def generate_containment_stats(exp_df):

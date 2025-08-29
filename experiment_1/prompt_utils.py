@@ -31,26 +31,34 @@ def get_llama_bnf_spec(propositions):
     propositions = [p.replace("_", "-") for p in propositions]
     
     bnf_spec = \
-    f"""root ::= ltl-depth-2
+    f"""# The root rule defines the starting point of the grammar.
+# The entire output must match this rule.
+root ::= ws expr ws
 
-ltl-depth-2 ::= atomic-formula | "~(" ltl-depth-1 ")" | ltl-depth-1 binary-op ltl-depth-1 | unary-op "(" ltl-depth-1 ")"
+# An "expr" is one or more "term"s joined by binary operators.
+# This structure avoids left-recursion and handles operator chaining (e.g., p & q | r).
+expr ::= term (ws binary-op ws term)*
 
-ltl-depth-1 ::= atomic-formula | "~(" atomic-formula ")" | atomic-formula binary-op atomic-formula | unary-op "(" atomic-formula ")"
+# A "term" is the fundamental, non-divisible building block.
+# It can be a simple proposition, a unary operation, a negation, or a parenthesized group.
+term ::= atomic-formula | unary-op ws "(" ws expr ws ")" | "~(" ws expr ws ")" | "(" ws expr ws ")"
+
+# --- Base Definitions ---
 
 predicate-name ::= {" | ".join(f'"{p}"' for p in propositions)}
 atomic-formula ::= predicate-name
 
+# Defines optional whitespace (zero or more spaces, tabs, or newlines).
+# This makes the grammar flexible to the LLM's output formatting.
+ws ::= [ \t\n]*
+
 binary-op ::= "&" | "|" | "->" | "U"
 # '&' (and): both propositions must be true
 # '|' (or): at least one predicate must be true
-# '->' (implies): if first predicate is true, then second predicate must be true 
+# '->' (implies): if first predicate is true, then second predicate must be true
 # 'U' (until): first predicate must be true at least until second predicate is true
 
-unary-op ::= globally | eventually
-globally ::= "G"
-# Predicate must always be true at every timestep
-
-eventually ::= "F"
-# Predicate must be true at some time in the future
-    """
+unary-op ::= "G" | "F"
+# G (globally): Predicate must always be true at every timestep
+# F (eventually): Predicate must be true at some time in the future"""
     return bnf_spec

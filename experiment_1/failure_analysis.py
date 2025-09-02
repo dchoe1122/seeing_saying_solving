@@ -24,7 +24,7 @@ def analyze_constrained_loss(exp_df):
             parser.parse(row['gemma_Pc_tl'])
             print(f"Row {index}: Unconstrained translation is valid.\n")
         except lark.exceptions.LarkError:
-            print(f"Row {index}: Unconstrained translation is INVALID.\nConstrainted TL: {row['gemma_Pc_tl']}\nUnconstrained TL: {row['gemma_PC_tl']}\n")
+            print(f"Row {index}: Unconstrained translation is INVALID.\nUnconstrainted TL: {row['gemma_Pc_tl']}\nConstrained TL: {row['gemma_PC_tl']}\n")
 
 
 def generate_containment_stats(exp_df):

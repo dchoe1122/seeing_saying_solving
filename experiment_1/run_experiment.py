@@ -4,6 +4,7 @@ import time
 import os
 import re
 import argparse
+import string
 
 from prompt_utils import get_prompt, get_llama_bnf_spec
 
@@ -66,7 +67,7 @@ def process_dataset(jsonl_path):
             id = line['id']
             nl_sentence = ' '.join(line['sentence'])
             logic_ltl = ''.join(line['logic_ltl'])
-            # logic_ltl = logic_ltl.replace("&", " & ").replace("|", " | ").replace("->", " -> ").replace("U", " U ")
+            logic_ltl = logic_ltl.replace("&", " & ").replace("|", " | ").replace("->", " -> ").replace("U", " U ")
             logic_ltl = re.sub(r"-(?!>)", "~", logic_ltl)
 
             propositions = line['propositions']
@@ -96,15 +97,19 @@ def strip_part_of_speech(word):
 
 def nl2tl_gemma(nl_sentence, propositions, few_shot_examples, grammar_constraint, grammar_prompt):
     from llama_cpp import LlamaGrammar
-    prompt = get_prompt(propositions=propositions, task=nl_sentence,
-                        bnf_spec=get_llama_bnf_spec(propositions),
+
+    proposition_labels, nl_sentence, mapping_str = replace_props_with_letters(propositions, nl_sentence)
+
+    prompt = get_prompt(propositions=proposition_labels, task=nl_sentence,
+                        bnf_spec=get_llama_bnf_spec(proposition_labels),
                         few_shot=few_shot_examples, grammar_prompt=grammar_prompt)
 
-    tl_bnf_grammar = LlamaGrammar.from_string(get_llama_bnf_spec(propositions)) if grammar_constraint else None
+
+    tl_bnf_grammar = LlamaGrammar.from_string(get_llama_bnf_spec(proposition_labels)) if grammar_constraint else None
 
     system_prompt = [{"role": "system", "content": [{"type": "text", "text": prompt}]}]
     query = [{"role": "user", "content": [{"type": "text",
-              "text": f"Natural Language Requirement - \"{nl_sentence}\"\nRelevant Propositions - {str(propositions)[1:-1]}"}]}]
+              "text": f"Natural Language Requirement - \"{nl_sentence}\"\nRelevant Propositions - {mapping_str}"}]}]
 
     out = get_gemma_llm().create_chat_completion(
         messages=system_prompt + few_shot_examples + query,
@@ -113,6 +118,7 @@ def nl2tl_gemma(nl_sentence, propositions, few_shot_examples, grammar_constraint
 
     response = out['choices'][0]['message']['content']
     response = re.sub(r"-(?!>)", "_", response) # replace dashes in propositions with underscores
+    propositions, response = replace_letters_with_props(propositions, response)
     return response.strip()
 
 
@@ -144,7 +150,10 @@ def get_few_shot_examples(df, num_examples):
         nl_sentence = row['nl_sentence']
         logic_ltl = row['dataset_tl']
         propositions = eval(row['propositions'])
-        user_prompt = f"Natural Language Requirement - \"{nl_sentence}\"\nRelevant Propositions - {str(propositions)[1:-1]}"
+
+        proposition_labels, logic_ltl, mapping_str = replace_props_with_letters(propositions, logic_ltl)
+
+        user_prompt = f"Natural Language Requirement - \"{nl_sentence}\"\nRelevant Propositions - {mapping_str}"
         assistant_prompt = logic_ltl
         few_shot_examples.extend([
             {"role": "user", "content": [{"type": "text", "text": user_prompt}]},
@@ -152,11 +161,30 @@ def get_few_shot_examples(df, num_examples):
         ])
     return few_shot_examples
 
+def replace_props_with_letters(propositions, tl):
+    # Replace propositions with capital letter characters
+    proposition_labels = list(string.ascii_uppercase[:len(propositions)])
+    proposition_mapping = dict(zip(propositions, proposition_labels))
+    for proposition, label in proposition_mapping.items():
+        tl = tl.replace(proposition, label)
+
+    mapping_str = ", ".join([f"'{k}': '{v}'" for k, v in proposition_mapping.items()])
+
+    return [proposition_labels, tl, mapping_str]
+
+def replace_letters_with_props(propositions, tl):
+    # Replace propositions with capital letter characters
+    proposition_labels = list(string.ascii_uppercase[:len(propositions)])
+    proposition_mapping = dict(zip(propositions, proposition_labels))
+    for proposition, label in proposition_mapping.items():
+        tl = tl.replace(label, proposition)
+
+    return [propositions, tl]
 
 def safe_are_equivalent(true_ltl, llm_ltl):
     import spot
-    true_ltl = true_ltl.replace("&", " & ").replace("|", " | ").replace("->", " -> ").replace("U", " U ")
-    llm_ltl = llm_ltl.replace("&", " & ").replace("|", " | ").replace("->", " -> ").replace("U", " U ")
+    #true_ltl = true_ltl.replace("&", " & ").replace("|", " | ").replace("->", " -> ").replace("U", " U ")
+    #llm_ltl = llm_ltl.replace("&", " & ").replace("|", " | ").replace("->", " -> ").replace("U", " U ")
 
     try:
         return spot.are_equivalent(true_ltl, llm_ltl)
@@ -193,8 +221,8 @@ if __name__ == "__main__":
         {'name': 'gemma_Pc', 'function': lambda row: nl2tl_gemma(row['nl_sentence'], eval(row['propositions']), few_shot_examples, False, True)},
         {'name': 'gemma_PC', 'function': lambda row: nl2tl_gemma(row['nl_sentence'], eval(row['propositions']), few_shot_examples, True, True)},
         {'name': 'gemma_pc', 'function': lambda row: nl2tl_gemma(row['nl_sentence'], eval(row['propositions']), few_shot_examples, False, False)},
-        {'name': 'gemma_pC', 'function': lambda row: nl2tl_gemma(row['nl_sentence'], eval(row['propositions']), few_shot_examples, True, False)},
-        {'name': 'gpt4_Pc', 'function': lambda row: nl2tl_gpt4(row['nl_sentence'], eval(row['propositions']), few_shot_examples, True)}
+        {'name': 'gemma_pC', 'function': lambda row: nl2tl_gemma(row['nl_sentence'], eval(row['propositions']), few_shot_examples, True, False)}
+        #{'name': 'gpt4_Pc', 'function': lambda row: nl2tl_gpt4(row['nl_sentence'], eval(row['propositions']), few_shot_examples, True)}
     ]
 
     for i in range(num_trials):

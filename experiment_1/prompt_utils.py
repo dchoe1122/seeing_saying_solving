@@ -41,7 +41,7 @@ expr ::= term (ws binary-op ws term)*
 
 # A "term" is the fundamental, non-divisible building block.
 # It can be a simple proposition, a unary operation, a negation, or a parenthesized group.
-term ::= atomic-formula | unary-op ws "(" ws expr ws ")" | "~(" ws expr ws ")" | "(" ws expr ws ")"
+term ::= atomic-formula | unary-op ws "(" ws expr ws ")" | "~" ws term | "(" ws expr ws ")"
 
 # --- Base Definitions ---
 

@@ -7,54 +7,18 @@ import argparse
 
 from prompt_utils import get_prompt, get_llama_bnf_spec
 
-# ---------- Lazy import helpers ----------
-
-_gemma_llm = None
 _openai_client = None
-_tokenizer = None
-
-def get_tokenizer():
-    global _tokenizer
-    if _tokenizer is None:
-        from transformers import AutoTokenizer
-        _tokenizer = AutoTokenizer.from_pretrained("google/gemma-3-27b-it")
-    return _tokenizer
-
-def get_grammar_processor(grammar_str):
-    from transformers_cfg.grammar_utils import IncrementalGrammarConstraint
-    from transformers_cfg.generation.logits_process import GrammarConstrainedLogitsProcessor
-
-    grammar = IncrementalGrammarConstraint(grammar_str, "root", get_tokenizer())
-    grammar_processor = GrammarConstrainedLogitsProcessor(grammar, adapter="llama-cpp-python")
-    return grammar_processor
-
-def get_gemma_llm_base():
-    """Lazily load the Gemma Llama model."""
-    global _gemma_llm
-    if _gemma_llm is None:
-        from llama_cpp import Llama
-        _gemma_llm = Llama.from_pretrained(
-            repo_id="google/gemma-3-27b-it-qat-q4_0-gguf",
-            filename="gemma-3-27b-it-q4_0.gguf",
-            n_gpu_layers=-1,
-            n_ctx=4096,
-            verbose=False
-        )
-    return _gemma_llm
+_llamacpp_client = None
 
 
-def get_gemma_llm():
-    """Lazily load the finetuned Gemma Llama model."""
-    global _gemma_llm
-    if _gemma_llm is None:
-        from llama_cpp import Llama
-        _gemma_llm = Llama(
-            model_path="./finetune/gemma-3-finetune.gguf",
-            n_gpu_layers=-1,
-            n_ctx=4096,
-            verbose=False
-        )
-    return _gemma_llm
+def get_llamacpp_client():
+    """Lazily initialize the Llama.cpp client."""
+    global _llamacpp_client
+    if _llamacpp_client is None:
+        import openai
+        from openai import OpenAI
+        _llamacpp_client = OpenAI(base_url="http://localhost:8080/v1", api_key="-")
+    return _llamacpp_client
 
 def get_openai_client():
     """Lazily initialize the OpenAI client."""
@@ -69,9 +33,6 @@ def get_openai_client():
         _openai_client = OpenAI()
     return _openai_client
 
-
-# ---------- Core functions ----------
-
 def parse_args():
     parser = argparse.ArgumentParser(description="Experiment configuration")
     parser.add_argument("--entries", type=int, required=True,
@@ -83,7 +44,6 @@ def parse_args():
     parser.add_argument("--dataset_jsonl", type=str, required=True,
                         help="Path to the input JSONL dataset")
     return parser.parse_args()
-
 
 def process_dataset(jsonl_path):
     from tqdm import tqdm
@@ -126,29 +86,91 @@ def strip_part_of_speech(word):
         breakpoint()
     return parts[0].replace(' ', '_').replace("'", "")
 
+def messages_to_gemma_prompt(messages):
+    """
+    Convert OpenAI-style messages into a Gemma 3-compatible prompt string.
+    Merges initial 'system' with first 'user' turn.
+    """
+    gemma_prompt = []
+    pending_system = None
+
+    for msg in messages:
+        role = msg["role"]
+
+        # Map roles to Gemma's known tags
+        if role == "system":
+            # Save for merging later
+            pending_system = msg
+            continue
+        elif role == "user":
+            role = "user"
+        elif role == "assistant":
+            role = "model"
+        else:
+            raise ValueError(f"Unsupported role: {role}")
+
+        # Extract text from content (OpenAI format allows list or str)
+        if isinstance(msg["content"], list):
+            text_parts = [c["text"] for c in msg["content"] if c["type"] == "text"]
+            text = "\n".join(text_parts)
+        else:
+            text = str(msg["content"])
+
+        # Merge system into first user message
+        if pending_system and role == "user":
+            if isinstance(pending_system["content"], list):
+                sys_text = "\n".join(
+                    c["text"] for c in pending_system["content"] if c["type"] == "text"
+                )
+            else:
+                sys_text = str(pending_system["content"])
+            text = sys_text + "\n\n" + text
+            pending_system = None
+
+        gemma_prompt.append(f"<start_of_turn>{role}\n{text}<end_of_turn>")
+
+    # If system was never merged (no user messages), keep it as user
+    if pending_system:
+        if isinstance(pending_system["content"], list):
+            sys_text = "\n".join(
+                c["text"] for c in pending_system["content"] if c["type"] == "text"
+            )
+        else:
+            sys_text = str(pending_system["content"])
+        gemma_prompt.insert(0, f"<start_of_turn>user\n{sys_text}<end_of_turn>")
+
+    # Ensure the model knows it's supposed to answer
+    if not messages or messages[-1]["role"] != "assistant":
+        gemma_prompt.append("<start_of_turn>model\n")
+
+    return "\n".join(gemma_prompt)
 
 def nl2tl_gemma(nl_sentence, propositions, few_shot_examples, grammar_constraint, grammar_prompt):
-    from llama_cpp import LlamaGrammar
     prompt = get_prompt(propositions=propositions, task=nl_sentence,
                         bnf_spec=get_llama_bnf_spec(propositions),
                         few_shot=few_shot_examples, grammar_prompt=grammar_prompt)
 
-    tl_bnf_grammar = LlamaGrammar.from_string(get_llama_bnf_spec(propositions))
+
     grammar_str = get_llama_bnf_spec(propositions)
 
     system_prompt = [{"role": "system", "content": [{"type": "text", "text": prompt}]}]
     query = [{"role": "user", "content": [{"type": "text",
               "text": f"Natural Language Requirement - \"{nl_sentence}\"\nRelevant Propositions - {str(propositions)[1:-1]}"}]}]
 
-    out = get_gemma_llm_base().create_chat_completion(
-        messages=system_prompt + few_shot_examples + query,
-        grammar = tl_bnf_grammar
-        #logits_processor = [get_grammar_processor(grammar_str)] if grammar_constraint else None
-    )
+    if grammar_constraint:
+        out = get_llamacpp_client().completions.create(
+            model = "gemma3",
+            prompt = messages_to_gemma_prompt(system_prompt + few_shot_examples + query),
+            extra_body={"grammar": grammar_str},
+        )
+    else:
+        out = get_llamacpp_client().completions.create(
+            model = "gemma3",
+            prompt = messages_to_gemma_prompt(system_prompt + few_shot_examples + query),
+        )
 
-    response = out['choices'][0]['message']['content']
+    response = out.choices[0].text
     response = re.sub(r"-(?!>)", "_", response)
-    response = response.replace("&", " & ").replace("|", " | ").replace("->", " -> ").replace("U", " U ")
     
     return response.strip()
 

@@ -41,12 +41,14 @@ expr ::= term (ws binary-op ws term)*
 
 # A "term" is the fundamental, non-divisible building block.
 # It can be a simple proposition, a unary operation, a negation, or a parenthesized group.
-term ::= atomic-formula | unary-op ws "(" ws expr ws ")" | "~" ws term | "(" ws expr ws ")"
+# Allow unary operators to work with both single atoms and complex expressions.
+term ::= atomic-formula | unary-op ws "(" ws expr ws ")" | unary-op ws atomic-formula | "~" ws term | "(" ws expr ws ")"
 
 # --- Base Definitions ---
 
 predicate-name ::= {" | ".join(f'"{p}"' for p in propositions)}
-atomic-formula ::= predicate-name
+# Allow propositions with or without parentheses
+atomic-formula ::= predicate-name | "(" ws predicate-name ws ")"
 
 # Defines optional whitespace (zero or more spaces, tabs, or newlines).
 # This makes the grammar flexible to the LLM's output formatting.

@@ -1,0 +1,23 @@
+[workspace]
+authors = ["Sundhar Vinodh Sangeetha <sundharvs@gmail.com>"]
+channels = ["conda-forge"]
+name = "seeing_saying_solving"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[system-requirements]
+cuda = "12.9"
+
+[tasks]
+
+[dependencies]
+pytorch-gpu = "*"
+spot = "*"
+pandas = "*"
+accelerate = "*"
+bitsandbytes = ">=0.47.0,<0.48"
+cuda-toolkit = ">=12.9.1,<13"
+
+[pypi-dependencies]
+openai = "*"
+transformers-cfg = "*"

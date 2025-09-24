@@ -29,38 +29,51 @@ Return only the STL formula, without any additional text or explanation.
 def get_llama_bnf_spec(propositions):
     
     propositions = [p.replace("_", "-") for p in propositions]
-    
-    bnf_spec = \
-    f"""# The root rule defines the starting point of the grammar.
-# The entire output must match this rule.
-root ::= ws expr ws
 
-# An "expr" is one or more "term"s joined by binary operators.
-# This structure avoids left-recursion and handles operator chaining (e.g., p & q | r).
-expr ::= term (ws binary-op ws term)*
+    bnf_spec = f"""root ::= ws expr ws
 
-# A "term" is the fundamental, non-divisible building block.
-# It can be a simple proposition, a unary operation, a negation, or a parenthesized group.
-# Allow unary operators to work with both single atoms and complex expressions.
-term ::= atomic-formula | unary-op ws "(" ws expr ws ")" | unary-op ws atomic-formula | "~" ws term | "(" ws expr ws ")"
+# The main expression rule.
+expr ::= term (spaced-binary-op term)*
+
+# REVISED: The term rule is now simpler and delegates the prefix logic.
+term ::= core-term | "~" ws term
+
+# REVISED: The core-term now explicitly lists the two alternatives,
+# one with the unary operator and one without. This resolves the parsing error.
+core-term ::= unary-op ws atomic-formula | atomic-formula | "(" ws expr ws ")"
 
 # --- Base Definitions ---
-
 predicate-name ::= {" | ".join(f'"{p}"' for p in propositions)}
-# Allow propositions with or without parentheses
 atomic-formula ::= predicate-name | "(" ws predicate-name ws ")"
-
-# Defines optional whitespace (zero or more spaces, tabs, or newlines).
-# This makes the grammar flexible to the LLM's output formatting.
 ws ::= [ \t\n]*
-
-binary-op ::= "&" | "|" | "->" | "U"
-# '&' (and): both propositions must be true
-# '|' (or): at least one predicate must be true
-# '->' (implies): if first predicate is true, then second predicate must be true
-# 'U' (until): first predicate must be true at least until second predicate is true
-
+spaced-binary-op ::= ws ("&" | "|" | "->" | "U") ws
 unary-op ::= "G" | "F"
-# G (globally): Predicate must always be true at every timestep
-# F (eventually): Predicate must be true at some time in the future"""
+"""
+
+#     bnf_spec = \
+#     f"""# The root rule defines the starting point of the grammar.
+# # The entire output must match this rule.
+# root ::= ws expr ws
+
+# # MODIFIED: Removed ws from around the operator.
+# expr ::= term (spaced-binary-op term)*
+
+# # A "term" is the fundamental, non-divisible building block.
+# term ::= atomic-formula | unary-op ws "(" ws expr ws ")" | unary-op ws atomic-formula | "~" ws term | "(" ws expr ws ")"
+
+# # --- Base Definitions ---
+# predicate-name ::= {" | ".join(f'"{p}"' for p in propositions)}
+# atomic-formula ::= predicate-name | "(" ws predicate-name ws ")"
+# ws ::= [ \t\n]*
+
+# # OLD binary-op
+# # binary-op ::= "&" | "|" | "->" | "U"
+
+# # NEW "token-aware" rule for operators
+# # This forces the model to choose the operator and its spacing as a single logical unit.
+# spaced-binary-op ::= ws ("&" | "|" | "->" | "U") ws
+
+# unary-op ::= "G" | "F"
+# # G (globally): Predicate must always be true at every timestep
+# # F (eventually): Predicate must be true at some time in the future"""
     return bnf_spec

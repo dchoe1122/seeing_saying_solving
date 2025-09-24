@@ -68,7 +68,7 @@ def analyze_constrained_loss(exp_df):
         propositions = eval(row['propositions'])
         unconstrained_tl = row['gemma_Pc_tl']
         constrained_tl = row['gemma_PC_tl']
-        
+
         # Test with Lark (original method)
         try:
             grammar = parse_ebnf(get_llama_bnf_spec(propositions=propositions))
@@ -77,19 +77,40 @@ def analyze_constrained_loss(exp_df):
         except Exception as e:
             print(f"Row {index}: Lark validation failed with error: {e}")
             lark_valid = False
-        
+
         # Test with GBNF validator
         gbnf_valid = validate_with_gbnf(unconstrained_tl, propositions)
-        
+
         validation_status = f"Lark: {'VALID' if lark_valid else 'INVALID'}, GBNF: {'VALID' if gbnf_valid else 'INVALID'}"
-        
+
         print(f"Row {index}: Unconstrained translation validation ({validation_status})")
         print(f"  Constrained TL: {constrained_tl}")
         print(f"  Unconstrained TL: {unconstrained_tl}")
-        
+
         if lark_valid != gbnf_valid:
             print(f"  WARNING: Validation methods disagree!")
         print()
+
+def extract_failures_to_csv(exp_df, output_file="failures.csv"):
+    """
+    Extract failure cases and output them in the same format as navigation_dataset.csv
+    """
+    # Find all rows where at least one model failed (equivalence is False)
+    equivalence_cols = [col for col in exp_df.columns if col.endswith('_equivalence')]
+
+    # Create a mask for rows where any equivalence check failed
+    failure_mask = exp_df[equivalence_cols].apply(lambda row: any(val == False or val == "False" for val in row), axis=1)
+
+    failure_rows = exp_df[failure_mask]
+
+    # Extract only the columns that match navigation_dataset.csv format
+    output_data = failure_rows[['id', 'propositions', 'nl_sentence', 'dataset_tl']].copy()
+
+    # Save to CSV with same format as navigation_dataset.csv
+    output_data.to_csv(output_file, index=False)
+
+    print(f"Extracted {len(output_data)} failure cases to {output_file}")
+    return output_data
 
 def generate_containment_stats(exp_df):
     containment_results = []
@@ -120,6 +141,9 @@ if __name__ == "__main__":
     experiment_csv = args.experiment_csv
 
     exp_df = pd.read_csv(experiment_csv)
+
+    # Extract failures to CSV file
+    extract_failures_to_csv(exp_df)
 
     analyze_constrained_loss(exp_df)
     #containment_df = generate_containment_stats(exp_df)

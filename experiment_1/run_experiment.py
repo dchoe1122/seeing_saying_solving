@@ -43,6 +43,8 @@ def parse_args():
                         help="Number of few-shot examples to include")
     parser.add_argument("--dataset_jsonl", type=str, required=True,
                         help="Path to the input JSONL dataset")
+    parser.add_argument("--dataset_csv", type=str, default=None,
+                        help="Path to the input CSV dataset (overrides default navigation_dataset.csv)")
     return parser.parse_args()
 
 def process_dataset(jsonl_path):
@@ -162,11 +164,13 @@ def nl2tl_gemma(nl_sentence, propositions, few_shot_examples, grammar_constraint
             model = "gemma3",
             prompt = messages_to_gemma_prompt(system_prompt + few_shot_examples + query),
             extra_body={"grammar": grammar_str},
+            temperature=0
         )
     else:
         out = get_llamacpp_client().completions.create(
             model = "gemma3",
             prompt = messages_to_gemma_prompt(system_prompt + few_shot_examples + query),
+            temperature=0
         )
 
     response = out.choices[0].text
@@ -240,7 +244,10 @@ if __name__ == "__main__":
     num_trials = args.trials
     num_examples = args.examples
 
-    dataset_filename = "navigation_dataset.csv" if os.path.exists("navigation_dataset.csv") else process_dataset(args.dataset_jsonl)
+    if args.dataset_csv:
+        dataset_filename = args.dataset_csv
+    else:
+        dataset_filename = "navigation_dataset.csv" if os.path.exists("navigation_dataset.csv") else process_dataset(args.dataset_jsonl)
     full_dataset = pd.read_csv(dataset_filename)
     summary_df = pd.DataFrame()
 

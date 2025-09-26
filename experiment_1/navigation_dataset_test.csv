@@ -1,0 +1,1533 @@
+id,propositions,nl_sentence,dataset_tl
+3469,"['touch_tree', 'steal_apple']",when possible touch tree or whenever steal apple,F(touch_tree)|F(steal_apple)
+2700,"['touch_tree', 'journey_to_tree']",at some time touch tree or whenever journey to tree,F(touch_tree)|F(journey_to_tree)
+1716,"['let_go_pear', 'make_contact_with_house']",do not let go pear or whenever make contact with house,~(let_go_pear)|F(make_contact_with_house)
+3860,"['scoop_up_apple', 'make_way_for_tree']",when possible scoop up apple or at any time make way for tree,F(scoop_up_apple)|F(make_way_for_tree)
+2104,"['seize_orange', 'shift_to_flag']",at any time seize orange until when possible shift to flag,F(seize_orange)UF(shift_to_flag)
+3450,"['be_near_tree', 'come_home']",whenever be near tree or when possible come home,F(be_near_tree)|F(come_home)
+1892,"['move_to_flag', 'pick_up_flag']",when possible move to flag and pick up flag,F(move_to_flag)&pick_up_flag
+5085,"['be_at_flag', 'yield_pear']",at any time be at flag or when possible yield pear,F(be_at_flag)|F(yield_pear)
+4512,"['make_contact_with_house', 'touch_flag']",when possible make contact with house and always touch flag,F(make_contact_with_house)&G(touch_flag)
+5565,"['go_to_apple', 'make_way_to_house']",at any time go to apple or repeatedly make way to house,F(go_to_apple)|G(F(make_way_to_house))
+4096,"['put_in_bin', 'gather_pear']",put in bin or at any time gather pear,put_in_bin|F(gather_pear)
+5725,"['grab_pear', 'make_contact_with_house']",at some time grab pear or at any time make contact with house,F(grab_pear)|F(make_contact_with_house)
+2203,"['grab_hold_pear', 'got_to_house']",grab hold pear or when possible got to house,grab_hold_pear|F(got_to_house)
+4584,"['travel_to_trash_can', 'move_past_trash_can']",whenever travel to trash can or when possible move past trash can,F(travel_to_trash_can)|F(move_past_trash_can)
+1562,"['hold_on_pear', 'go_to_apple_trashcan']",always hold on pear or repeatedly go to apple trashcan,G(hold_on_pear)|G(F(go_to_apple_trashcan))
+2410,"['withdraw_pear', 'make_way_waste_basket']",when possible withdraw pear or whenever make way waste basket,F(withdraw_pear)|F(make_way_waste_basket)
+1944,"['present_at_flag', 'drop_apple']",at any time present at flag or never drop apple,F(present_at_flag)|G(~(drop_apple))
+3793,"['contact_house', 'move_to_trash_can']",whenever contact house or move to trash can,F(contact_house)|move_to_trash_can
+1755,"['bring_pear', 'reach_flag']",at any time bring pear until at some time reach flag,F(bring_pear)UF(reach_flag)
+4426,"['travel_house', 'collect_pear']",at some time travel house and collect pear,F(travel_house)&collect_pear
+4805,"['travel_by_tree', 'grab_pear']",at any time travel by tree or at any time grab pear,F(travel_by_tree)|F(grab_pear)
+1998,"['make_way_waste_basket', 'go_to_transh_can']",at any time make way waste basket and when possible go to transh can,F(make_way_waste_basket)&F(go_to_transh_can)
+2782,"['move_to_flag', 'go_visit_house']",at any time move to flag and when possible go visit house,F(move_to_flag)&F(go_visit_house)
+2171,"['get_to_flag', 'migrate_to_tree']",whenever get to flag and when possible migrate to tree,F(get_to_flag)&F(migrate_to_tree)
+4842,"['stop_by_flag', 'drop_orange']",stop by flag or never drop orange,stop_by_flag|G(~(drop_orange))
+4435,"['going_to_house', 'go_to_flag']",at some time going to house and when possible go to flag,F(going_to_house)&F(go_to_flag)
+5579,"['go_to_apple', 'seize_apple']","when at any time go to apple , seize apple",F(go_to_apple)->seize_apple
+2910,"['touch_tree', 'move_towards_trash_can']",when possible touch tree or move towards trash can,F(touch_tree)|move_towards_trash_can
+5700,"['approach_house', 'show_yourself_near_house']",at any time approach house and at some time show yourself near house,F(approach_house)&F(show_yourself_near_house)
+1518,"['go_to_bucket', 'obtain_orange']",go to bucket and when possible obtain orange,go_to_bucket&F(obtain_orange)
+4031,"['scoop_up_pear', 'take_apple']",at some time scoop up pear or take apple,F(scoop_up_pear)|take_apple
+3744,"['go_to_trash_bin', 'hold_pear']",whenever go to trash bin and hold pear,F(go_to_trash_bin)&hold_pear
+1343,"['approach_trash_can', 'grab_tree']",approach trash can or repeatedly grab tree,approach_trash_can|G(F(grab_tree))
+1557,"['withdraw_pear', 'go_to_trashcan']",when possible withdraw pear or when possible go to trashcan,F(withdraw_pear)|F(go_to_trashcan)
+5171,"['go_near_pear', 'make_contact_with_house']",at some time go near pear or at some time make contact with house,F(go_near_pear)|F(make_contact_with_house)
+2480,"['get_to_cup', 'have_possession_of_apple']",at some time get to cup or at any time have possession of apple,F(get_to_cup)|F(have_possession_of_apple)
+5346,"['let_go_pear', 'hold_orange']",don't let go pear or hold orange,~(let_go_pear)|hold_orange
+4705,"['travel_by_tree', 'let_go_apple']",when possible travel by tree or whenever let go apple,F(travel_by_tree)|F(let_go_apple)
+1654,"['reach_house', 'move_to_trashcan']",reach house or move to trashcan,reach_house|move_to_trashcan
+4849,"['collect_orange', 'grasp_pear']",whenever collect orange and at some time grasp pear,F(collect_orange)&F(grasp_pear)
+5197,"['venture_house', 'get_hold_apple']","if at any time venture house , at any time get hold apple",F(venture_house)->F(get_hold_apple)
+1088,"['gather_apple', 'go_to_pear']",gather apple and repeatedly go to pear,gather_apple&G(F(go_to_pear))
+1306,"['go_by_waste_bin', 'venture_towards_house']",go by waste bin or venture towards house,go_by_waste_bin|venture_towards_house
+3127,"['withold_apple', 'go_visit_flag']",at any time withold apple and go visit flag,F(withold_apple)&go_visit_flag
+2291,"['going_to_house', 'stop_by_trash_can']",at any time going to house and at any time stop by trash can,F(going_to_house)&F(stop_by_trash_can)
+1787,"['reach_flag', 'bring_pear']","if at some time reach flag , when possible bring pear",F(reach_flag)->F(bring_pear)
+1958,"['make_way_to_house', 'secure_pear']",repeatedly make way to house or at any time secure pear,G(F(make_way_to_house))|F(secure_pear)
+3212,"['go_home', 'approach_house']",when possible go home or at some time approach house,F(go_home)|F(approach_house)
+1895,"['obtain_pear', 'grasp_orange']",when possible obtain pear or grasp orange,F(obtain_pear)|grasp_orange
+1994,"['travel_to_apple', 'take_to_trashcan']",travel to apple or take to trashcan,travel_to_apple|take_to_trashcan
+1699,"['bring_pear', 'secure_apple']",when possible bring pear or secure apple,F(bring_pear)|secure_apple
+3957,"['go_by_tree', 'visit_house']",when possible go by tree and at any time visit house,F(go_by_tree)&F(visit_house)
+1233,"['bring_pear', 'withhold_apple']",whenever bring pear and at some time withhold apple,F(bring_pear)&F(withhold_apple)
+3103,"['set_out_to_house', 'gather_apple']",at some time set out to house and gather apple,F(set_out_to_house)&gather_apple
+2941,"['grab_pear', 'grab_orange']",when possible grab pear and at any time grab orange,F(grab_pear)&F(grab_orange)
+3355,"['go_by_flag', 'take_possession_of_bear']",whenever go by flag means that whenever take possession of bear,F(go_by_flag)->F(take_possession_of_bear)
+4663,"['walk_to_flag', 'seize_orange']",whenever walk to flag can infer that whenever seize orange,F(walk_to_flag)->F(seize_orange)
+1975,"['secure_pear', 'scoop_up_pear']",whenever secure pear and when possible scoop up pear,F(secure_pear)&F(scoop_up_pear)
+4651,"['collect_orange', 'make_contact_with_house']",when possible collect orange or whenever make contact with house,F(collect_orange)|F(make_contact_with_house)
+5947,"['go_home', 'pick_up_pear']",whenever go home or pick up pear,F(go_home)|pick_up_pear
+1433,"['spend_time_at_tree', 'be_in_houses_vicinity']",when possible spend time at tree or when possible be in house's vicinity,F(spend_time_at_tree)|F(be_in_houses_vicinity)
+2432,"['pass_by_trash_bin', 'reach_tree']",at any time pass by trash bin and when possible reach tree,F(pass_by_trash_bin)&F(reach_tree)
+1883,"['present_at_flag', 'present_at_flag']",when possible present at flag and at some time present at flag,F(present_at_flag)&F(present_at_flag)
+1523,"['drop_apple', 'drop_apple']",never drop apple or never drop apple,G(~(drop_apple))|G(~(drop_apple))
+5590,"['go_to_trash_bin', 'go_to_pear']",whenever go to trash bin or repeatedly go to pear,F(go_to_trash_bin)|G(F(go_to_pear))
+1862,"['make_to_flag', 'grab_tree']",when possible make to flag or repeatedly grab tree,F(make_to_flag)|G(F(grab_tree))
+1250,"['move', 'put_in_apple_bucket']",forever move or put in apple bucket,G(move)|put_in_apple_bucket
+1230,"['visit_tree', 'take_possession_of_bear']",visit tree until when possible take possession of bear,visit_treeUF(take_possession_of_bear)
+1335,"['venture_to_house', 'venture_towards_house']",at any time venture to house or venture towards house,F(venture_to_house)|venture_towards_house
+3913,"['travel_to_flag', 'obtain_apple']",at some time travel to flag or at some time obtain apple,F(travel_to_flag)|F(obtain_apple)
+2294,"['take_to_tree', 'get_to_cup']",take to tree or at some time get to cup,take_to_tree|F(get_to_cup)
+2640,"['pass_by_trash_bin', 'stop_by_trash_can']",at any time pass by trash bin means that when possible stop by trash can,F(pass_by_trash_bin)->F(stop_by_trash_can)
+1913,"['travel_to_apple', 'snatch_up_pear']",travel to apple or snatch up pear,travel_to_apple|snatch_up_pear
+5174,"['travel_to_waste_bin', 'obtain_pear']",travel to waste bin until whenever obtain pear,travel_to_waste_binUF(obtain_pear)
+4613,"['go_to_waste_basket', 'come_home']",repeatedly go to waste basket or at some time come home,G(F(go_to_waste_basket))|F(come_home)
+3433,"['go_to_bucket', 'grasp_orange']",go to bucket or grasp orange,go_to_bucket|grasp_orange
+1083,"['journey_by_flag', 'get_to_flag']",whenever journey by flag or at any time get to flag,F(journey_by_flag)|F(get_to_flag)
+1897,"['reach_flag', 'go_by_waste_basket']",at any time reach flag and when possible go by waste basket,F(reach_flag)&F(go_by_waste_basket)
+2242,"['got_to_house', 'reach_house']",at any time got to house or reach house,F(got_to_house)|reach_house
+1957,"['go_by_waste_basket', 'secure_apple']",whenever go by waste basket or secure apple,F(go_by_waste_basket)|secure_apple
+2081,"['make_way_waste_basket', 'move_to_trashcan']",when possible make way waste basket or move to trashcan,F(make_way_waste_basket)|move_to_trashcan
+2400,"['travel_to_apple', 'venture_flag']",travel to apple and at some time venture flag,travel_to_apple&F(venture_flag)
+5286,"['journey_to_flag', 'travel_to_house']",whenever journey to flag and when possible travel to house,F(journey_to_flag)&F(travel_to_house)
+2001,"['snatch_up_pear', 'move_near_tree']",snatch up pear and when possible move near tree,snatch_up_pear&F(move_near_tree)
+3984,"['proceed_to_tree', 'procure_apple']",whenever proceed to tree or procure apple,F(proceed_to_tree)|procure_apple
+5948,"['going_to_tree', 'take_orange']",going to tree or take orange,going_to_tree|take_orange
+2399,"['travel_to_apple', 'be_in_houses_vicinity']",travel to apple until at any time be in house's vicinity,travel_to_appleUF(be_in_houses_vicinity)
+4595,"['proceed_to_house', 'go_to_tree']",at some time proceed to house and whenever go to tree,F(proceed_to_house)&F(go_to_tree)
+1310,"['going_to_house', 'go_to_waste_basket']",when possible going to house or repeatedly go to waste basket,F(going_to_house)|G(F(go_to_waste_basket))
+1514,"['venture_towards_house', 'bring_pear']",venture towards house and when possible bring pear,venture_towards_house&F(bring_pear)
+2033,"['shift_to_flag', 'scoop_up_apple']",when possible shift to flag or at any time scoop up apple,F(shift_to_flag)|F(scoop_up_apple)
+4225,"['move_past_trash_can', 'go_to_trash_bin']",whenever move past trash can and when possible go to trash bin,F(move_past_trash_can)&F(go_to_trash_bin)
+3430,"['walk_near_flag', 'proceed_to_house']",at any time walk near flag and whenever proceed to house,F(walk_near_flag)&F(proceed_to_house)
+1337,"['put_in_bin', 'have_apple']",put in bin and always have apple,put_in_bin&G(have_apple)
+1935,"['drop_apple', 'go_by_waste_basket']",never drop apple and whenever go by waste basket,G(~(drop_apple))&F(go_by_waste_basket)
+2178,"['go_to_apple_trashcan', 'grip_apple']","when repeatedly go to apple trashcan , grip apple",G(F(go_to_apple_trashcan))->grip_apple
+2274,"['go_near_pear', 'move_forward_trash_can']",when possible go near pear and whenever move forward trash can,F(go_near_pear)&F(move_forward_trash_can)
+2999,"['drop_orange', 'visit_waste_basket']",drop orange and whenever visit waste basket,drop_orange&F(visit_waste_basket)
+1187,"['go_to_house', 'make_way_for_tree']",whenever go to house or whenever make way for tree,F(go_to_house)|F(make_way_for_tree)
+1592,"['make_way_waste_basket', 'grip_apple']",at any time make way waste basket or grip apple,F(make_way_waste_basket)|grip_apple
+5546,"['go_to', 'pear_bin', 'seize_pear']",when possible go to pear bin and when possible seize pear,F(go_topear_bin)&F(seize_pear)
+3378,"['take_to_trash_can', 'seize_orange']",take to trash can and whenever seize orange,take_to_trash_can&F(seize_orange)
+4330,"['drop_apple', 'walk_near_flag']",never drop apple or at any time walk near flag,G(~(drop_apple))|F(walk_near_flag)
+3661,"['get_hold_orange', 'grab_pear']",when possible get hold orange and at some time grab pear,F(get_hold_orange)&F(grab_pear)
+2368,"['visit_tree', 'seize_orange']",visit tree and at some time seize orange,visit_tree&F(seize_orange)
+1193,"['go_by_waste_basket', 'drop_apple']",at any time go by waste basket and never drop apple,F(go_by_waste_basket)&G(~(drop_apple))
+1137,"['have_in_orange', 'grip_apple']",forever have in orange or grip apple,G(have_in_orange)|grip_apple
+1264,"['walk', 'be_at_flag']",walk and at some time be at flag,walk&F(be_at_flag)
+1439,"['withhold_apple', 'present_at_flag']",at any time withhold apple or at any time present at flag,F(withhold_apple)|F(present_at_flag)
+1912,"['have_apple', 'acquire_pear']",always have apple and at some time acquire pear,G(have_apple)&F(acquire_pear)
+1148,"['gather_orange', 'pick_up_fruit']",gather orange until pick up fruit,gather_orangeUpick_up_fruit
+5561,"['go_to_pear', 'touch_flag']",repeatedly go to pear and always touch flag,G(F(go_to_pear))&G(touch_flag)
+5205,"['venture_house', 'put_in_bin']",when possible venture house or put in bin,F(venture_house)|put_in_bin
+5142,"['pick_up_peach', 'gather_pear']",at any time pick up peach or at any time gather pear,F(pick_up_peach)|F(gather_pear)
+1719,"['reach_house', 'go_to_apple_trashcan']",reach house until repeatedly go to apple trashcan,reach_houseUG(F(go_to_apple_trashcan))
+1217,"['get_near_flag', 'move_to_trashcan']",at any time get near flag or move to trashcan,F(get_near_flag)|move_to_trashcan
+5419,"['acquire_pear', 'be_near_tree']",at any time acquire pear and at any time be near tree,F(acquire_pear)&F(be_near_tree)
+4648,"['contact_house', 'move_forward_trash_can']",whenever contact house or when possible move forward trash can,F(contact_house)|F(move_forward_trash_can)
+2465,"['go_to_apple_trashcan', 'journey_by_flag']",repeatedly go to apple trashcan means that at some time journey by flag,G(F(go_to_apple_trashcan))->F(journey_by_flag)
+1879,"['drop_apple', 'go_by_waste_basket']",never drop apple and whenever go by waste basket,G(~(drop_apple))&F(go_by_waste_basket)
+4398,"['stop_by_trash_can', 'get_apple']",whenever stop by trash can and at some time get apple,F(stop_by_trash_can)&F(get_apple)
+4034,"['pass_by_trash_bin', 'travel_by_tree']",at any time pass by trash bin until at some time travel by tree,F(pass_by_trash_bin)UF(travel_by_tree)
+5783,"['grasp_apple', 'travel_to_tree']",when possible grasp apple or travel to tree,F(grasp_apple)|travel_to_tree
+2173,"['take_to_trashcan', 'go_near_house']",take to trashcan and when possible go near house,take_to_trashcan&F(go_near_house)
+1718,"['venture_to_house', 'secure_apple']",at some time venture to house and secure apple,F(venture_to_house)&secure_apple
+2891,"['journey_to_tree', 'let_go_apple']",at some time journey to tree or at some time let go apple,F(journey_to_tree)|F(let_go_apple)
+1516,"['take_to_trashcan', 'advance_to_tree']",take to trashcan or advance to tree,take_to_trashcan|advance_to_tree
+3293,"['go_to_apple', 'go_near_flag']",when possible go to apple and when possible go near flag,F(go_to_apple)&F(go_near_flag)
+2179,"['get_near_flag', 'reach_house']",when possible get near flag or reach house,F(get_near_flag)|reach_house
+1757,"['get_apple', 'grab_pear']",whenever get apple or at some time grab pear,F(get_apple)|F(grab_pear)
+3029,"['go_to_home', 'obtain_pear']",whenever go to home or whenever obtain pear,F(go_to_home)|F(obtain_pear)
+4597,"['proceed_to_tree', 'make_way_for_tree']",whenever proceed to tree or at any time make way for tree,F(proceed_to_tree)|F(make_way_for_tree)
+4384,"['go_to_orange', 'acquire_orange']",go to orange or acquire orange,go_to_orange|acquire_orange
+3071,"['approach_flag', 'reach_tree']",whenever approach flag and whenever reach tree,F(approach_flag)&F(reach_tree)
+2284,"['get_close_tree', 'get_close_flag']",at any time get close tree and when possible get close flag,F(get_close_tree)&F(get_close_flag)
+1865,"['grab_hold_pear', 'start_going_to_house']",grab hold pear and when possible start going to house,grab_hold_pear&F(start_going_to_house)
+2196,"['move_to_trashcan', 'start_going_to_house']",move to trashcan or whenever start going to house,move_to_trashcan|F(start_going_to_house)
+3610,"['drop_orange', 'start_going_to_tree']",drop orange until whenever start going to tree,drop_orangeUF(start_going_to_tree)
+1148,"['venture_towards_house', 'secure_apple']",venture towards house and secure apple,venture_towards_house&secure_apple
+3656,"['collect_apple', 'go_by_trash_can']",at some time collect apple and forever go by trash can,F(collect_apple)&G(go_by_trash_can)
+1586,"['secure_apple', 'withhold_apple']",secure apple or at any time withhold apple,secure_apple|F(withhold_apple)
+1045,"['snatch_up_pear', 'journey_by_flag']",snatch up pear and whenever journey by flag,snatch_up_pear&F(journey_by_flag)
+2377,"['steal_apple', 'proceed_to_tree']",when possible steal apple and when possible proceed to tree,F(steal_apple)&F(proceed_to_tree)
+3138,"['go_by_trash_can', 'go_to_peach']",always go by trash can or at any time go to peach,G(go_by_trash_can)|F(go_to_peach)
+1427,"['set_out_to_house', 'make_contact_flag']",whenever set out to house or at some time make contact flag,F(set_out_to_house)|F(make_contact_flag)
+6000,"['get_hold_apple', 'drop_orange']",whenever get hold apple or never drop orange,F(get_hold_apple)|G(~(drop_orange))
+1213,"['approach_trash_can', 'snag_orange']",approach trash can and whenever snag orange,approach_trash_can&F(snag_orange)
+3867,"['put_in_bin', 'make_your_way_flag']",put in bin and whenever make your way flag,put_in_bin&F(make_your_way_flag)
+4198,"['travel_to_waste_bin', 'be_near_tree']",travel to waste bin or whenever be near tree,travel_to_waste_bin|F(be_near_tree)
+5303,"['make_contact_flag', 'be_near_tree']",whenever make contact flag or at some time be near tree,F(make_contact_flag)|F(be_near_tree)
+2872,"['go_to_trash_receptacle', 'take_to_trash_can']",at some time go to trash receptacle until take to trash can,F(go_to_trash_receptacle)Utake_to_trash_can
+2137,"['move_to_house', 'get_close_tree']",move to house and at some time get close tree,move_to_house&F(get_close_tree)
+1352,"['got_to_house', 'go_near_house']",whenever got to house and at any time go near house,F(got_to_house)&F(go_near_house)
+1669,"['withhold_apple', 'present_at_flag']",at any time withhold apple and at some time present at flag,F(withhold_apple)&F(present_at_flag)
+5723,"['yield_pear', 'venture_to_trash_can']","when at some time yield pear , venture to trash can",F(yield_pear)->venture_to_trash_can
+2609,"['visit_waste_basket', 'going_to_tree']",at some time visit waste basket or going to tree,F(visit_waste_basket)|going_to_tree
+1824,"['get_to_tree', 'reach_house']",get to tree or reach house,get_to_tree|reach_house
+4938,"['walk', 'seize_orange']",walk or at some time seize orange,walk|F(seize_orange)
+2435,"['venture_to_trash_can', 'go_near_pear']",venture to trash can and at some time go near pear,venture_to_trash_can&F(go_near_pear)
+2165,"['seize_apple', 'touch_flag']",seize apple or forever touch flag,seize_apple|G(touch_flag)
+1273,"['stop_by_trash_can', 'drop_orange']",whenever stop by trash can until never drop orange,F(stop_by_trash_can)UG(~(drop_orange))
+5358,"['travel_to_trash_can', 'pass_by_trash_bin']",whenever travel to trash can can infer that when possible pass by trash bin,F(travel_to_trash_can)->F(pass_by_trash_bin)
+3564,"['put_in_apple_bucket', 'pass_by_trash_bin']",put in apple bucket until when possible pass by trash bin,put_in_apple_bucketUF(pass_by_trash_bin)
+2817,"['acquire_apple', 'gather_orange']",acquire apple or gather orange,acquire_apple|gather_orange
+4995,"['go_to_tree', 'make_contact_with_house']",whenever go to tree or when possible make contact with house,F(go_to_tree)|F(make_contact_with_house)
+1791,"['advance_to_tree', 'let_go_orange']",advance to tree or do not let go orange,advance_to_tree|~(let_go_orange)
+1208,"['withdraw_pear', 'let_go_orange']",at any time withdraw pear or do not let go orange,F(withdraw_pear)|~(let_go_orange)
+2381,"['let_go_pear', 'withdraw_pear']",do not let go pear or at any time withdraw pear,~(let_go_pear)|F(withdraw_pear)
+2116,"['go_to_apple_trashcan', 'let_go_pear']",repeatedly go to apple trashcan and don't let go pear,G(F(go_to_apple_trashcan))&~(let_go_pear)
+3406,"['let_go_orange', 'make_contact_flag']",never let go orange or at any time make contact flag,G(~(let_go_orange))|F(make_contact_flag)
+2733,"['let_go', 'let_go_orange']",never let go and never let go orange,G(~(let_go))&G(~(let_go_orange))
+1573,"['moving', 'journey_by_flag']",forever moving and whenever journey by flag,G(moving)&F(journey_by_flag)
+1753,"['tax_apple', 'reach_tree']",when possible tax apple or whenever reach tree,F(tax_apple)|F(reach_tree)
+3139,"['go_past_house', 'gather_orange']",whenever go past house or gather orange,F(go_past_house)|gather_orange
+4173,"['reach_trash_can', 'go_to_house']",reach trash can or at any time go to house,reach_trash_can|F(go_to_house)
+1849,"['withhold_apple', 'go_by_waste_basket']",at some time withhold apple or at any time go by waste basket,F(withhold_apple)|F(go_by_waste_basket)
+3849,"['drop_orange', 'move_forward_trash_can']",never drop orange or at some time move forward trash can,G(~(drop_orange))|F(move_forward_trash_can)
+1799,"['take_to_trash_can', 'pass_by_trash_bin']",take to trash can or at any time pass by trash bin,take_to_trash_can|F(pass_by_trash_bin)
+4247,"['go_by_house', 'gather_pear']",at some time go by house or when possible gather pear,F(go_by_house)|F(gather_pear)
+2296,"['go_past_flag', 'go_to_orange']",whenever go past flag or go to orange,F(go_past_flag)|go_to_orange
+4574,"['capture_pear', 'go_to_peach']",at some time capture pear and at some time go to peach,F(capture_pear)&F(go_to_peach)
+4191,"['collect_apple', 'hold_on_to_pear']",when possible collect apple or hold on to pear,F(collect_apple)|hold_on_to_pear
+2142,"['make_contact_with_house', 'go_to_peach']",at some time make contact with house and when possible go to peach,F(make_contact_with_house)&F(go_to_peach)
+3476,"['approach_tree', 'go_by_house']",approach tree and at some time go by house,approach_tree&F(go_by_house)
+1076,"['pick_up_anything', 'go_to_pear']",do not pick up anything and repeatedly go to pear,~(F(pick_up_anything))&G(F(go_to_pear))
+1210,"['go_to_trashcan', 'travel_to_apple']",when possible go to trashcan and travel to apple,F(go_to_trashcan)&travel_to_apple
+1923,"['secure_apple', 'withhold_apple']",secure apple or at some time withhold apple,secure_apple|F(withhold_apple)
+3050,"['venture_to_flag', 'capture_pear']",whenever venture to flag or at some time capture pear,F(venture_to_flag)|F(capture_pear)
+5539,"['collect_orange', 'take_orange']",whenever collect orange and take orange,F(collect_orange)&take_orange
+5213,"['make_contact_with_house', 'advance_to_house']",at any time make contact with house or when possible advance to house,F(make_contact_with_house)|F(advance_to_house)
+2237,"['go_to_house', 'stop_by_trash_can']",at some time go to house and whenever stop by trash can,F(go_to_house)&F(stop_by_trash_can)
+4908,"['visit_tree', 'procure_apple']",visit tree or procure apple,visit_tree|procure_apple
+5813,"['take_to_trash_can', 'yield_pear']",take to trash can or when possible yield pear,take_to_trash_can|F(yield_pear)
+3603,"['let_go', 'reach_trash_can']",never let go or reach trash can,G(~(let_go))|reach_trash_can
+1371,"['start_going_to_tree', 'venture_house']",at some time start going to tree and when possible venture house,F(start_going_to_tree)&F(venture_house)
+2110,"['go_to_trashcan', 'move_to_trashcan']",at any time go to trashcan or move to trashcan,F(go_to_trashcan)|move_to_trashcan
+5782,"['get_close_tree', 'make_way_to_house']",at any time get close tree or repeatedly make way to house,F(get_close_tree)|G(F(make_way_to_house))
+3371,"['visit_waste_basket', 'go_by_house']",when possible visit waste basket or when possible go by house,F(visit_waste_basket)|F(go_by_house)
+1695,"['journey_by_house', 'stand_by_tree']",when possible journey by house or when possible stand by tree,F(journey_by_house)|F(stand_by_tree)
+2003,"['pick_up_orange', 'grab_orange']",pick up orange or at some time grab orange,pick_up_orange|F(grab_orange)
+2244,"['proceed_to_flag', 'journey_to_tree']",at any time proceed to flag or at any time journey to tree,F(proceed_to_flag)|F(journey_to_tree)
+2470,"['make_contact_with_house', 'reach_tree']",at any time make contact with house means that at some time reach tree,F(make_contact_with_house)->F(reach_tree)
+2021,"['acquire_orange', 'reach_trash_can']",acquire orange or reach trash can,acquire_orange|reach_trash_can
+5655,"['hold_pear', 'pick_up_flag']",hold pear or pick up flag,hold_pear|pick_up_flag
+1319,"['stop_by_house', 'have_pear']",whenever stop by house or at some time have pear,F(stop_by_house)|F(have_pear)
+1720,"['have_apple', 'travel_to_flag']",forever have apple or at any time travel to flag,G(have_apple)|F(travel_to_flag)
+4688,"['set_out_to_house', 'go_visit_flag']",whenever set out to house and go visit flag,F(set_out_to_house)&go_visit_flag
+5001,"['grasp_orange', 'approach_tree']",grasp orange or approach tree,grasp_orange|approach_tree
+2039,"['tax_apple', 'gather_pear']",at any time tax apple and at some time gather pear,F(tax_apple)&F(gather_pear)
+3884,"['hold_apple', 'go_to_trash_bin']",hold apple or at any time go to trash bin,hold_apple|F(go_to_trash_bin)
+5459,"['capture_orange', 'pass_by_trash_bin']",capture orange or at any time pass by trash bin,capture_orange|F(pass_by_trash_bin)
+1484,"['venture_to_waste_basket', 'tax_apple']",at some time venture to waste basket can infer that whenever tax apple,F(venture_to_waste_basket)->F(tax_apple)
+5053,"['secure_pear', 'drop_apple']",when possible secure pear or never drop apple,F(secure_pear)|G(~(drop_apple))
+1153,"['track_towards_tree', 'travel_to_apple']",whenever track towards tree until travel to apple,F(track_towards_tree)Utravel_to_apple
+2756,"['get_apple', 'hold_orange']",when possible get apple until hold orange,F(get_apple)Uhold_orange
+2336,"['visit_trash_bin', 'drop_orange']",at any time visit trash bin or never drop orange,F(visit_trash_bin)|G(~(drop_orange))
+1382,"['go_by_waste_bin', 'bring_pear']",go by waste bin or at some time bring pear,go_by_waste_bin|F(bring_pear)
+5915,"['make_way_to_house', 'touch_tree']",repeatedly make way to house or at any time touch tree,G(F(make_way_to_house))|F(touch_tree)
+2263,"['have_in_orange', 'lay_hold_of_apple']",forever have in orange or when possible lay hold of apple,G(have_in_orange)|F(lay_hold_of_apple)
+3687,"['capture_pear', 'go_visit_house']",at any time capture pear can infer that whenever go visit house,F(capture_pear)->F(go_visit_house)
+1907,"['present_at_flag', 'venture_to_house']",at any time present at flag until at some time venture to house,F(present_at_flag)UF(venture_to_house)
+3367,"['go_near_flag', 'go_past_flag']",at any time go near flag or when possible go past flag,F(go_near_flag)|F(go_past_flag)
+1531,"['put_in_apple_bucket', 'approach_flag']",put in apple bucket or when possible approach flag,put_in_apple_bucket|F(approach_flag)
+2808,"['let_go_orange', 'journey_by_house']",never let go orange until when possible journey by house,G(~(let_go_orange))UF(journey_by_house)
+2164,"['tax_apple', 'pick_up_peach']",whenever tax apple or when possible pick up peach,F(tax_apple)|F(pick_up_peach)
+3080,"['capture_pear', 'go_near_flag']",whenever capture pear and when possible go near flag,F(capture_pear)&F(go_near_flag)
+4441,"['pass_by_house', 'journey_to_tree']",when possible pass by house and when possible journey to tree,F(pass_by_house)&F(journey_to_tree)
+1703,"['drop_by', 'walk_to_flag']",drop by or when possible walk to flag,drop_by|F(walk_to_flag)
+3919,"['go_to_tree', 'venture_house']",at any time go to tree until when possible venture house,F(go_to_tree)UF(venture_house)
+2383,"['get_close_tree', 'touch_house']",when possible get close tree and at any time touch house,F(get_close_tree)&F(touch_house)
+5730,"['make_way_for_tree', 'move_past_trash_can']",at some time make way for tree and when possible move past trash can,F(make_way_for_tree)&F(move_past_trash_can)
+1315,"['have_pear', 'make_to_flag']",when possible have pear or at any time make to flag,F(have_pear)|F(make_to_flag)
+4635,"['hold_on_to_pear', 'go_to_flag']",hold on to pear and when possible go to flag,hold_on_to_pear&F(go_to_flag)
+3494,"['go_to_trash_can', 'take_to_tree']",whenever go to trash can or take to tree,F(go_to_trash_can)|take_to_tree
+1442,"['go_by_waste_bin', 'withhold_apple']",go by waste bin or at any time withhold apple,go_by_waste_bin|F(withhold_apple)
+2327,"['grab_flag', 'get_to_tree']",at any time grab flag and get to tree,F(grab_flag)&get_to_tree
+1355,"['go_by_waste_basket', 'bring_pear']",when possible go by waste basket until when possible bring pear,F(go_by_waste_basket)UF(bring_pear)
+5553,"['get_hold_orange', 'stop_by_trash_can']",whenever get hold orange or at any time stop by trash can,F(get_hold_orange)|F(stop_by_trash_can)
+1591,"['withhold_apple', 'go_by_waste_bin']",at any time withhold apple or go by waste bin,F(withhold_apple)|go_by_waste_bin
+3496,"['go_to_waste_basket', 'travel_to_waste_bin']",repeatedly go to waste basket or travel to waste bin,G(F(go_to_waste_basket))|travel_to_waste_bin
+1010,"['present_at_flag', 'withhold_apple']",when possible present at flag or whenever withhold apple,F(present_at_flag)|F(withhold_apple)
+4977,"['go_to_apple', 'get_hold_orange']",at some time go to apple and whenever get hold orange,F(go_to_apple)&F(get_hold_orange)
+5956,"['make_way_for_tree', 'acquire_apple']",at any time make way for tree and acquire apple,F(make_way_for_tree)&acquire_apple
+3308,"['travel_by_tree', 'come_home']",when possible travel by tree and at any time come home,F(travel_by_tree)&F(come_home)
+4736,"['approach_tree', 'journey_to_house']",approach tree and at some time journey to house,approach_tree&F(journey_to_house)
+1787,"['approach_tree', 'have_possession_of_apple']",approach tree can infer that whenever have possession of apple,approach_tree->F(have_possession_of_apple)
+1092,"['pick_up_anything', 'go_to_peach']",do not pick up anything or whenever go to peach,~(F(pick_up_anything))|F(go_to_peach)
+4864,"['travel_to_flag', 'procure_pear']",whenever travel to flag or at some time procure pear,F(travel_to_flag)|F(procure_pear)
+4693,"['pick_up_flag', 'venture_to_flag']","when pick up flag , when possible venture to flag",pick_up_flag->F(venture_to_flag)
+1103,"['withhold_apple', 'bring_pear']",at any time withhold apple and at some time bring pear,F(withhold_apple)&F(bring_pear)
+4329,"['take_apple', 'take_to_trash_can']",take apple until take to trash can,take_appleUtake_to_trash_can
+3629,"['move_to_flag', 'grab_pear']",whenever move to flag or at any time grab pear,F(move_to_flag)|F(grab_pear)
+5542,"['grasp_pear', 'stop_by_flag']",at some time grasp pear or stop by flag,F(grasp_pear)|stop_by_flag
+5093,"['go_past_house', 'make_way_to_house']",at some time go past house or repeatedly make way to house,F(go_past_house)|G(F(make_way_to_house))
+3960,"['go_by_trash_can', 'grab_apple']",always go by trash can or at some time grab apple,G(go_by_trash_can)|F(grab_apple)
+2617,"['approach_house', 'take_pear']",when possible approach house and take pear,F(approach_house)&take_pear
+5310,"['venture_to_trash_can', 'take_possession_of_bear']",venture to trash can or when possible take possession of bear,venture_to_trash_can|F(take_possession_of_bear)
+1430,"['capture_orange', 'gather_pear']",capture orange or at some time gather pear,capture_orange|F(gather_pear)
+4562,"['go_past_house', 'gather_apple']",at any time go past house and gather apple,F(go_past_house)&gather_apple
+1983,"['bring_pear', 'go_by_waste_bin']","if at some time bring pear , go by waste bin",F(bring_pear)->go_by_waste_bin
+1534,"['go_near_flag', 'let_go_apple']",at some time go near flag and never let go apple,F(go_near_flag)&G(~(let_go_apple))
+5149,"['proceed_to_flag', 'make_contact_with_house']",when possible proceed to flag and at some time make contact with house,F(proceed_to_flag)&F(make_contact_with_house)
+1986,"['travel_to_tree', 'drop_apple']",travel to tree or never drop apple,travel_to_tree|G(~(drop_apple))
+3384,"['touch_flag', 'start_going_to_tree']",forever touch flag or whenever start going to tree,G(touch_flag)|F(start_going_to_tree)
+4326,"['take_pear', 'scoop_up_pear']",take pear or when possible scoop up pear,take_pear|F(scoop_up_pear)
+5568,"['go_to_bucket', 'reach_trash_can']",go to bucket or reach trash can,go_to_bucket|reach_trash_can
+5069,"['procure_apple', 'hold_apple']",procure apple or hold apple,procure_apple|hold_apple
+3068,"['tax_apple', 'pick_up_fruit']",at any time tax apple and pick up fruit,F(tax_apple)&pick_up_fruit
+3426,"['haul_pear', 'go_by_house']","if at some time haul pear , when possible go by house",F(haul_pear)->F(go_by_house)
+2250,"['get_pear', 'touch_flag']",at some time get pear and forever touch flag,F(get_pear)&G(touch_flag)
+5734,"['visit_flag', 'make_way_for_tree']",at some time visit flag and when possible make way for tree,F(visit_flag)&F(make_way_for_tree)
+1866,"['venture_towards_house', 'go_by_waste_bin']",venture towards house or go by waste bin,venture_towards_house|go_by_waste_bin
+2151,"['have_pear', 'reach_house']",when possible have pear or reach house,F(have_pear)|reach_house
+3903,"['move_to_trash_can', 'journey_to_house']",move to trash can and at some time journey to house,move_to_trash_can&F(journey_to_house)
+1719,"['bring_pear', 'go_by_waste_basket']",whenever bring pear and whenever go by waste basket,F(bring_pear)&F(go_by_waste_basket)
+1392,"['grip_apple', 'go_to_apple_trashcan']",grip apple or repeatedly go to apple trashcan,grip_apple|G(F(go_to_apple_trashcan))
+5266,"['going_to_tree', 'go_by_tree']",going to tree and when possible go by tree,going_to_tree&F(go_by_tree)
+5797,"['come_home', 'drop_apple']",at any time come home or never drop apple,F(come_home)|G(~(drop_apple))
+2530,"['grasp_orange', 'acquire_pear']",grasp orange or whenever acquire pear,grasp_orange|F(acquire_pear)
+3854,"['contact_house', 'pick_up_orange']",when possible contact house or pick up orange,F(contact_house)|pick_up_orange
+1606,"['be_near_tree', 'grab_orange']",at any time be near tree and whenever grab orange,F(be_near_tree)&F(grab_orange)
+5109,"['get_pear', 'reach_tree']",when possible get pear and at any time reach tree,F(get_pear)&F(reach_tree)
+3136,"['pass_by_waste_receptacle', 'go_visit_flag']",whenever pass by waste receptacle can infer that go visit flag,F(pass_by_waste_receptacle)->go_visit_flag
+1652,"['let_go_orange', 'travel_to_flag']",never let go orange until at any time travel to flag,G(~(let_go_orange))UF(travel_to_flag)
+5852,"['go_to_waste_basket', 'get_to_cup']",repeatedly go to waste basket or at any time get to cup,G(F(go_to_waste_basket))|F(get_to_cup)
+1987,"['reach_house', 'spend_time_at_tree']",reach house and when possible spend time at tree,reach_house&F(spend_time_at_tree)
+1168,"['have_apple', 'walk_to_flag']",forever have apple or at some time walk to flag,G(have_apple)|F(walk_to_flag)
+1411,"['reach_flag', 'go_by_waste_basket']",at some time reach flag or at any time go by waste basket,F(reach_flag)|F(go_by_waste_basket)
+3978,"['drop_orange', 'drop_orange']",never drop orange and never drop orange,G(~(drop_orange))&G(~(drop_orange))
+1254,"['be_in_houses_vicinity', 'start_going_to_house']",whenever be in house's vicinity or whenever start going to house,F(be_in_houses_vicinity)|F(start_going_to_house)
+2944,"['drop_by', 'go_to_peach']",drop by or whenever go to peach,drop_by|F(go_to_peach)
+5674,"['touch_house', 'travel_to_trash_can']",at any time touch house or whenever travel to trash can,F(touch_house)|F(travel_to_trash_can)
+3870,"['contact_house', 'drop_orange']",at any time contact house or never drop orange,F(contact_house)|G(~(drop_orange))
+2974,"['capture_orange', 'contact_flag']",capture orange or whenever contact flag,capture_orange|F(contact_flag)
+3285,"['drop_apple', 'drop_orange']",never drop apple and never drop orange,G(~(drop_apple))&G(~(drop_orange))
+2222,"['contact_flag', 'put_in_bucket']",whenever contact flag or put in bucket,F(contact_flag)|put_in_bucket
+4633,"['stand_by_tree', 'travel_house']",when possible stand by tree or at some time travel house,F(stand_by_tree)|F(travel_house)
+5821,"['get_orange', 'come_home']",whenever get orange and at some time come home,F(get_orange)&F(come_home)
+1886,"['reach_flag', 'drop_apple']",when possible reach flag and never drop apple,F(reach_flag)&G(~(drop_apple))
+1608,"['withhold_apple', 'drop_apple']",when possible withhold apple or never drop apple,F(withhold_apple)|G(~(drop_apple))
+1033,"['present_at_flag', 'reach_flag']",when possible present at flag until when possible reach flag,F(present_at_flag)UF(reach_flag)
+1003,"['venture_to_house', 'withhold_apple']",at any time venture to house or at any time withhold apple,F(venture_to_house)|F(withhold_apple)
+1384,"['go_visit_house', 'walk_to_flag']","if when possible go visit house , when possible walk to flag",F(go_visit_house)->F(walk_to_flag)
+2393,"['pick_up_peach', 'move_past_trash_can']",when possible pick up peach or at some time move past trash can,F(pick_up_peach)|F(move_past_trash_can)
+2265,"['come_to_tree', 'stop_by_house']",come to tree or at some time stop by house,come_to_tree|F(stop_by_house)
+2483,"['go_to_pear', 'collect_orange']",repeatedly go to pear or when possible collect orange,G(F(go_to_pear))|F(collect_orange)
+5015,"['pick_up_anything', 'go_to_peach']",do not pick up anything or at any time go to peach,~(F(pick_up_anything))|F(go_to_peach)
+4458,"['drop_by', 'pick_up_orange']",drop by and pick up orange,drop_by&pick_up_orange
+1112,"['grab_hold_pear', 'drop_pear']",grab hold pear until drop pear,grab_hold_pearUdrop_pear
+3769,"['take_apple', 'move_past_trash_can']",take apple or at any time move past trash can,take_apple|F(move_past_trash_can)
+1040,"['reach_house', 'track_towards_tree']",reach house or whenever track towards tree,reach_house|F(track_towards_tree)
+2229,"['let_go_orange', 'take_to_trashcan']",do not let go orange and take to trashcan,~(let_go_orange)&take_to_trashcan
+3024,"['drop_orange', 'seize_apple']",never drop orange and seize apple,G(~(drop_orange))&seize_apple
+1134,"['procure_apple', 'pick_up_orange']",procure apple and pick up orange,procure_apple&pick_up_orange
+3895,"['venture_to_flag', 'go_near_pear']",whenever venture to flag and when possible go near pear,F(venture_to_flag)&F(go_near_pear)
+1225,"['travel_house', 'pick_up_apple']",at any time travel house or at some time pick up apple,F(travel_house)|F(pick_up_apple)
+5876,"['pick_up_anything', 'go_to_pear']",don't pick up anything and repeatedly go to pear,~(F(pick_up_anything))&G(F(go_to_pear))
+2795,"['go_past_flag', 'hold_onto_orange']",whenever go past flag or always hold onto orange,F(go_past_flag)|G(hold_onto_orange)
+2677,"['take_possession_of_bear', 'put_in_bucket']",whenever take possession of bear until put in bucket,F(take_possession_of_bear)Uput_in_bucket
+1351,"['get_hold_of_pear', 'visit_flag']",get hold of pear until whenever visit flag,get_hold_of_pearUF(visit_flag)
+1555,"['go_to_trashcan', 'venture_flag']",at any time go to trashcan and whenever venture flag,F(go_to_trashcan)&F(venture_flag)
+2276,"['drop_orange', 'approach_trash_can']","if never drop orange , approach trash can",G(~(drop_orange))->approach_trash_can
+4155,"['let_go_apple', 'let_go_orange']",whenever let go apple and never let go orange,F(let_go_apple)&G(~(let_go_orange))
+1558,"['have_pear', 'move_near_tree']",when possible have pear or when possible move near tree,F(have_pear)|F(move_near_tree)
+1376,"['withhold_apple', 'secure_apple']",at any time withhold apple and secure apple,F(withhold_apple)&secure_apple
+1111,"['walk_near_flag', 'get_pear']",when possible walk near flag or at some time get pear,F(walk_near_flag)|F(get_pear)
+4738,"['go_to_pear', 'procure_pear']",repeatedly go to pear or whenever procure pear,G(F(go_to_pear))|F(procure_pear)
+1491,"['present_at_flag', 'reach_flag']",at any time present at flag until whenever reach flag,F(present_at_flag)UF(reach_flag)
+4028,"['move_to_trash_can', 'reach_trash_can']",move to trash can and reach trash can,move_to_trash_can&reach_trash_can
+1287,"['pass_by_house', 'travel_to_tree']",when possible pass by house or travel to tree,F(pass_by_house)|travel_to_tree
+5176,"['touch_house', 'touch_house']",at some time touch house and when possible touch house,F(touch_house)&F(touch_house)
+2027,"['acquire_pear', 'get_close_tree']",at any time acquire pear or when possible get close tree,F(acquire_pear)|F(get_close_tree)
+4510,"['set_out_to_house', 'grasp_apple']",whenever set out to house or at some time grasp apple,F(set_out_to_house)|F(grasp_apple)
+2500,"['have_in_orange', 'grab_flag']",forever have in orange or at any time grab flag,G(have_in_orange)|F(grab_flag)
+4815,"['pick_up_apple', 'venture_house']",whenever pick up apple and at any time venture house,F(pick_up_apple)&F(venture_house)
+1348,"['stand_by_tree', 'pick_up_apple']",at any time stand by tree and when possible pick up apple,F(stand_by_tree)&F(pick_up_apple)
+5329,"['be_at_flag', 'acquire_pear']",whenever be at flag or at some time acquire pear,F(be_at_flag)|F(acquire_pear)
+2268,"['let_go_orange', 'hold_on_to_pear']",never let go orange and hold on to pear,G(~(let_go_orange))&hold_on_to_pear
+1074,"['bring_pear', 'secure_apple']",when possible bring pear until secure apple,F(bring_pear)Usecure_apple
+5843,"['drop_by', 'start_going_to_tree']",drop by means that at some time start going to tree,drop_by->F(start_going_to_tree)
+1296,"['gather_orange', 'go_past_flag']",gather orange until whenever go past flag,gather_orangeUF(go_past_flag)
+1459,"['venture_to_house', 'reach_flag']",when possible venture to house until at some time reach flag,F(venture_to_house)UF(reach_flag)
+1485,"['be_near_tree', 'grasp_pear']",whenever be near tree or at some time grasp pear,F(be_near_tree)|F(grasp_pear)
+2004,"['stop_by_trash_can', 'get_apple']",when possible stop by trash can or whenever get apple,F(stop_by_trash_can)|F(get_apple)
+4601,"['get_pear', 'grab_pear']",whenever get pear or at some time grab pear,F(get_pear)|F(grab_pear)
+4931,"['show_yourself_near_house', 'go_to_apple']",at some time show yourself near house or at some time go to apple,F(show_yourself_near_house)|F(go_to_apple)
+1469,"['reach_flag', 'venture_towards_house']",at any time reach flag or venture towards house,F(reach_flag)|venture_towards_house
+3237,"['have_apple', 'visit_tree']",forever have apple and visit tree,G(have_apple)&visit_tree
+1479,"['venture_to_house', 'go_by_waste_bin']",when possible venture to house and go by waste bin,F(venture_to_house)&go_by_waste_bin
+5230,"['touch_tree', 'seize_pear']",at any time touch tree or whenever seize pear,F(touch_tree)|F(seize_pear)
+5313,"['drop_orange', 'go_to_trash_bin']",drop orange until at any time go to trash bin,drop_orangeUF(go_to_trash_bin)
+1500,"['start_going_to_house', 'stop_by_house']",whenever start going to house until whenever stop by house,F(start_going_to_house)UF(stop_by_house)
+3550,"['get_hold_apple', 'venture_house']",when possible get hold apple or whenever venture house,F(get_hold_apple)|F(venture_house)
+2127,"['let_go_pear', 'let_go_orange']",don't let go pear and don't let go orange,~(let_go_pear)&~(let_go_orange)
+1704,"['venture_house', 'move_past_trash_can']",at some time venture house and at some time move past trash can,F(venture_house)&F(move_past_trash_can)
+1748,"['come_to_tree', 'journey_by_flag']",come to tree can infer that at some time journey by flag,come_to_tree->F(journey_by_flag)
+3889,"['pick_up_orange', 'going_to_house']",pick up orange can infer that at any time going to house,pick_up_orange->F(going_to_house)
+2602,"['pass_by_trash_bin', 'visit_house']",when possible pass by trash bin or at any time visit house,F(pass_by_trash_bin)|F(visit_house)
+3710,"['venture_to_waste_basket', 'acquire_apple']",when possible venture to waste basket or acquire apple,F(venture_to_waste_basket)|acquire_apple
+2755,"['move_forward_trash_can', 'get_orange']",when possible move forward trash can and at any time get orange,F(move_forward_trash_can)&F(get_orange)
+1570,"['journey_by_house', 'pick_up_anything']",at any time journey by house and don't pick up anything,F(journey_by_house)&~(F(pick_up_anything))
+3789,"['pass_by_trash_bin', 'go_visit_house']",at some time pass by trash bin or whenever go visit house,F(pass_by_trash_bin)|F(go_visit_house)
+3304,"['move_past_trash_can', 'going_to_house']",whenever move past trash can and at any time going to house,F(move_past_trash_can)&F(going_to_house)
+4036,"['drop_pear', 'visit_flag']",never drop pear until at some time visit flag,G(~(drop_pear))UF(visit_flag)
+1649,"['drop_pear', 'make_way_waste_basket']",drop pear means that at some time make way waste basket,drop_pear->F(make_way_waste_basket)
+3633,"['get_orange', 'pick_up_peach']",when possible get orange or whenever pick up peach,F(get_orange)|F(pick_up_peach)
+2172,"['stop_by_house', 'make_way_waste_basket']",when possible stop by house and when possible make way waste basket,F(stop_by_house)&F(make_way_waste_basket)
+5834,"['procure_pear', 'drop_orange']",when possible procure pear or drop orange,F(procure_pear)|drop_orange
+1944,"['seize_apple', 'approach_house']",seize apple or when possible approach house,seize_apple|F(approach_house)
+1522,"['venture_towards_house', 'secure_apple']",venture towards house and secure apple,venture_towards_house&secure_apple
+3772,"['going_to_tree', 'going_to_tree']","if going to tree , going to tree",going_to_tree->going_to_tree
+1513,"['go_by_waste_basket', 'secure_apple']","if when possible go by waste basket , secure apple",F(go_by_waste_basket)->secure_apple
+1927,"['procure_apple', 'gather_apple']",procure apple and gather apple,procure_apple&gather_apple
+2210,"['migrate_to_tree', 'go_near_house']",when possible migrate to tree or when possible go near house,F(migrate_to_tree)|F(go_near_house)
+1360,"['go_to', 'pear_bin', 'grasp_pear']",when possible go to pear bin and whenever grasp pear,F(go_topear_bin)&F(grasp_pear)
+1971,"['touch_tree', 'drop_apple']",when possible touch tree or never drop apple,F(touch_tree)|G(~(drop_apple))
+5588,"['go_near_flag', 'venture_house']",at any time go near flag or at some time venture house,F(go_near_flag)|F(venture_house)
+1330,"['grip_apple', 'let_go_pear']","when grip apple , don't let go pear",grip_apple->~(let_go_pear)
+1094,"['go_to_pear', 'travel_to_trash_can']",repeatedly go to pear or at some time travel to trash can,G(F(go_to_pear))|F(travel_to_trash_can)
+4287,"['come_home', 'let_go_orange']",at any time come home until never let go orange,F(come_home)UG(~(let_go_orange))
+1310,"['venture_towards_house', 'reach_flag']",venture towards house means that whenever reach flag,venture_towards_house->F(reach_flag)
+1227,"['go_by_waste_basket', 'reach_flag']",at some time go by waste basket and whenever reach flag,F(go_by_waste_basket)&F(reach_flag)
+1733,"['go_by_waste_basket', 'go_by_waste_basket']",at some time go by waste basket or at some time go by waste basket,F(go_by_waste_basket)|F(go_by_waste_basket)
+4793,"['scoop_up_apple', 'make_contact_flag']",when possible scoop up apple and at any time make contact flag,F(scoop_up_apple)&F(make_contact_flag)
+2057,"['grab_hold_pear', 'move_near_tree']",grab hold pear and when possible move near tree,grab_hold_pear&F(move_near_tree)
+2025,"['scoop_up_pear', 'go_near_flag']",when possible scoop up pear or when possible go near flag,F(scoop_up_pear)|F(go_near_flag)
+2492,"['acquire_pear', 'go_to_waste_basket']",when possible acquire pear and repeatedly go to waste basket,F(acquire_pear)&G(F(go_to_waste_basket))
+3742,"['travel_house', 'drop_orange']",at some time travel house or never drop orange,F(travel_house)|G(~(drop_orange))
+5414,"['move_to_trash_can', 'go_by_flag']",move to trash can and when possible go by flag,move_to_trash_can&F(go_by_flag)
+2048,"['visit_flag', 'venture_to_waste_basket']","if at any time visit flag , whenever venture to waste basket",F(visit_flag)->F(venture_to_waste_basket)
+1693,"['move_near_tree', 'travel_to_apple']",at some time move near tree or travel to apple,F(move_near_tree)|travel_to_apple
+4358,"['go_to_peach', 'go_to_trash_can']",at any time go to peach or when possible go to trash can,F(go_to_peach)|F(go_to_trash_can)
+1817,"['take_to_trashcan', 'drop_pear']",take to trashcan and drop pear,take_to_trashcan&drop_pear
+3575,"['grab_apple', 'go_to_waste_basket']",at some time grab apple or repeatedly go to waste basket,F(grab_apple)|G(F(go_to_waste_basket))
+1715,"['go_to_apple_trashcan', 'reach_house']",repeatedly go to apple trashcan and reach house,G(F(go_to_apple_trashcan))&reach_house
+4127,"['haul_pear', 'journey_to_house']",at some time haul pear and when possible journey to house,F(haul_pear)&F(journey_to_house)
+1651,"['venture_towards_house', 'drop_apple']",venture towards house and never drop apple,venture_towards_house&G(~(drop_apple))
+1609,"['get_close_tree', 'grab_orange']",when possible get close tree or at any time grab orange,F(get_close_tree)|F(grab_orange)
+3166,"['let_go_apple', 'get_orange']",at any time let go apple or at some time get orange,F(let_go_apple)|F(get_orange)
+5113,"['get_to_cup', 'get_orange']",whenever get to cup until at some time get orange,F(get_to_cup)UF(get_orange)
+3986,"['procure_orange', 'go_to_house']",at some time procure orange or at any time go to house,F(procure_orange)|F(go_to_house)
+1550,"['hold_apple', 'journey_to_flag']","if hold apple , when possible journey to flag",hold_apple->F(journey_to_flag)
+5709,"['scoop_up_apple', 'approach_flag']",when possible scoop up apple and when possible approach flag,F(scoop_up_apple)&F(approach_flag)
+1748,"['drop_apple', 'bring_pear']",never drop apple and whenever bring pear,G(~(drop_apple))&F(bring_pear)
+2406,"['grasp_apple', 'get_hold_orange']","when whenever grasp apple , at some time get hold orange",F(grasp_apple)->F(get_hold_orange)
+1707,"['bring_pear', 'secure_apple']",whenever bring pear and secure apple,F(bring_pear)&secure_apple
+1514,"['hold_onto_orange', 'make_contact_with_house']",forever hold onto orange or at some time make contact with house,G(hold_onto_orange)|F(make_contact_with_house)
+4332,"['get_hold_of_pear', 'seize_pear']",get hold of pear until at any time seize pear,get_hold_of_pearUF(seize_pear)
+4607,"['pick_up_apple', 'arrive_at_tree']",whenever pick up apple or when possible arrive at tree,F(pick_up_apple)|F(arrive_at_tree)
+4349,"['pick_up_anything', 'venture_to_flag']",do not pick up anything and when possible venture to flag,~(F(pick_up_anything))&F(venture_to_flag)
+1297,"['drop_apple', 'procure_pear']",never drop apple and at any time procure pear,G(~(drop_apple))&F(procure_pear)
+3480,"['grasp_pear', 'obtain_apple']",at some time grasp pear can infer that at any time obtain apple,F(grasp_pear)->F(obtain_apple)
+1874,"['moving', 'get_to_tree']",always moving until get to tree,G(moving)Uget_to_tree
+2918,"['capture_pear', 'go_to_peach']",whenever capture pear or at some time go to peach,F(capture_pear)|F(go_to_peach)
+3786,"['secure_pear', 'approach_flag']",at some time secure pear and when possible approach flag,F(secure_pear)&F(approach_flag)
+4149,"['go_to_tree', 'approach_house']",at any time go to tree and at some time approach house,F(go_to_tree)&F(approach_house)
+4794,"['stop_by_flag', 'gather_pear']",stop by flag or whenever gather pear,stop_by_flag|F(gather_pear)
+1478,"['go_to_trashcan', 'track_towards_tree']",whenever go to trashcan and at some time track towards tree,F(go_to_trashcan)&F(track_towards_tree)
+1480,"['go_by_waste_bin', 'present_at_flag']",go by waste bin means that when possible present at flag,go_by_waste_bin->F(present_at_flag)
+4887,"['acquire_pear', 'procure_apple']",when possible acquire pear or procure apple,F(acquire_pear)|procure_apple
+1422,"['drop_apple', 'venture_towards_house']",never drop apple or venture towards house,G(~(drop_apple))|venture_towards_house
+4582,"['go_visit_flag', 'move_to_flag']",go visit flag or whenever move to flag,go_visit_flag|F(move_to_flag)
+3074,"['move_to_tree', 'go_to_waste_basket']",move to tree or repeatedly go to waste basket,move_to_tree|G(F(go_to_waste_basket))
+2585,"['move', 'touch_flag']",forever move and always touch flag,G(move)&G(touch_flag)
+3983,"['reach_trash_can', 'capture_orange']",reach trash can or capture orange,reach_trash_can|capture_orange
+2244,"['venture_flag', 'approach_trash_can']","when whenever venture flag , approach trash can",F(venture_flag)->approach_trash_can
+4131,"['walk', 'get_apple']",walk and at some time get apple,walk&F(get_apple)
+1250,"['get_to_flag', 'journey_by_flag']",whenever get to flag or at any time journey by flag,F(get_to_flag)|F(journey_by_flag)
+1502,"['gather_apple', 'take_to_trash_can']",gather apple until take to trash can,gather_appleUtake_to_trash_can
+1369,"['venture_towards_house', 'venture_to_house']",venture towards house or whenever venture to house,venture_towards_house|F(venture_to_house)
+1228,"['grab_hold_pear', 'let_go_pear']","when grab hold pear , do not let go pear",grab_hold_pear->~(let_go_pear)
+1786,"['go_by_house', 'travel_by_tree']",whenever go by house until whenever travel by tree,F(go_by_house)UF(travel_by_tree)
+1396,"['venture_flag', 'make_to_flag']",at some time venture flag or at any time make to flag,F(venture_flag)|F(make_to_flag)
+1222,"['venture_flag', 'venture_flag']",whenever venture flag and whenever venture flag,F(venture_flag)&F(venture_flag)
+2246,"['clutch_orange', 'approach_trash_can']",at some time clutch orange or approach trash can,F(clutch_orange)|approach_trash_can
+1725,"['go_by_waste_bin', 'go_by_waste_bin']",go by waste bin until go by waste bin,go_by_waste_binUgo_by_waste_bin
+1539,"['grab_flag', 'approach_trash_can']",whenever grab flag or approach trash can,F(grab_flag)|approach_trash_can
+1445,"['migrate_to_tree', 'withdraw_pear']",when possible migrate to tree and at some time withdraw pear,F(migrate_to_tree)&F(withdraw_pear)
+1508,"['withhold_apple', 'bring_pear']",at some time withhold apple or whenever bring pear,F(withhold_apple)|F(bring_pear)
+1969,"['journey_by_flag', 'hold_on_pear']",whenever journey by flag or always hold on pear,F(journey_by_flag)|G(hold_on_pear)
+1518,"['drop_orange', 'be_in_houses_vicinity']",never drop orange and at any time be in house's vicinity,G(~(drop_orange))&F(be_in_houses_vicinity)
+5875,"['move_towards_trash_can', 'put_in_bucket']",move towards trash can can infer that put in bucket,move_towards_trash_can->put_in_bucket
+4416,"['get_to_cup', 'contact_flag']",at any time get to cup or at some time contact flag,F(get_to_cup)|F(contact_flag)
+2160,"['go_near_house', 'go_to_orange_bin']",at some time go near house or go to orange bin,F(go_near_house)|go_to_orange_bin
+5646,"['pass_by_waste_receptacle', 'go_by_house']",at any time pass by waste receptacle means that at any time go by house,F(pass_by_waste_receptacle)->F(go_by_house)
+1621,"['withdraw_pear', 'get_to_tree']",when possible withdraw pear until get to tree,F(withdraw_pear)Uget_to_tree
+4746,"['visit_tree', 'hold_apple']",visit tree or hold apple,visit_tree|hold_apple
+3412,"['scoop_up_pear', 'reach_trash_can']","when whenever scoop up pear , reach trash can",F(scoop_up_pear)->reach_trash_can
+1703,"['drop_orange', 'track_towards_tree']",never drop orange or at any time track towards tree,G(~(drop_orange))|F(track_towards_tree)
+5058,"['journey_to_house', 'travel_to_flag']",whenever journey to house or whenever travel to flag,F(journey_to_house)|F(travel_to_flag)
+1540,"['venture_to_house', 'venture_to_house']",at some time venture to house or when possible venture to house,F(venture_to_house)|F(venture_to_house)
+1020,"['procure_apple', 'get_hold_orange']",procure apple or when possible get hold orange,procure_apple|F(get_hold_orange)
+1244,"['proceed_to_house', 'go_to_bucket']",at some time proceed to house or go to bucket,F(proceed_to_house)|go_to_bucket
+2180,"['hold_on_pear', 'let_go_pear']",forever hold on pear or do not let go pear,G(hold_on_pear)|~(let_go_pear)
+5644,"['go_to_apple', 'let_go_apple']",whenever go to apple or whenever let go apple,F(go_to_apple)|F(let_go_apple)
+1361,"['advance_to_tree', 'approach_trash_can']",advance to tree or approach trash can,advance_to_tree|approach_trash_can
+1178,"['drop_apple', 'venture_towards_house']",never drop apple or venture towards house,G(~(drop_apple))|venture_towards_house
+3880,"['move_to_flag', 'gather_orange']",at any time move to flag or gather orange,F(move_to_flag)|gather_orange
+1456,"['go_by_waste_basket', 'venture_to_house']",at any time go by waste basket until when possible venture to house,F(go_by_waste_basket)UF(venture_to_house)
+3605,"['grasp_apple', 'contact_house']",at any time grasp apple or when possible contact house,F(grasp_apple)|F(contact_house)
+5738,"['be_near_tree', 'capture_pear']",at some time be near tree and when possible capture pear,F(be_near_tree)&F(capture_pear)
+5612,"['visit_house', 'scoop_up_apple']",whenever visit house and when possible scoop up apple,F(visit_house)&F(scoop_up_apple)
+1817,"['bring_pear', 'drop_apple']",whenever bring pear and never drop apple,F(bring_pear)&G(~(drop_apple))
+3421,"['travel_to_house', 'proceed_to_house']",at any time travel to house or whenever proceed to house,F(travel_to_house)|F(proceed_to_house)
+5397,"['take_pear', 'venture_house']",take pear and whenever venture house,take_pear&F(venture_house)
+1643,"['move_to_house', 'journey_by_house']",move to house or whenever journey by house,move_to_house|F(journey_by_house)
+1789,"['go_by_waste_bin', 'reach_flag']",go by waste bin until at some time reach flag,go_by_waste_binUF(reach_flag)
+4652,"['collect_orange', 'journey_to_house']",whenever collect orange and when possible journey to house,F(collect_orange)&F(journey_to_house)
+1345,"['advance_to_tree', 'take_to_trashcan']",advance to tree or take to trashcan,advance_to_tree|take_to_trashcan
+2499,"['grab_flag', 'have_pear']",at some time grab flag or whenever have pear,F(grab_flag)|F(have_pear)
+2168,"['seize_apple', 'grasp_apple']",seize apple or whenever grasp apple,seize_apple|F(grasp_apple)
+1834,"['venture_to_house', 'reach_flag']",whenever venture to house or whenever reach flag,F(venture_to_house)|F(reach_flag)
+5659,"['collect_orange', 'going_to_house']",at some time collect orange or whenever going to house,F(collect_orange)|F(going_to_house)
+2174,"['approach_trash_can', 'have_pear']",approach trash can or whenever have pear,approach_trash_can|F(have_pear)
+4847,"['journey_to_flag', 'take_possession_of_bear']",when possible journey to flag and at some time take possession of bear,F(journey_to_flag)&F(take_possession_of_bear)
+2119,"['stop_by_house', 'have_in_orange']",at some time stop by house or forever have in orange,F(stop_by_house)|G(have_in_orange)
+3532,"['pick_up_pear', 'drop_apple']",pick up pear or never drop apple,pick_up_pear|G(~(drop_apple))
+5068,"['drop_orange', 'scoop_up_apple']",never drop orange or at any time scoop up apple,G(~(drop_orange))|F(scoop_up_apple)
+2682,"['seize_pear', 'pick_up_fruit']",whenever seize pear or pick up fruit,F(seize_pear)|pick_up_fruit
+1411,"['pick_up_flag', 'obtain_orange']","if pick up flag , at any time obtain orange",pick_up_flag->F(obtain_orange)
+2260,"['go_to_orange_bin', 'clutch_orange']",go to orange bin or at any time clutch orange,go_to_orange_bin|F(clutch_orange)
+5335,"['approach_flag', 'move_to_house']",at any time approach flag and move to house,F(approach_flag)&move_to_house
+1312,"['advance_to_tree', 'have_in_orange']",advance to tree or forever have in orange,advance_to_tree|G(have_in_orange)
+1594,"['go_by_waste_bin', 'withhold_apple']",go by waste bin or whenever withhold apple,go_by_waste_bin|F(withhold_apple)
+1656,"['pick_up_peach', 'put_in_bucket']","if whenever pick up peach , put in bucket",F(pick_up_peach)->put_in_bucket
+5502,"['let_go', 'contact_house']",never let go or when possible contact house,G(~(let_go))|F(contact_house)
+5030,"['visit_waste_basket', 'move_forward_trash_can']",at some time visit waste basket or when possible move forward trash can,F(visit_waste_basket)|F(move_forward_trash_can)
+1831,"['drop_orange', 'snag_orange']",never drop orange until whenever snag orange,G(~(drop_orange))UF(snag_orange)
+1239,"['pass_by_house', 'touch_flag']",whenever pass by house and always touch flag,F(pass_by_house)&G(touch_flag)
+2245,"['reach_house', 'journey_by_flag']",reach house or when possible journey by flag,reach_house|F(journey_by_flag)
+1281,"['go_by_waste_basket', 'withhold_apple']",whenever go by waste basket until at any time withhold apple,F(go_by_waste_basket)UF(withhold_apple)
+2445,"['make_way_waste_basket', 'track_towards_tree']",whenever make way waste basket or at some time track towards tree,F(make_way_waste_basket)|F(track_towards_tree)
+1869,"['come_to_tree', 'go_near_house']",come to tree and whenever go near house,come_to_tree&F(go_near_house)
+3130,"['scoop_up_apple', 'show_yourself_near_house']",whenever scoop up apple or at some time show yourself near house,F(scoop_up_apple)|F(show_yourself_near_house)
+3078,"['get_close_tree', 'journey_by_house']",at any time get close tree or at some time journey by house,F(get_close_tree)|F(journey_by_house)
+5540,"['approach_tree', 'make_your_way_flag']",approach tree can infer that when possible make your way flag,approach_tree->F(make_your_way_flag)
+3500,"['move_to_house', 'pick_up_pear']",move to house means that pick up pear,move_to_house->pick_up_pear
+4321,"['visit_waste_basket', 'go_to_house']",at any time visit waste basket or at any time go to house,F(visit_waste_basket)|F(go_to_house)
+5190,"['proceed_to_tree', 'drop_apple']",at some time proceed to tree or never drop apple,F(proceed_to_tree)|G(~(drop_apple))
+2572,"['journey_to_flag', 'collect_apple']",at any time journey to flag or whenever collect apple,F(journey_to_flag)|F(collect_apple)
+1908,"['withhold_apple', 'reach_flag']","when at any time withhold apple , at some time reach flag",F(withhold_apple)->F(reach_flag)
+2051,"['have_in_orange', 'clutch_orange']",always have in orange until when possible clutch orange,G(have_in_orange)UF(clutch_orange)
+1856,"['present_at_flag', 'withhold_apple']",whenever present at flag until at some time withhold apple,F(present_at_flag)UF(withhold_apple)
+1612,"['move_to_trash_can', 'contact_flag']",move to trash can and when possible contact flag,move_to_trash_can&F(contact_flag)
+4538,"['go_by_house', 'go_near_flag']",at any time go by house and at some time go near flag,F(go_by_house)&F(go_near_flag)
+3635,"['drop_orange', 'visit_waste_basket']",never drop orange and when possible visit waste basket,G(~(drop_orange))&F(visit_waste_basket)
+3879,"['obtain_apple', 'approach_house']",whenever obtain apple or at some time approach house,F(obtain_apple)|F(approach_house)
+1123,"['reach_house', 'get_near_flag']",reach house and at any time get near flag,reach_house&F(get_near_flag)
+4486,"['grab_pear', 'go_to_waste_basket']",when possible grab pear and repeatedly go to waste basket,F(grab_pear)&G(F(go_to_waste_basket))
+1369,"['make_your_way_flag', 'let_go_apple']",whenever make your way flag means that whenever let go apple,F(make_your_way_flag)->F(let_go_apple)
+2973,"['move_towards_trash_can', 'go_near_pear']",move towards trash can or whenever go near pear,move_towards_trash_can|F(go_near_pear)
+1429,"['keep_apple', 'grab_hold_pear']",keep apple or grab hold pear,keep_apple|grab_hold_pear
+1851,"['reach_flag', 'present_at_flag']",whenever reach flag or at some time present at flag,F(reach_flag)|F(present_at_flag)
+3329,"['venture_to_flag', 'go_to_pear']",at any time venture to flag until repeatedly go to pear,F(venture_to_flag)UG(F(go_to_pear))
+4020,"['go_visit_flag', 'get_close_flag']",go visit flag or whenever get close flag,go_visit_flag|F(get_close_flag)
+4033,"['go_to_trash_can', 'journey_to_flag']",when possible go to trash can and at any time journey to flag,F(go_to_trash_can)&F(journey_to_flag)
+5823,"['move_to_flag', 'seize_pear']",at any time move to flag and when possible seize pear,F(move_to_flag)&F(seize_pear)
+1646,"['present_at_flag', 'venture_towards_house']",when possible present at flag or venture towards house,F(present_at_flag)|venture_towards_house
+1362,"['get_hold_apple', 'seize_pear']","when at some time get hold apple , whenever seize pear",F(get_hold_apple)->F(seize_pear)
+5867,"['proceed_to_tree', 'walk_to_flag']",at any time proceed to tree and at any time walk to flag,F(proceed_to_tree)&F(walk_to_flag)
+4103,"['hold_pear', 'get_apple']",hold pear until when possible get apple,hold_pearUF(get_apple)
+2934,"['reach_tree', 'going_to_house']",when possible reach tree and when possible going to house,F(reach_tree)&F(going_to_house)
+2335,"['come_home', 'hold_apple']",whenever come home or hold apple,F(come_home)|hold_apple
+5668,"['go_to_apple', 'go_past_flag']",when possible go to apple or when possible go past flag,F(go_to_apple)|F(go_past_flag)
+3963,"['go_to_orange', 'advance_to_house']",go to orange or at any time advance to house,go_to_orange|F(advance_to_house)
+3425,"['go_by_house', 'steal_apple']","if whenever go by house , at any time steal apple",F(go_by_house)->F(steal_apple)
+2070,"['move_to_trashcan', 'drop_pear']",move to trashcan and drop pear,move_to_trashcan&drop_pear
+3049,"['capture_orange', 'contact_house']",capture orange and whenever contact house,capture_orange&F(contact_house)
+1783,"['bring_pear', 'secure_apple']",whenever bring pear or secure apple,F(bring_pear)|secure_apple
+1690,"['secure_apple', 'go_by_waste_basket']",secure apple or when possible go by waste basket,secure_apple|F(go_by_waste_basket)
+1025,"['secure_apple', 'venture_towards_house']",secure apple or venture towards house,secure_apple|venture_towards_house
+2478,"['advance_to_tree', 'journey_by_flag']","when advance to tree , when possible journey by flag",advance_to_tree->F(journey_by_flag)
+1590,"['drop_apple', 'withhold_apple']",never drop apple or at any time withhold apple,G(~(drop_apple))|F(withhold_apple)
+2843,"['venture_house', 'procure_pear']",whenever venture house and whenever procure pear,F(venture_house)&F(procure_pear)
+4488,"['withold_apple', 'grab_pear']",at some time withold apple or whenever grab pear,F(withold_apple)|F(grab_pear)
+1484,"['withhold_apple', 'secure_apple']",at some time withhold apple until secure apple,F(withhold_apple)Usecure_apple
+1926,"['grasp_apple', 'tax_apple']",at some time grasp apple or when possible tax apple,F(grasp_apple)|F(tax_apple)
+2465,"['go_to_bucket', 'go_to_house']",go to bucket or when possible go to house,go_to_bucket|F(go_to_house)
+4501,"['move_towards_trash_can', 'go_home']",move towards trash can or whenever go home,move_towards_trash_can|F(go_home)
+2340,"['be_at_flag', 'get_orange']",whenever be at flag until whenever get orange,F(be_at_flag)UF(get_orange)
+1064,"['present_at_flag', 'bring_pear']",when possible present at flag or at any time bring pear,F(present_at_flag)|F(bring_pear)
+1858,"['present_at_flag', 'drop_apple']",whenever present at flag or never drop apple,F(present_at_flag)|G(~(drop_apple))
+4517,"['travel_house', 'proceed_to_house']",whenever travel house or at any time proceed to house,F(travel_house)|F(proceed_to_house)
+1222,"['reach_flag', 'go_by_waste_bin']",at some time reach flag or go by waste bin,F(reach_flag)|go_by_waste_bin
+1215,"['advance_to_tree', 'move_near_tree']",advance to tree and whenever move near tree,advance_to_tree&F(move_near_tree)
+1560,"['secure_apple', 'drop_apple']",secure apple or never drop apple,secure_apple|G(~(drop_apple))
+1264,"['reach_flag', 'venture_towards_house']",when possible reach flag until venture towards house,F(reach_flag)Uventure_towards_house
+1138,"['venture_towards_house', 'venture_to_house']",venture towards house or when possible venture to house,venture_towards_house|F(venture_to_house)
+2651,"['approach_house', 'grasp_orange']",when possible approach house or grasp orange,F(approach_house)|grasp_orange
+1935,"['get_orange', 'go_by_flag']",at any time get orange or whenever go by flag,F(get_orange)|F(go_by_flag)
+5188,"['hold_on_to_pear', 'grab_apple']",hold on to pear and at any time grab apple,hold_on_to_pear&F(grab_apple)
+3914,"['drop_orange', 'going_to_flag']",never drop orange and whenever going to flag,G(~(drop_orange))&F(going_to_flag)
+1377,"['venture_towards_house', 'present_at_flag']","if venture towards house , when possible present at flag",venture_towards_house->F(present_at_flag)
+3303,"['hold_on_to_pear', 'collect_pear']",hold on to pear until collect pear,hold_on_to_pearUcollect_pear
+3255,"['scoop_up_pear', 'pick_up_peach']","if when possible scoop up pear , whenever pick up peach",F(scoop_up_pear)->F(pick_up_peach)
+2868,"['take_orange', 'get_to_cup']",take orange and at any time get to cup,take_orange&F(get_to_cup)
+2147,"['withdraw_pear', 'let_go_pear']",at any time withdraw pear and do not let go pear,F(withdraw_pear)&~(let_go_pear)
+2148,"['have_pear', 'start_going_to_house']",at some time have pear or at any time start going to house,F(have_pear)|F(start_going_to_house)
+1034,"['go_by_waste_basket', 'reach_flag']",at any time go by waste basket or when possible reach flag,F(go_by_waste_basket)|F(reach_flag)
+1861,"['get_close_flag', 'capture_pear']",at any time get close flag or at any time capture pear,F(get_close_flag)|F(capture_pear)
+2061,"['get_to_cup', 'approach_tree']",when possible get to cup or approach tree,F(get_to_cup)|approach_tree
+4324,"['get_hold_apple', 'go_visit_flag']",at some time get hold apple and go visit flag,F(get_hold_apple)&go_visit_flag
+3594,"['put_in_apple_bucket', 'journey_to_flag']",put in apple bucket or whenever journey to flag,put_in_apple_bucket|F(journey_to_flag)
+2298,"['show_yourself_near_house', 'go_to_waste_basket']",at some time show yourself near house and repeatedly go to waste basket,F(show_yourself_near_house)&G(F(go_to_waste_basket))
+2714,"['go_by_tree', 'get_close_tree']",at any time go by tree and whenever get close tree,F(go_by_tree)&F(get_close_tree)
+1018,"['make_way_waste_basket', 'be_in_houses_vicinity']",at some time make way waste basket and at some time be in house's vicinity,F(make_way_waste_basket)&F(be_in_houses_vicinity)
+4337,"['procure_pear', 'collect_orange']",at some time procure pear and at some time collect orange,F(procure_pear)&F(collect_orange)
+1710,"['venture_to_house', 'go_by_waste_basket']",whenever venture to house and at some time go by waste basket,F(venture_to_house)&F(go_by_waste_basket)
+1389,"['drop_orange', 'take_apple']",never drop orange or take apple,G(~(drop_orange))|take_apple
+4650,"['move_to_house', 'tax_apple']",move to house and at some time tax apple,move_to_house&F(tax_apple)
+3725,"['go_to_trash_bin', 'go_by_house']",at some time go to trash bin or when possible go by house,F(go_to_trash_bin)|F(go_by_house)
+1295,"['advance_to_tree', 'stop_by_house']",advance to tree and when possible stop by house,advance_to_tree&F(stop_by_house)
+1047,"['travel_house', 'journey_to_flag']",at any time travel house or when possible journey to flag,F(travel_house)|F(journey_to_flag)
+4645,"['get_orange', 'let_go_apple']",whenever get orange and whenever let go apple,F(get_orange)&F(let_go_apple)
+5424,"['travel_house', 'start_going_to_tree']",whenever travel house and at any time start going to tree,F(travel_house)&F(start_going_to_tree)
+3064,"['go_to_peach', 'put_in_apple_bucket']",at any time go to peach and put in apple bucket,F(go_to_peach)&put_in_apple_bucket
+1165,"['get_to_flag', 'grab_tree']",at some time get to flag or repeatedly grab tree,F(get_to_flag)|G(F(grab_tree))
+3454,"['visit_tree', 'grab_orange']",visit tree or at some time grab orange,visit_tree|F(grab_orange)
+1215,"['withhold_apple', 'secure_apple']",whenever withhold apple or secure apple,F(withhold_apple)|secure_apple
+4878,"['get_orange', 'let_go_pear']",at any time get orange or don't let go pear,F(get_orange)|~(let_go_pear)
+1188,"['obtain_apple', 'acquire_apple']",at some time obtain apple until acquire apple,F(obtain_apple)Uacquire_apple
+3887,"['let_go_orange', 'drop_orange']",never let go orange or never drop orange,G(~(let_go_orange))|G(~(drop_orange))
+2750,"['grab_apple', 'pass_by_house']",when possible grab apple or whenever pass by house,F(grab_apple)|F(pass_by_house)
+2100,"['get_to_cup', 'travel_to_trash_can']",whenever get to cup until when possible travel to trash can,F(get_to_cup)UF(travel_to_trash_can)
+3142,"['go_to_tree', 'move_towards_trash_can']",when possible go to tree and move towards trash can,F(go_to_tree)&move_towards_trash_can
+4307,"['capture_pear', 'tax_apple']",whenever capture pear until at any time tax apple,F(capture_pear)UF(tax_apple)
+2655,"['obtain_pear', 'make_your_way_flag']",whenever obtain pear or when possible make your way flag,F(obtain_pear)|F(make_your_way_flag)
+3022,"['go_to_bucket', 'go_to_orange']",go to bucket and go to orange,go_to_bucket&go_to_orange
+1920,"['acquire_apple', 'let_go_orange']",acquire apple until never let go orange,acquire_appleUG(~(let_go_orange))
+1451,"['go_visit_flag', 'move_towards_trash_can']",go visit flag and move towards trash can,go_visit_flag&move_towards_trash_can
+2039,"['move_near_tree', 'approach_trash_can']",when possible move near tree and approach trash can,F(move_near_tree)&approach_trash_can
+3906,"['take_to_tree', 'travel_to_house']",take to tree or whenever travel to house,take_to_tree|F(travel_to_house)
+1764,"['spend_time_at_tree', 'get_to_tree']",at any time spend time at tree and get to tree,F(spend_time_at_tree)&get_to_tree
+1579,"['reach_flag', 'venture_towards_house']",when possible reach flag and venture towards house,F(reach_flag)&venture_towards_house
+5455,"['visit_flag', 'pass_by_house']",when possible visit flag and at some time pass by house,F(visit_flag)&F(pass_by_house)
+1202,"['get_near_flag', 'snag_orange']",when possible get near flag or at some time snag orange,F(get_near_flag)|F(snag_orange)
+4366,"['go_to_orange', 'shift_to_flag']",go to orange and at any time shift to flag,go_to_orange&F(shift_to_flag)
+1688,"['drop_apple', 'go_by_waste_basket']",never drop apple or at some time go by waste basket,G(~(drop_apple))|F(go_by_waste_basket)
+3825,"['tax_apple', 'go_to_bucket']",when possible tax apple and go to bucket,F(tax_apple)&go_to_bucket
+1336,"['go_visit_house', 'walk_near_flag']",whenever go visit house or at some time walk near flag,F(go_visit_house)|F(walk_near_flag)
+4230,"['let_go_orange', 'touch_tree']",never let go orange and when possible touch tree,G(~(let_go_orange))&F(touch_tree)
+1919,"['present_at_flag', 'secure_apple']",at some time present at flag or secure apple,F(present_at_flag)|secure_apple
+4504,"['drop_orange', 'go_visit_house']","if drop orange , at any time go visit house",drop_orange->F(go_visit_house)
+1089,"['going_to_tree', 'grasp_orange']",going to tree or grasp orange,going_to_tree|grasp_orange
+1056,"['clutch_orange', 'move_to_trashcan']",at some time clutch orange or move to trashcan,F(clutch_orange)|move_to_trashcan
+4674,"['move_forward_trash_can', 'walk_to_flag']",at any time move forward trash can and at any time walk to flag,F(move_forward_trash_can)&F(walk_to_flag)
+1642,"['present_at_flag', 'drop_apple']",when possible present at flag until never drop apple,F(present_at_flag)UG(~(drop_apple))
+1208,"['proceed_to_house', 'travel_to_flag']",when possible proceed to house or whenever travel to flag,F(proceed_to_house)|F(travel_to_flag)
+5896,"['grasp_apple', 'pick_up_apple']",at any time grasp apple or when possible pick up apple,F(grasp_apple)|F(pick_up_apple)
+4638,"['walk_to_flag', 'procure_orange']",at any time walk to flag or at some time procure orange,F(walk_to_flag)|F(procure_orange)
+1134,"['get_near_flag', 'go_to_apple_trashcan']",when possible get near flag and repeatedly go to apple trashcan,F(get_near_flag)&G(F(go_to_apple_trashcan))
+2432,"['start_going_to_house', 'get_near_flag']",at some time start going to house or at any time get near flag,F(start_going_to_house)|F(get_near_flag)
+4423,"['go_to_home', 'go_past_house']",when possible go to home or at some time go past house,F(go_to_home)|F(go_past_house)
+1686,"['go_by_waste_basket', 'venture_towards_house']",whenever go by waste basket and venture towards house,F(go_by_waste_basket)&venture_towards_house
+4865,"['get_orange', 'get_hold_of_pear']",when possible get orange and get hold of pear,F(get_orange)&get_hold_of_pear
+1724,"['get_near_flag', 'clutch_orange']",whenever get near flag and at some time clutch orange,F(get_near_flag)&F(clutch_orange)
+1361,"['go_by_waste_basket', 'venture_towards_house']",when possible go by waste basket or venture towards house,F(go_by_waste_basket)|venture_towards_house
+4344,"['have_possession_of_apple', 'hold_orange']",whenever have possession of apple or hold orange,F(have_possession_of_apple)|hold_orange
+5632,"['walk_to_flag', 'reach_trash_can']",whenever walk to flag or reach trash can,F(walk_to_flag)|reach_trash_can
+2256,"['journey_by_flag', 'clutch_orange']",at some time journey by flag or when possible clutch orange,F(journey_by_flag)|F(clutch_orange)
+4478,"['travel_to_house', 'move_past_trash_can']",when possible travel to house or whenever move past trash can,F(travel_to_house)|F(move_past_trash_can)
+5545,"['grasp_pear', 'gather_apple']",when possible grasp pear and gather apple,F(grasp_pear)&gather_apple
+2047,"['make_your_way_flag', 'take_apple']",when possible make your way flag or take apple,F(make_your_way_flag)|take_apple
+1802,"['be_in_houses_vicinity', 'grab_flag']",whenever be in house's vicinity can infer that at some time grab flag,F(be_in_houses_vicinity)->F(grab_flag)
+2423,"['track_towards_tree', 'get_to_flag']",when possible track towards tree or whenever get to flag,F(track_towards_tree)|F(get_to_flag)
+2490,"['move_to_trashcan', 'snag_orange']",move to trashcan or at some time snag orange,move_to_trashcan|F(snag_orange)
+1239,"['be_in_houses_vicinity', 'grab_tree']",at any time be in house's vicinity or repeatedly grab tree,F(be_in_houses_vicinity)|G(F(grab_tree))
+1965,"['stop_by_house', 'move_near_tree']",whenever stop by house and at some time move near tree,F(stop_by_house)&F(move_near_tree)
+2529,"['visit_waste_basket', 'let_go_orange']",when possible visit waste basket and never let go orange,F(visit_waste_basket)&G(~(let_go_orange))
+1155,"['secure_apple', 'go_by_waste_basket']",secure apple and whenever go by waste basket,secure_apple&F(go_by_waste_basket)
+1938,"['spend_time_at_tree', 'make_to_flag']",at any time spend time at tree or at some time make to flag,F(spend_time_at_tree)|F(make_to_flag)
+5868,"['snatch_pear', 'go_past_house']","if whenever snatch pear , at any time go past house",F(snatch_pear)->F(go_past_house)
+5858,"['proceed_to_flag', 'go_to_tree']",at any time proceed to flag means that at any time go to tree,F(proceed_to_flag)->F(go_to_tree)
+4573,"['travel_by_tree', 'journey_to_flag']",when possible travel by tree or at any time journey to flag,F(travel_by_tree)|F(journey_to_flag)
+5778,"['acquire_pear', 'take_apple']",at any time acquire pear or take apple,F(acquire_pear)|take_apple
+5527,"['go_to_pear', 'set_out_to_house']",repeatedly go to pear and whenever set out to house,G(F(go_to_pear))&F(set_out_to_house)
+1563,"['present_at_flag', 'venture_to_house']",at some time present at flag until whenever venture to house,F(present_at_flag)UF(venture_to_house)
+1052,"['get_near_flag', 'grip_apple']",when possible get near flag or grip apple,F(get_near_flag)|grip_apple
+2213,"['got_to_house', 'go_near_house']",at any time got to house and when possible go near house,F(got_to_house)&F(go_near_house)
+2125,"['take_possession_of_bear', 'go_near_flag']",at some time take possession of bear and at any time go near flag,F(take_possession_of_bear)&F(go_near_flag)
+4942,"['go_near_pear', 'secure_pear']",whenever go near pear or at any time secure pear,F(go_near_pear)|F(secure_pear)
+3076,"['pick_up_orange', 'haul_pear']",pick up orange or at some time haul pear,pick_up_orange|F(haul_pear)
+2099,"['reach_tree', 'move_to_flag']",whenever reach tree or when possible move to flag,F(reach_tree)|F(move_to_flag)
+1835,"['bring_pear', 'bring_pear']",at some time bring pear or when possible bring pear,F(bring_pear)|F(bring_pear)
+1190,"['go_past_house', 'let_go_apple']",whenever go past house and never let go apple,F(go_past_house)&G(~(let_go_apple))
+5467,"['venture_house', 'procure_pear']",whenever venture house or whenever procure pear,F(venture_house)|F(procure_pear)
+1841,"['grab_tree', 'approach_trash_can']",repeatedly grab tree until approach trash can,G(F(grab_tree))Uapproach_trash_can
+2437,"['go_by_tree', 'make_way_to_house']",whenever go by tree or repeatedly make way to house,F(go_by_tree)|G(F(make_way_to_house))
+5810,"['move_forward_trash_can', 'scoop_up_pear']",at any time move forward trash can and at any time scoop up pear,F(move_forward_trash_can)&F(scoop_up_pear)
+1338,"['venture_to_house', 'reach_flag']",at any time venture to house or when possible reach flag,F(venture_to_house)|F(reach_flag)
+1015,"['clutch_orange', 'visit_trash_bin']",whenever clutch orange and at some time visit trash bin,F(clutch_orange)&F(visit_trash_bin)
+1842,"['venture_flag', 'visit_trash_bin']","if at any time venture flag , whenever visit trash bin",F(venture_flag)->F(visit_trash_bin)
+1742,"['make_contact_flag', 'proceed_to_house']",whenever make contact flag or at any time proceed to house,F(make_contact_flag)|F(proceed_to_house)
+1980,"['withhold_apple', 'venture_to_house']",when possible withhold apple or when possible venture to house,F(withhold_apple)|F(venture_to_house)
+3969,"['let_go_orange', 'withold_apple']",never let go orange and when possible withold apple,G(~(let_go_orange))&F(withold_apple)
+1635,"['spend_time_at_tree', 'go_to_transh_can']",when possible spend time at tree or when possible go to transh can,F(spend_time_at_tree)|F(go_to_transh_can)
+2345,"['snatch_up_pear', 'get_near_flag']",snatch up pear and when possible get near flag,snatch_up_pear&F(get_near_flag)
+5388,"['make_contact_flag', 'move_to_flag']",whenever make contact flag or at some time move to flag,F(make_contact_flag)|F(move_to_flag)
+2778,"['walk', 'pass_by_waste_receptacle']",walk or when possible pass by waste receptacle,walk|F(pass_by_waste_receptacle)
+2961,"['grab_orange', 'touch_flag']",when possible grab orange and always touch flag,F(grab_orange)&G(touch_flag)
+5421,"['visit_tree', 'travel_to_tree']",visit tree and travel to tree,visit_tree&travel_to_tree
+3203,"['snatch_pear', 'contact_house']",whenever snatch pear or at any time contact house,F(snatch_pear)|F(contact_house)
+1407,"['get_near_flag', 'go_to_apple_trashcan']",at some time get near flag or repeatedly go to apple trashcan,F(get_near_flag)|G(F(go_to_apple_trashcan))
+1789,"['snatch_up_pear', 'go_to_transh_can']",snatch up pear and when possible go to transh can,snatch_up_pear&F(go_to_transh_can)
+4885,"['get_to_cup', 'visit_tree']",at some time get to cup or visit tree,F(get_to_cup)|visit_tree
+4333,"['grab_pear', 'procure_orange']",when possible grab pear and when possible procure orange,F(grab_pear)&F(procure_orange)
+1446,"['travel_house', 'grab_apple']",at any time travel house or at any time grab apple,F(travel_house)|F(grab_apple)
+1402,"['grab_hold_pear', 'get_to_flag']",grab hold pear or when possible get to flag,grab_hold_pear|F(get_to_flag)
+1870,"['go_to_transh_can', 'make_to_flag']",at some time go to transh can or at any time make to flag,F(go_to_transh_can)|F(make_to_flag)
+2485,"['secure_pear', 'go_to_apple']",at any time secure pear or at some time go to apple,F(secure_pear)|F(go_to_apple)
+5974,"['visit_waste_basket', 'venture_to_flag']",at some time visit waste basket until at any time venture to flag,F(visit_waste_basket)UF(venture_to_flag)
+1196,"['proceed_to_house', 'get_close_flag']",at some time proceed to house until whenever get close flag,F(proceed_to_house)UF(get_close_flag)
+2312,"['visit_tree', 'go_to_house']",visit tree or at any time go to house,visit_tree|F(go_to_house)
+1693,"['drop_apple', 'venture_to_house']",never drop apple or when possible venture to house,G(~(drop_apple))|F(venture_to_house)
+1304,"['hold_orange', 'go_to_flag']",hold orange and when possible go to flag,hold_orange&F(go_to_flag)
+1198,"['obtain_orange', 'yield_pear']",when possible obtain orange or when possible yield pear,F(obtain_orange)|F(yield_pear)
+3294,"['walk_near_flag', 'advance_to_house']",whenever walk near flag and whenever advance to house,F(walk_near_flag)&F(advance_to_house)
+3264,"['make_your_way_flag', 'hold_pear']",at some time make your way flag until hold pear,F(make_your_way_flag)Uhold_pear
+1417,"['get_to_flag', 'drop_pear']",whenever get to flag or drop pear,F(get_to_flag)|drop_pear
+1705,"['venture_to_house', 'present_at_flag']",when possible venture to house and at any time present at flag,F(venture_to_house)&F(present_at_flag)
+3964,"['be_at_house', 'take_apple']",at any time be at house and take apple,F(be_at_house)&take_apple
+1200,"['withhold_apple', 'drop_apple']",at any time withhold apple or never drop apple,F(withhold_apple)|G(~(drop_apple))
+1350,"['go_to_trashcan', 'grab_hold_pear']",whenever go to trashcan or grab hold pear,F(go_to_trashcan)|grab_hold_pear
+1507,"['venture_towards_house', 'secure_apple']",venture towards house or secure apple,venture_towards_house|secure_apple
+5663,"['pass_by_trash_bin', 'take_orange']",at any time pass by trash bin or take orange,F(pass_by_trash_bin)|take_orange
+2604,"['snatch_pear', 'pick_up_flag']",when possible snatch pear or pick up flag,F(snatch_pear)|pick_up_flag
+1071,"['venture_towards_house', 'present_at_flag']",venture towards house or whenever present at flag,venture_towards_house|F(present_at_flag)
+3247,"['hold_orange', 'be_at_flag']",hold orange and whenever be at flag,hold_orange&F(be_at_flag)
+1653,"['secure_apple', 'bring_pear']",secure apple and at some time bring pear,secure_apple&F(bring_pear)
+1260,"['go_by_waste_bin', 'drop_apple']",go by waste bin or never drop apple,go_by_waste_bin|G(~(drop_apple))
+1242,"['advance_to_tree', 'grab_flag']",advance to tree or at some time grab flag,advance_to_tree|F(grab_flag)
+1795,"['reach_trash_can', 'put_in_bucket']",reach trash can or put in bucket,reach_trash_can|put_in_bucket
+1535,"['present_at_flag', 'venture_to_house']",when possible present at flag and at some time venture to house,F(present_at_flag)&F(venture_to_house)
+1715,"['go_to_tree', 'pick_up_anything']",whenever go to tree and do not pick up anything,F(go_to_tree)&~(F(pick_up_anything))
+5255,"['journey_by_house', 'get_hold_of_pear']",when possible journey by house until get hold of pear,F(journey_by_house)Uget_hold_of_pear
+4495,"['pass_by_house', 'make_way_to_house']",whenever pass by house and repeatedly make way to house,F(pass_by_house)&G(F(make_way_to_house))
+1275,"['seize_pear', 'secure_pear']",whenever seize pear or when possible secure pear,F(seize_pear)|F(secure_pear)
+2924,"['touch_house', 'travel_to_waste_bin']",at some time touch house or travel to waste bin,F(touch_house)|travel_to_waste_bin
+3551,"['going_to_tree', 'let_go_apple']",going to tree or at some time let go apple,going_to_tree|F(let_go_apple)
+1618,"['withhold_apple', 'venture_towards_house']",when possible withhold apple or venture towards house,F(withhold_apple)|venture_towards_house
+1126,"['snatch_up_pear', 'lay_hold_of_apple']",snatch up pear or at some time lay hold of apple,snatch_up_pear|F(lay_hold_of_apple)
+3817,"['proceed_to_tree', 'visit_house']",at some time proceed to tree and at some time visit house,F(proceed_to_tree)&F(visit_house)
+3788,"['acquire_pear', 'grasp_pear']",when possible acquire pear or at any time grasp pear,F(acquire_pear)|F(grasp_pear)
+3455,"['proceed_to_flag', 'procure_orange']",when possible proceed to flag or at any time procure orange,F(proceed_to_flag)|F(procure_orange)
+2420,"['make_way_waste_basket', 'have_in_orange']",when possible make way waste basket and forever have in orange,F(make_way_waste_basket)&G(have_in_orange)
+1191,"['venture_towards_house', 'venture_towards_house']",venture towards house and venture towards house,venture_towards_house&venture_towards_house
+2859,"['go_to_apple', 'go_to_pear']",whenever go to apple or repeatedly go to pear,F(go_to_apple)|G(F(go_to_pear))
+1784,"['grab_hold_pear', 'make_way_waste_basket']",grab hold pear or whenever make way waste basket,grab_hold_pear|F(make_way_waste_basket)
+1587,"['snag_orange', 'migrate_to_tree']","when at any time snag orange , when possible migrate to tree",F(snag_orange)->F(migrate_to_tree)
+2267,"['have_pear', 'take_to_trashcan']",when possible have pear or take to trashcan,F(have_pear)|take_to_trashcan
+3987,"['contact_flag', 'touch_tree']",at some time contact flag or at any time touch tree,F(contact_flag)|F(touch_tree)
+1741,"['migrate_to_tree', 'go_to_transh_can']","if at some time migrate to tree , at some time go to transh can",F(migrate_to_tree)->F(go_to_transh_can)
+1202,"['get_apple', 'take_orange']",at some time get apple or take orange,F(get_apple)|take_orange
+5281,"['journey_to_flag', 'let_go_apple']",at some time journey to flag and never let go apple,F(journey_to_flag)&G(~(let_go_apple))
+5538,"['make_way_to_house', 'go_to_waste_basket']","when repeatedly make way to house , repeatedly go to waste basket",G(F(make_way_to_house))->G(F(go_to_waste_basket))
+3357,"['visit_tree', 'steal_apple']",visit tree and at any time steal apple,visit_tree&F(steal_apple)
+3990,"['be_at_house', 'gather_pear']",whenever be at house or whenever gather pear,F(be_at_house)|F(gather_pear)
+1696,"['let_go', 'hold_on_to_pear']",never let go or hold on to pear,G(~(let_go))|hold_on_to_pear
+1567,"['secure_apple', 'reach_flag']","when secure apple , at some time reach flag",secure_apple->F(reach_flag)
+3547,"['go_by_tree', 'acquire_apple']",whenever go by tree means that acquire apple,F(go_by_tree)->acquire_apple
+4568,"['acquire_orange', 'let_go_apple']",acquire orange and at some time let go apple,acquire_orange&F(let_go_apple)
+1079,"['take_pear', 'gather_pear']",take pear can infer that when possible gather pear,take_pear->F(gather_pear)
+1143,"['journey_by_flag', 'advance_to_tree']",whenever journey by flag or advance to tree,F(journey_by_flag)|advance_to_tree
+1315,"['secure_apple', 'go_by_waste_bin']","when secure apple , go by waste bin",secure_apple->go_by_waste_bin
+1529,"['reach_flag', 'go_by_waste_basket']",when possible reach flag or whenever go by waste basket,F(reach_flag)|F(go_by_waste_basket)
+2120,"['walk', 'hold_apple']",walk means that hold apple,walk->hold_apple
+1726,"['present_at_flag', 'go_by_waste_basket']",whenever present at flag or whenever go by waste basket,F(present_at_flag)|F(go_by_waste_basket)
+1204,"['secure_apple', 'bring_pear']",secure apple and at any time bring pear,secure_apple&F(bring_pear)
+2472,"['travel_by_tree', 'obtain_orange']",at any time travel by tree and at some time obtain orange,F(travel_by_tree)&F(obtain_orange)
+4379,"['go_to_trash_receptacle', 'let_go_orange']",whenever go to trash receptacle or never let go orange,F(go_to_trash_receptacle)|G(~(let_go_orange))
+1048,"['withhold_apple', 'secure_apple']",at some time withhold apple or secure apple,F(withhold_apple)|secure_apple
+1053,"['approach_house', 'pick_up_flag']",when possible approach house and pick up flag,F(approach_house)&pick_up_flag
+5920,"['make_contact_flag', 'collect_orange']",when possible make contact flag and at any time collect orange,F(make_contact_flag)&F(collect_orange)
+4102,"['walk_to_flag', 'move_past_trash_can']",at some time walk to flag until at some time move past trash can,F(walk_to_flag)UF(move_past_trash_can)
+2670,"['get_close_tree', 'seize_apple']",at any time get close tree and seize apple,F(get_close_tree)&seize_apple
+1351,"['secure_apple', 'bring_pear']",secure apple and at some time bring pear,secure_apple&F(bring_pear)
+1796,"['stop_by_house', 'travel_to_apple']",at some time stop by house or travel to apple,F(stop_by_house)|travel_to_apple
+3025,"['let_go_orange', 'go_to_peach']",never let go orange or when possible go to peach,G(~(let_go_orange))|F(go_to_peach)
+2374,"['approach_trash_can', 'venture_flag']",approach trash can and at some time venture flag,approach_trash_can&F(venture_flag)
+5224,"['journey_by_house', 'make_your_way_flag']",at some time journey by house or at some time make your way flag,F(journey_by_house)|F(make_your_way_flag)
+1064,"['get_to_tree', 'get_to_flag']",get to tree until when possible get to flag,get_to_treeUF(get_to_flag)
+1536,"['venture_towards_house', 'drop_apple']",venture towards house and never drop apple,venture_towards_house&G(~(drop_apple))
+1614,"['move_near_tree', 'have_in_orange']",whenever move near tree and always have in orange,F(move_near_tree)&G(have_in_orange)
+1638,"['bring_pear', 'reach_flag']","if when possible bring pear , whenever reach flag",F(bring_pear)->F(reach_flag)
+1068,"['reach_flag', 'bring_pear']",whenever reach flag or at some time bring pear,F(reach_flag)|F(bring_pear)
+5103,"['travel_to_house', 'get_hold_of_pear']",whenever travel to house and get hold of pear,F(travel_to_house)&get_hold_of_pear
+1161,"['grab_flag', 'have_pear']",at any time grab flag or at any time have pear,F(grab_flag)|F(have_pear)
+2230,"['arrive_at_tree', 'travel_to_house']",at any time arrive at tree or at some time travel to house,F(arrive_at_tree)|F(travel_to_house)
+4910,"['tax_apple', 'contact_flag']",when possible tax apple or whenever contact flag,F(tax_apple)|F(contact_flag)
+3381,"['take_apple', 'pick_up_peach']",take apple or when possible pick up peach,take_apple|F(pick_up_peach)
+4261,"['obtain_orange', 'travel_house']",when possible obtain orange or at any time travel house,F(obtain_orange)|F(travel_house)
+2239,"['visit_trash_bin', 'take_to_trashcan']",when possible visit trash bin or take to trashcan,F(visit_trash_bin)|take_to_trashcan
+4323,"['capture_orange', 'take_pear']",capture orange or take pear,capture_orange|take_pear
+1920,"['start_going_to_house', 'grab_flag']",when possible start going to house can infer that when possible grab flag,F(start_going_to_house)->F(grab_flag)
+2469,"['keep_apple', 'have_pear']",keep apple until when possible have pear,keep_appleUF(have_pear)
+1333,"['venture_to_house', 'secure_apple']",when possible venture to house or secure apple,F(venture_to_house)|secure_apple
+1877,"['moving', 'have_in_orange']",always moving or always have in orange,G(moving)|G(have_in_orange)
+1956,"['grab_apple', 'travel_to_tree']",whenever grab apple or travel to tree,F(grab_apple)|travel_to_tree
+2554,"['be_near_tree', 'go_visit_house']",whenever be near tree or when possible go visit house,F(be_near_tree)|F(go_visit_house)
+3689,"['reach_tree', 'procure_pear']",whenever reach tree or when possible procure pear,F(reach_tree)|F(procure_pear)
+1726,"['seize_orange', 'put_in_bucket']",at any time seize orange and put in bucket,F(seize_orange)&put_in_bucket
+2209,"['take_orange', 'contact_flag']",take orange until at some time contact flag,take_orangeUF(contact_flag)
+2341,"['get_near_flag', 'grip_apple']",whenever get near flag or grip apple,F(get_near_flag)|grip_apple
+5707,"['go_to_bucket', 'going_to_tree']",go to bucket and going to tree,go_to_bucket&going_to_tree
+1331,"['grab_flag', 'grab_tree']",at any time grab flag or repeatedly grab tree,F(grab_flag)|G(F(grab_tree))
+4463,"['travel_by_tree', 'come_home']",at some time travel by tree and whenever come home,F(travel_by_tree)&F(come_home)
+3188,"['acquire_pear', 'get_pear']",at some time acquire pear or when possible get pear,F(acquire_pear)|F(get_pear)
+2084,"['haul_pear', 'advance_to_house']",at any time haul pear or at some time advance to house,F(haul_pear)|F(advance_to_house)
+1035,"['clutch_orange', 'be_in_houses_vicinity']",at some time clutch orange and when possible be in house's vicinity,F(clutch_orange)&F(be_in_houses_vicinity)
+1116,"['withhold_apple', 'reach_flag']",at some time withhold apple and at some time reach flag,F(withhold_apple)&F(reach_flag)
+4795,"['take_pear', 'scoop_up_pear']",take pear and at some time scoop up pear,take_pear&F(scoop_up_pear)
+3995,"['pick_up_anything', 'go_to_house']",don't pick up anything or at some time go to house,~(F(pick_up_anything))|F(go_to_house)
+1311,"['withhold_apple', 'go_by_waste_basket']",when possible withhold apple or whenever go by waste basket,F(withhold_apple)|F(go_by_waste_basket)
+3684,"['put_in_bin', 'hold_on_to_pear']",put in bin and hold on to pear,put_in_bin&hold_on_to_pear
+4522,"['secure_pear', 'collect_orange']",whenever secure pear or at any time collect orange,F(secure_pear)|F(collect_orange)
+5250,"['go_by_flag', 'put_in_apple_bucket']",at some time go by flag can infer that put in apple bucket,F(go_by_flag)->put_in_apple_bucket
+5061,"['drop_orange', 'contact_house']",drop orange or whenever contact house,drop_orange|F(contact_house)
+4914,"['get_hold_of_orange', 'have_apple']",at some time get hold of orange or forever have apple,F(get_hold_of_orange)|G(have_apple)
+1175,"['drop_orange', 'move_to_trashcan']",never drop orange and move to trashcan,G(~(drop_orange))&move_to_trashcan
+1482,"['venture_towards_house', 'bring_pear']",venture towards house and at any time bring pear,venture_towards_house&F(bring_pear)
+1783,"['make_your_way_flag', 'travel_to_waste_bin']",whenever make your way flag or travel to waste bin,F(make_your_way_flag)|travel_to_waste_bin
+2238,"['be_at_flag', 'contact_house']",whenever be at flag or when possible contact house,F(be_at_flag)|F(contact_house)
+2939,"['journey_to_tree', 'secure_pear']",when possible journey to tree or at some time secure pear,F(journey_to_tree)|F(secure_pear)
+1035,"['go_near_flag', 'collect_pear']",at any time go near flag or collect pear,F(go_near_flag)|collect_pear
+1559,"['go_to_orange_bin', 'journey_by_flag']",go to orange bin means that when possible journey by flag,go_to_orange_bin->F(journey_by_flag)
+3198,"['go_to_bucket', 'pass_by_house']",go to bucket or at some time pass by house,go_to_bucket|F(pass_by_house)
+2965,"['take_orange', 'pick_up_anything']",take orange until don't pick up anything,take_orangeU~(F(pick_up_anything))
+4116,"['drop_orange', 'collect_apple']",drop orange or when possible collect apple,drop_orange|F(collect_apple)
+1219,"['venture_to_house', 'secure_apple']",when possible venture to house and secure apple,F(venture_to_house)&secure_apple
+2707,"['go_past_flag', 'travel_to_waste_bin']",at some time go past flag and travel to waste bin,F(go_past_flag)&travel_to_waste_bin
+5749,"['gather_orange', 'venture_to_flag']",gather orange or at some time venture to flag,gather_orange|F(venture_to_flag)
+1437,"['go_to', 'pear_bin', 'shift_to_flag']",when possible go to pear bin or at some time shift to flag,F(go_topear_bin)|F(shift_to_flag)
+2887,"['go_home', 'go_home']",whenever go home and when possible go home,F(go_home)&F(go_home)
+2794,"['going_to_flag', 'make_way_to_house']",at any time going to flag and repeatedly make way to house,F(going_to_flag)&G(F(make_way_to_house))
+3809,"['gather_orange', 'go_by_tree']",gather orange and when possible go by tree,gather_orange&F(go_by_tree)
+1509,"['go_by_waste_basket', 'drop_apple']",at some time go by waste basket and never drop apple,F(go_by_waste_basket)&G(~(drop_apple))
+1124,"['present_at_flag', 'bring_pear']",when possible present at flag or at some time bring pear,F(present_at_flag)|F(bring_pear)
+5779,"['go_past_flag', 'venture_house']",whenever go past flag or at some time venture house,F(go_past_flag)|F(venture_house)
+3088,"['shift_to_flag', 'travel_to_flag']",at some time shift to flag and at any time travel to flag,F(shift_to_flag)&F(travel_to_flag)
+3246,"['grab_pear', 'going_to_tree']",at some time grab pear and going to tree,F(grab_pear)&going_to_tree
+1674,"['advance_to_tree', 'spend_time_at_tree']",advance to tree or when possible spend time at tree,advance_to_tree|F(spend_time_at_tree)
+1593,"['start_going_to_house', 'make_way_waste_basket']",at any time start going to house and when possible make way waste basket,F(start_going_to_house)&F(make_way_waste_basket)
+1770,"['drop_pear', 'journey_by_flag']","when drop pear , whenever journey by flag",drop_pear->F(journey_by_flag)
+2283,"['go_to_apple_trashcan', 'visit_trash_bin']",repeatedly go to apple trashcan or whenever visit trash bin,G(F(go_to_apple_trashcan))|F(visit_trash_bin)
+1603,"['seize_apple', 'pick_up_apple']",seize apple and at some time pick up apple,seize_apple&F(pick_up_apple)
+1853,"['drop_apple', 'go_by_waste_bin']",never drop apple and go by waste bin,G(~(drop_apple))&go_by_waste_bin
+3951,"['venture_house', 'visit_waste_basket']",whenever venture house and when possible visit waste basket,F(venture_house)&F(visit_waste_basket)
+3061,"['capture_orange', 'hold_apple']",capture orange until hold apple,capture_orangeUhold_apple
+2720,"['approach_flag', 'venture_to_waste_basket']",when possible approach flag or whenever venture to waste basket,F(approach_flag)|F(venture_to_waste_basket)
+1648,"['bring_pear', 'present_at_flag']",at some time bring pear or at some time present at flag,F(bring_pear)|F(present_at_flag)
+1249,"['move_past_trash_can', 'make_your_way_flag']",at any time move past trash can and when possible make your way flag,F(move_past_trash_can)&F(make_your_way_flag)
+1493,"['go_by_waste_bin', 'venture_to_house']",go by waste bin or at some time venture to house,go_by_waste_bin|F(venture_to_house)
+1113,"['secure_apple', 'reach_flag']",secure apple or at some time reach flag,secure_apple|F(reach_flag)
+3227,"['proceed_to_tree', 'visit_waste_basket']",at some time proceed to tree and at any time visit waste basket,F(proceed_to_tree)&F(visit_waste_basket)
+1988,"['secure_apple', 'drop_apple']",secure apple and never drop apple,secure_apple&G(~(drop_apple))
+4436,"['travel_by_tree', 'visit_waste_basket']",at some time travel by tree or at any time visit waste basket,F(travel_by_tree)|F(visit_waste_basket)
+2455,"['seize_apple', 'hold_pear']",seize apple or hold pear,seize_apple|hold_pear
+3486,"['advance_to_house', 'collect_pear']","if whenever advance to house , collect pear",F(advance_to_house)->collect_pear
+2292,"['stop_by_trash_can', 'tax_apple']",at some time stop by trash can and whenever tax apple,F(stop_by_trash_can)&F(tax_apple)
+2904,"['go_to_home', 'acquire_pear']",at any time go to home or when possible acquire pear,F(go_to_home)|F(acquire_pear)
+1320,"['come_to_tree', 'stop_by_house']",come to tree or at some time stop by house,come_to_tree|F(stop_by_house)
+2403,"['let_go_pear', 'spend_time_at_tree']",do not let go pear or at some time spend time at tree,~(let_go_pear)|F(spend_time_at_tree)
+1077,"['make_to_flag', 'move_to_trashcan']",when possible make to flag or move to trashcan,F(make_to_flag)|move_to_trashcan
+3002,"['haul_pear', 'snatch_pear']",at any time haul pear or at some time snatch pear,F(haul_pear)|F(snatch_pear)
+4769,"['grasp_pear', 'get_close_tree']",at some time grasp pear or at any time get close tree,F(grasp_pear)|F(get_close_tree)
+1879,"['have_in_orange', 'stop_by_house']",forever have in orange or at some time stop by house,G(have_in_orange)|F(stop_by_house)
+1279,"['drop_apple', 'reach_flag']",never drop apple and at some time reach flag,G(~(drop_apple))&F(reach_flag)
+5361,"['move', 'visit_house']",always move or at any time visit house,G(move)|F(visit_house)
+1026,"['let_go_apple', 'obtain_orange']",never let go apple and at any time obtain orange,G(~(let_go_apple))&F(obtain_orange)
+3226,"['take_possession_of_bear', 'hold_on_to_pear']",at any time take possession of bear and hold on to pear,F(take_possession_of_bear)&hold_on_to_pear
+2746,"['take_apple', 'move_past_trash_can']",take apple or whenever move past trash can,take_apple|F(move_past_trash_can)
+2873,"['venture_to_trash_can', 'seize_pear']",venture to trash can and whenever seize pear,venture_to_trash_can&F(seize_pear)
+4493,"['move_to_tree', 'journey_to_flag']",move to tree or whenever journey to flag,move_to_tree|F(journey_to_flag)
+4094,"['obtain_orange', 'make_your_way_flag']",whenever obtain orange or at some time make your way flag,F(obtain_orange)|F(make_your_way_flag)
+2867,"['get_hold_of_orange', 'go_by_tree']",whenever get hold of orange or at some time go by tree,F(get_hold_of_orange)|F(go_by_tree)
+2310,"['pick_up_pear', 'travel_to_waste_bin']",pick up pear and travel to waste bin,pick_up_pear&travel_to_waste_bin
+2822,"['travel_house', 'get_orange']",at some time travel house or at any time get orange,F(travel_house)|F(get_orange)
+1069,"['lay_hold_of_apple', 'journey_by_flag']",when possible lay hold of apple and at any time journey by flag,F(lay_hold_of_apple)&F(journey_by_flag)
+2015,"['move_to_trashcan', 'go_to_trashcan']",move to trashcan or at some time go to trashcan,move_to_trashcan|F(go_to_trashcan)
+1258,"['present_at_flag', 'venture_to_house']",at any time present at flag until whenever venture to house,F(present_at_flag)UF(venture_to_house)
+1278,"['drop_by', 'be_at_flag']",drop by and whenever be at flag,drop_by&F(be_at_flag)
+5210,"['pass_by_trash_bin', 'journey_to_flag']",whenever pass by trash bin or at some time journey to flag,F(pass_by_trash_bin)|F(journey_to_flag)
+1383,"['go_by_waste_basket', 'venture_to_house']",whenever go by waste basket or at some time venture to house,F(go_by_waste_basket)|F(venture_to_house)
+2591,"['pass_by_waste_receptacle', 'journey_to_house']",at any time pass by waste receptacle or at some time journey to house,F(pass_by_waste_receptacle)|F(journey_to_house)
+1683,"['get_hold_of_orange', 'stand_by_tree']",at any time get hold of orange or when possible stand by tree,F(get_hold_of_orange)|F(stand_by_tree)
+2238,"['let_go_pear', 'let_go_pear']",don't let go pear or don't let go pear,~(let_go_pear)|~(let_go_pear)
+3573,"['touch_flag', 'go_to_trash_receptacle']",forever touch flag and whenever go to trash receptacle,G(touch_flag)&F(go_to_trash_receptacle)
+4122,"['visit_waste_basket', 'go_by_trash_can']",when possible visit waste basket and always go by trash can,F(visit_waste_basket)&G(go_by_trash_can)
+2435,"['visit_trash_bin', 'go_near_house']",at any time visit trash bin or when possible go near house,F(visit_trash_bin)|F(go_near_house)
+1824,"['venture_towards_house', 'bring_pear']",venture towards house or at some time bring pear,venture_towards_house|F(bring_pear)
+2193,"['go_by_house', 'visit_house']",when possible go by house means that when possible visit house,F(go_by_house)->F(visit_house)
+3794,"['pick_up_pear', 'have_apple']",pick up pear or always have apple,pick_up_pear|G(have_apple)
+2015,"['pass_by_waste_receptacle', 'take_possession_of_bear']",when possible pass by waste receptacle and when possible take possession of bear,F(pass_by_waste_receptacle)&F(take_possession_of_bear)
+1606,"['present_at_flag', 'go_by_waste_bin']",at some time present at flag or go by waste bin,F(present_at_flag)|go_by_waste_bin
+1630,"['venture_to_house', 'withhold_apple']",at some time venture to house until at some time withhold apple,F(venture_to_house)UF(withhold_apple)
+3632,"['acquire_pear', 'touch_tree']",at any time acquire pear or at some time touch tree,F(acquire_pear)|F(touch_tree)
+3779,"['drop_apple', 'get_close_flag']",never drop apple means that at some time get close flag,G(~(drop_apple))->F(get_close_flag)
+1529,"['move_towards_trash_can', 'approach_flag']","if move towards trash can , when possible approach flag",move_towards_trash_can->F(approach_flag)
+5228,"['go_to_trash_receptacle', 'go_near_flag']",whenever go to trash receptacle or at any time go near flag,F(go_to_trash_receptacle)|F(go_near_flag)
+3664,"['journey_by_house', 'walk_to_flag']",whenever journey by house and when possible walk to flag,F(journey_by_house)&F(walk_to_flag)
+1563,"['go_to_orange_bin', 'snag_orange']",go to orange bin or at some time snag orange,go_to_orange_bin|F(snag_orange)
+2290,"['make_way_waste_basket', 'spend_time_at_tree']",at some time make way waste basket or whenever spend time at tree,F(make_way_waste_basket)|F(spend_time_at_tree)
+1303,"['go_home', 'approach_tree']",whenever go home until approach tree,F(go_home)Uapproach_tree
+3081,"['put_in_bucket', 'hold_onto_orange']",put in bucket or always hold onto orange,put_in_bucket|G(hold_onto_orange)
+1307,"['present_at_flag', 'secure_apple']",at some time present at flag or secure apple,F(present_at_flag)|secure_apple
+4935,"['be_at_flag', 'acquire_apple']",at some time be at flag or acquire apple,F(be_at_flag)|acquire_apple
+5976,"['hold_on_to_pear', 'venture_to_flag']",hold on to pear until at any time venture to flag,hold_on_to_pearUF(venture_to_flag)
+1961,"['go_by_waste_bin', 'drop_apple']",go by waste bin or never drop apple,go_by_waste_bin|G(~(drop_apple))
+4282,"['touch_flag', 'show_yourself_near_house']",forever touch flag or when possible show yourself near house,G(touch_flag)|F(show_yourself_near_house)
+3042,"['be_at_house', 'pick_up_peach']",whenever be at house or at any time pick up peach,F(be_at_house)|F(pick_up_peach)
+1478,"['pick_up_flag', 'drop_apple']",pick up flag and never drop apple,pick_up_flag&G(~(drop_apple))
+2967,"['pick_up_flag', 'visit_tree']",pick up flag or visit tree,pick_up_flag|visit_tree
+2132,"['let_go_orange', 'venture_to_flag']",never let go orange until at any time venture to flag,G(~(let_go_orange))UF(venture_to_flag)
+4548,"['hold_onto_orange', 'go_to_waste_basket']",forever hold onto orange and repeatedly go to waste basket,G(hold_onto_orange)&G(F(go_to_waste_basket))
+1992,"['let_go_pear', 'take_pear']",don't let go pear means that take pear,~(let_go_pear)->take_pear
+3620,"['obtain_pear', 'grab_orange']",at any time obtain pear or when possible grab orange,F(obtain_pear)|F(grab_orange)
+4733,"['get_hold_apple', 'go_past_flag']",when possible get hold apple or when possible go past flag,F(get_hold_apple)|F(go_past_flag)
+2862,"['go_to_bucket', 'get_to_cup']",go to bucket and when possible get to cup,go_to_bucket&F(get_to_cup)
+5022,"['let_go_apple', 'travel_to_tree']",never let go apple or travel to tree,G(~(let_go_apple))|travel_to_tree
+1787,"['get_near_flag', 'advance_to_tree']",whenever get near flag and advance to tree,F(get_near_flag)&advance_to_tree
+2353,"['going_to_flag', 'capture_pear']",at some time going to flag or at any time capture pear,F(going_to_flag)|F(capture_pear)
+4516,"['go_near_flag', 'go_visit_house']",at any time go near flag or when possible go visit house,F(go_near_flag)|F(go_visit_house)
+4299,"['touch_flag', 'gather_apple']",forever touch flag or gather apple,G(touch_flag)|gather_apple
+1061,"['hold_on_pear', 'get_to_tree']",always hold on pear or get to tree,G(hold_on_pear)|get_to_tree
+1695,"['venture_to_house', 'reach_flag']","if when possible venture to house , whenever reach flag",F(venture_to_house)->F(reach_flag)
+4117,"['travel_house', 'take_pear']",at any time travel house or take pear,F(travel_house)|take_pear
+2156,"['take_to_trashcan', 'advance_to_tree']",take to trashcan or advance to tree,take_to_trashcan|advance_to_tree
+4476,"['grab_apple', 'take_possession_of_bear']",whenever grab apple or whenever take possession of bear,F(grab_apple)|F(take_possession_of_bear)
+5991,"['drop_apple', 'walk_to_flag']",never drop apple or whenever walk to flag,G(~(drop_apple))|F(walk_to_flag)
+4956,"['seize_apple', 'going_to_tree']",seize apple and going to tree,seize_apple&going_to_tree
+4002,"['set_out_to_house', 'move_to_tree']","when whenever set out to house , move to tree",F(set_out_to_house)->move_to_tree
+1437,"['drop_apple', 'secure_apple']",never drop apple and secure apple,G(~(drop_apple))&secure_apple
+1749,"['snatch_up_pear', 'get_to_tree']",snatch up pear or get to tree,snatch_up_pear|get_to_tree
+4390,"['take_possession_of_bear', 'venture_to_trash_can']",at some time take possession of bear and venture to trash can,F(take_possession_of_bear)&venture_to_trash_can
+5411,"['go_to_flag', 'take_pear']",whenever go to flag or take pear,F(go_to_flag)|take_pear
+1171,"['bring_pear', 'present_at_flag']",when possible bring pear or at any time present at flag,F(bring_pear)|F(present_at_flag)
+4673,"['go_by_house', 'going_to_flag']",at any time go by house or when possible going to flag,F(go_by_house)|F(going_to_flag)
+5865,"['hold_pear', 'go_to_trash_can']",hold pear or whenever go to trash can,hold_pear|F(go_to_trash_can)
+1818,"['travel_to_waste_bin', 'go_to_peach']",travel to waste bin and at any time go to peach,travel_to_waste_bin&F(go_to_peach)
+1383,"['get_to_tree', 'venture_flag']",get to tree and whenever venture flag,get_to_tree&F(venture_flag)
+1767,"['move', 'get_hold_of_pear']","when always move , get hold of pear",G(move)->get_hold_of_pear
+3248,"['get_pear', 'go_to_peach']","if whenever get pear , when possible go to peach",F(get_pear)->F(go_to_peach)
+2337,"['arrive_at_tree', 'journey_to_tree']",whenever arrive at tree until at some time journey to tree,F(arrive_at_tree)UF(journey_to_tree)
+2086,"['keep_apple', 'got_to_house']",keep apple or at some time got to house,keep_apple|F(got_to_house)
+4824,"['procure_apple', 'start_going_to_tree']",procure apple or when possible start going to tree,procure_apple|F(start_going_to_tree)
+1457,"['let_go_orange', 'go_near_flag']",never let go orange and at any time go near flag,G(~(let_go_orange))&F(go_near_flag)
+1546,"['move_to_tree', 'go_past_house']",move to tree or whenever go past house,move_to_tree|F(go_past_house)
+1894,"['pick_up_apple', 'seize_orange']",at any time pick up apple or at some time seize orange,F(pick_up_apple)|F(seize_orange)
+1608,"['lay_hold_of_apple', 'snatch_up_pear']",whenever lay hold of apple and snatch up pear,F(lay_hold_of_apple)&snatch_up_pear
+1444,"['keep_apple', 'grab_tree']",keep apple until repeatedly grab tree,keep_appleUG(F(grab_tree))
+1346,"['go_by_waste_basket', 'go_by_waste_bin']",at any time go by waste basket or go by waste bin,F(go_by_waste_basket)|go_by_waste_bin
+3540,"['let_go_orange', 'procure_orange']",never let go orange and when possible procure orange,G(~(let_go_orange))&F(procure_orange)
+4250,"['pass_by_house', 'go_near_flag']",whenever pass by house and whenever go near flag,F(pass_by_house)&F(go_near_flag)
+1581,"['make_way_waste_basket', 'grab_flag']",when possible make way waste basket and at any time grab flag,F(make_way_waste_basket)&F(grab_flag)
+4000,"['hold_pear', 'journey_by_house']",hold pear or at some time journey by house,hold_pear|F(journey_by_house)
+4525,"['drop_pear', 'go_home']",never drop pear or at any time go home,G(~(drop_pear))|F(go_home)
+1797,"['present_at_flag', 'present_at_flag']",at any time present at flag or when possible present at flag,F(present_at_flag)|F(present_at_flag)
+1735,"['track_towards_tree', 'venture_flag']",whenever track towards tree until when possible venture flag,F(track_towards_tree)UF(venture_flag)
+1041,"['reach_tree', 'withold_apple']",at any time reach tree until whenever withold apple,F(reach_tree)UF(withold_apple)
+1551,"['drop_apple', 'drop_apple']",never drop apple or never drop apple,G(~(drop_apple))|G(~(drop_apple))
+3245,"['travel_to_waste_bin', 'be_at_flag']",travel to waste bin and when possible be at flag,travel_to_waste_bin&F(be_at_flag)
+1739,"['stop_by_house', 'travel_to_apple']",whenever stop by house or travel to apple,F(stop_by_house)|travel_to_apple
+3487,"['tax_apple', 'approach_house']",at some time tax apple means that when possible approach house,F(tax_apple)->F(approach_house)
+1164,"['drop_apple', 'drop_apple']",never drop apple or never drop apple,G(~(drop_apple))|G(~(drop_apple))
+1850,"['gather_apple', 'let_go_orange']",gather apple or never let go orange,gather_apple|G(~(let_go_orange))
+4659,"['grasp_pear', 'venture_house']",at any time grasp pear and at some time venture house,F(grasp_pear)&F(venture_house)
+5071,"['take_possession_of_bear', 'drop_orange']",at some time take possession of bear or drop orange,F(take_possession_of_bear)|drop_orange
+2931,"['go_by_tree', 'acquire_orange']",when possible go by tree or acquire orange,F(go_by_tree)|acquire_orange
+4371,"['venture_to_trash_can', 'acquire_orange']",venture to trash can or acquire orange,venture_to_trash_can|acquire_orange
+3549,"['move_to_house', 'go_to_pear']",move to house and repeatedly go to pear,move_to_house&G(F(go_to_pear))
+2863,"['arrive_at_tree', 'go_by_trash_can']",at some time arrive at tree or forever go by trash can,F(arrive_at_tree)|G(go_by_trash_can)
+5269,"['show_yourself_near_house', 'get_pear']",at some time show yourself near house and whenever get pear,F(show_yourself_near_house)&F(get_pear)
+4862,"['get_close_flag', 'be_at_house']",when possible get close flag or at some time be at house,F(get_close_flag)|F(be_at_house)
+1688,"['have_pear', 'hold_on_pear']",when possible have pear and always hold on pear,F(have_pear)&G(hold_on_pear)
+1385,"['venture_to_house', 'venture_towards_house']",when possible venture to house means that venture towards house,F(venture_to_house)->venture_towards_house
+1180,"['reach_flag', 'withhold_apple']",when possible reach flag and at some time withhold apple,F(reach_flag)&F(withhold_apple)
+2271,"['go_to_apple_trashcan', 'let_go_orange']",repeatedly go to apple trashcan or don't let go orange,G(F(go_to_apple_trashcan))|~(let_go_orange)
+1641,"['make_way_waste_basket', 'grab_tree']",when possible make way waste basket or repeatedly grab tree,F(make_way_waste_basket)|G(F(grab_tree))
+1809,"['move_to_trashcan', 'stop_by_house']",move to trashcan and whenever stop by house,move_to_trashcan&F(stop_by_house)
+1483,"['go_to_apple_trashcan', 'be_in_houses_vicinity']",repeatedly go to apple trashcan and at any time be in house's vicinity,G(F(go_to_apple_trashcan))&F(be_in_houses_vicinity)
+4372,"['go_to_trash_can', 'take_apple']",whenever go to trash can or take apple,F(go_to_trash_can)|take_apple
+2123,"['go_to_transh_can', 'visit_trash_bin']",at any time go to transh can or at some time visit trash bin,F(go_to_transh_can)|F(visit_trash_bin)
+1241,"['present_at_flag', 'withhold_apple']",at some time present at flag or at any time withhold apple,F(present_at_flag)|F(withhold_apple)
+1655,"['pass_by_house', 'show_yourself_near_house']",when possible pass by house or when possible show yourself near house,F(pass_by_house)|F(show_yourself_near_house)
+2237,"['get_to_flag', 'keep_apple']",at some time get to flag or keep apple,F(get_to_flag)|keep_apple
+1028,"['go_by_waste_bin', 'go_by_waste_basket']",go by waste bin and when possible go by waste basket,go_by_waste_bin&F(go_by_waste_basket)
+1628,"['move_near_tree', 'let_go_pear']",when possible move near tree and don't let go pear,F(move_near_tree)&~(let_go_pear)
+1926,"['go_by_waste_basket', 'go_by_waste_basket']",whenever go by waste basket and whenever go by waste basket,F(go_by_waste_basket)&F(go_by_waste_basket)
+4826,"['get_orange', 'make_way_for_tree']",whenever get orange means that at some time make way for tree,F(get_orange)->F(make_way_for_tree)
+1945,"['grab_flag', 'reach_house']",at any time grab flag or reach house,F(grab_flag)|reach_house
+4142,"['go_to_flag', 'go_to_trash_bin']",when possible go to flag or at any time go to trash bin,F(go_to_flag)|F(go_to_trash_bin)
+3119,"['haul_pear', 'be_at_flag']",when possible haul pear or at some time be at flag,F(haul_pear)|F(be_at_flag)
+3092,"['journey_to_flag', 'be_at_house']",at some time journey to flag and whenever be at house,F(journey_to_flag)&F(be_at_house)
+1929,"['drop_apple', 'venture_towards_house']",never drop apple or venture towards house,G(~(drop_apple))|venture_towards_house
+1988,"['got_to_house', 'travel_to_apple']",when possible got to house and travel to apple,F(got_to_house)&travel_to_apple
+5880,"['proceed_to_tree', 'make_contact_with_house']",at some time proceed to tree and at some time make contact with house,F(proceed_to_tree)&F(make_contact_with_house)
+4989,"['have_possession_of_apple', 'grasp_orange']",when possible have possession of apple or grasp orange,F(have_possession_of_apple)|grasp_orange
+5601,"['move_around', 'journey_by_house']",always move around or at some time journey by house,G(move_around)|F(journey_by_house)
+2397,"['touch_tree', 'set_out_to_house']",at some time touch tree and when possible set out to house,F(touch_tree)&F(set_out_to_house)
+1131,"['go_by_waste_bin', 'venture_towards_house']",go by waste bin until venture towards house,go_by_waste_binUventure_towards_house
+5177,"['go_by_trash_can', 'put_in_apple_bucket']",forever go by trash can and put in apple bucket,G(go_by_trash_can)&put_in_apple_bucket
+1964,"['lay_hold_of_apple', 'grab_hold_pear']",when possible lay hold of apple or grab hold pear,F(lay_hold_of_apple)|grab_hold_pear
+5161,"['walk_near_flag', 'venture_to_flag']",when possible walk near flag or whenever venture to flag,F(walk_near_flag)|F(venture_to_flag)
+1342,"['venture_towards_house', 'secure_apple']",venture towards house until secure apple,venture_towards_houseUsecure_apple
+3608,"['going_to_house', 'go_to_trash_bin']",when possible going to house and when possible go to trash bin,F(going_to_house)&F(go_to_trash_bin)
+5945,"['get_hold_of_orange', 'come_home']",when possible get hold of orange and at some time come home,F(get_hold_of_orange)&F(come_home)
+3965,"['pick_up_orange', 'obtain_pear']",pick up orange or when possible obtain pear,pick_up_orange|F(obtain_pear)
+1226,"['grasp_pear', 'pass_by_house']",at some time grasp pear or whenever pass by house,F(grasp_pear)|F(pass_by_house)
+1761,"['go_to_orange_bin', 'start_going_to_house']",go to orange bin or at any time start going to house,go_to_orange_bin|F(start_going_to_house)
+2221,"['got_to_house', 'have_pear']",at some time got to house until at any time have pear,F(got_to_house)UF(have_pear)
+1663,"['go_near_flag', 'touch_house']",when possible go near flag or whenever touch house,F(go_near_flag)|F(touch_house)
+3711,"['get_hold_orange', 'visit_flag']",at any time get hold orange or when possible visit flag,F(get_hold_orange)|F(visit_flag)
+1238,"['drop_apple', 'bring_pear']",never drop apple or at some time bring pear,G(~(drop_apple))|F(bring_pear)
+2975,"['pick_up_pear', 'make_your_way_flag']",pick up pear until at some time make your way flag,pick_up_pearUF(make_your_way_flag)
+1680,"['drop_pear', 'grab_flag']","if drop pear , when possible grab flag",drop_pear->F(grab_flag)
+2422,"['scoop_up_pear', 'pass_by_waste_receptacle']",at some time scoop up pear or at any time pass by waste receptacle,F(scoop_up_pear)|F(pass_by_waste_receptacle)
+1763,"['bring_pear', 'venture_towards_house']",whenever bring pear or venture towards house,F(bring_pear)|venture_towards_house
+3289,"['haul_pear', 'grab_pear']",whenever haul pear or at some time grab pear,F(haul_pear)|F(grab_pear)
+1011,"['got_to_house', 'lay_hold_of_apple']",at some time got to house or at some time lay hold of apple,F(got_to_house)|F(lay_hold_of_apple)
+2217,"['travel_to_trash_can', 'acquire_pear']",at any time travel to trash can until when possible acquire pear,F(travel_to_trash_can)UF(acquire_pear)
+2254,"['make_way_waste_basket', 'move_to_trashcan']",whenever make way waste basket or move to trashcan,F(make_way_waste_basket)|move_to_trashcan
+1738,"['approach_trash_can', 'journey_by_flag']",approach trash can or when possible journey by flag,approach_trash_can|F(journey_by_flag)
+1397,"['have_in_orange', 'approach_trash_can']",always have in orange or approach trash can,G(have_in_orange)|approach_trash_can
+2347,"['go_to_home', 'venture_to_flag']",whenever go to home or whenever venture to flag,F(go_to_home)|F(venture_to_flag)
+2289,"['let_go_pear', 'start_going_to_house']",do not let go pear or whenever start going to house,~(let_go_pear)|F(start_going_to_house)
+4064,"['let_go_orange', 'going_to_house']",never let go orange until whenever going to house,G(~(let_go_orange))UF(going_to_house)
+5750,"['pick_up_apple', 'pass_by_house']",at some time pick up apple or at any time pass by house,F(pick_up_apple)|F(pass_by_house)
+1002,"['touch_flag', 'drop_orange']",forever touch flag and drop orange,G(touch_flag)&drop_orange
+1936,"['let_go_pear', 'journey_by_flag']",do not let go pear or when possible journey by flag,~(let_go_pear)|F(journey_by_flag)
+3118,"['shift_to_flag', 'grab_orange']",when possible shift to flag until whenever grab orange,F(shift_to_flag)UF(grab_orange)
+3595,"['snatch_pear', 'steal_apple']",at some time snatch pear and whenever steal apple,F(snatch_pear)&F(steal_apple)
+1038,"['get_close_flag', 'start_going_to_tree']",at any time get close flag or at any time start going to tree,F(get_close_flag)|F(start_going_to_tree)
+1275,"['make_way_waste_basket', 'stop_by_house']",whenever make way waste basket or at some time stop by house,F(make_way_waste_basket)|F(stop_by_house)
+4466,"['visit_waste_basket', 'yield_pear']",at some time visit waste basket and at any time yield pear,F(visit_waste_basket)&F(yield_pear)
+1951,"['make_way_for_tree', 'getting_pear']",at some time make way for tree or when possible getting pear,F(make_way_for_tree)|F(getting_pear)
+2201,"['be_in_houses_vicinity', 'snag_orange']",whenever be in house's vicinity or at any time snag orange,F(be_in_houses_vicinity)|F(snag_orange)
+5417,"['pick_up_fruit', 'go_past_flag']",pick up fruit until at any time go past flag,pick_up_fruitUF(go_past_flag)
+1867,"['withhold_apple', 'withhold_apple']",at any time withhold apple or at any time withhold apple,F(withhold_apple)|F(withhold_apple)
+1400,"['present_at_flag', 'reach_flag']",at some time present at flag or at some time reach flag,F(present_at_flag)|F(reach_flag)
+2240,"['keep_apple', 'travel_to_apple']",keep apple or travel to apple,keep_apple|travel_to_apple
+2208,"['get_to_flag', 'go_near_house']",at some time get to flag and whenever go near house,F(get_to_flag)&F(go_near_house)
+4057,"['let_go_orange', 'procure_apple']","if never let go orange , procure apple",G(~(let_go_orange))->procure_apple
+4165,"['hold_onto_orange', 'pick_up_fruit']",forever hold onto orange or pick up fruit,G(hold_onto_orange)|pick_up_fruit
+1164,"['go_to_waste_basket', 'capture_pear']",repeatedly go to waste basket or whenever capture pear,G(F(go_to_waste_basket))|F(capture_pear)
+2050,"['migrate_to_tree', 'grab_flag']",whenever migrate to tree and whenever grab flag,F(migrate_to_tree)&F(grab_flag)
+5804,"['be_at_house', 'be_at_flag']",at some time be at house can infer that whenever be at flag,F(be_at_house)->F(be_at_flag)
+5992,"['move_past_trash_can', 'scoop_up_apple']",when possible move past trash can or when possible scoop up apple,F(move_past_trash_can)|F(scoop_up_apple)
+2842,"['move_forward_trash_can', 'let_go_orange']",at any time move forward trash can and never let go orange,F(move_forward_trash_can)&G(~(let_go_orange))
+5276,"['go_to', 'pear_bin', 'going_to_flag']",at some time go to pear bin or at any time going to flag,F(go_topear_bin)|F(going_to_flag)
+1884,"['secure_apple', 'drop_apple']",secure apple and never drop apple,secure_apple&G(~(drop_apple))
+2060,"['proceed_to_house', 'visit_house']",at some time proceed to house until at any time visit house,F(proceed_to_house)UF(visit_house)
+1297,"['go_by_waste_basket', 'go_by_waste_basket']",at any time go by waste basket or at some time go by waste basket,F(go_by_waste_basket)|F(go_by_waste_basket)
+4015,"['walk_near_flag', 'pick_up_pear']",when possible walk near flag or pick up pear,F(walk_near_flag)|pick_up_pear
+2153,"['go_visit_house', 'let_go_orange']",at some time go visit house or never let go orange,F(go_visit_house)|G(~(let_go_orange))
+1428,"['let_go_pear', 'grab_tree']",don't let go pear and repeatedly grab tree,~(let_go_pear)&G(F(grab_tree))
+1447,"['go_to_transh_can', 'snatch_up_pear']",when possible go to transh can or snatch up pear,F(go_to_transh_can)|snatch_up_pear
+3534,"['put_in_bucket', 'pick_up_apple']",put in bucket or when possible pick up apple,put_in_bucket|F(pick_up_apple)
+3221,"['obtain_orange', 'pick_up_apple']",whenever obtain orange until when possible pick up apple,F(obtain_orange)UF(pick_up_apple)
+2330,"['gather_pear', 'put_in_bin']",whenever gather pear or put in bin,F(gather_pear)|put_in_bin
+4411,"['advance_to_house', 'travel_to_house']",when possible advance to house or whenever travel to house,F(advance_to_house)|F(travel_to_house)
+4915,"['secure_pear', 'be_at_flag']",whenever secure pear and whenever be at flag,F(secure_pear)&F(be_at_flag)
+1665,"['secure_pear', 'pick_up_orange']",at some time secure pear or pick up orange,F(secure_pear)|pick_up_orange
+4013,"['get_apple', 'obtain_orange']",whenever get apple or whenever obtain orange,F(get_apple)|F(obtain_orange)
+4431,"['obtain_pear', 'take_possession_of_bear']",whenever obtain pear or at any time take possession of bear,F(obtain_pear)|F(take_possession_of_bear)
+2362,"['touch_house', 'gather_orange']",whenever touch house or gather orange,F(touch_house)|gather_orange
+5064,"['stop_by_trash_can', 'get_close_flag']",at any time stop by trash can and when possible get close flag,F(stop_by_trash_can)&F(get_close_flag)
+5318,"['make_way_for_tree', 'travel_by_tree']",at some time make way for tree until when possible travel by tree,F(make_way_for_tree)UF(travel_by_tree)
+1301,"['come_home', 'proceed_to_tree']",when possible come home and when possible proceed to tree,F(come_home)&F(proceed_to_tree)
+1265,"['venture_flag', 'be_in_houses_vicinity']",at any time venture flag and whenever be in house's vicinity,F(venture_flag)&F(be_in_houses_vicinity)
+1559,"['bring_pear', 'drop_apple']",whenever bring pear can infer that never drop apple,F(bring_pear)->G(~(drop_apple))
+2471,"['stop_by_flag', 'go_to_tree']",stop by flag until whenever go to tree,stop_by_flagUF(go_to_tree)
+1259,"['move_to_trashcan', 'let_go_orange']",move to trashcan and do not let go orange,move_to_trashcan&~(let_go_orange)
+5146,"['go_by_flag', 'go_to_bucket']",when possible go by flag and go to bucket,F(go_by_flag)&go_to_bucket
+2648,"['proceed_to_house', 'pick_up_orange']",whenever proceed to house or pick up orange,F(proceed_to_house)|pick_up_orange
+1956,"['reach_flag', 'venture_towards_house']",when possible reach flag or venture towards house,F(reach_flag)|venture_towards_house
+5180,"['journey_to_house', 'go_near_flag']",whenever journey to house or when possible go near flag,F(journey_to_house)|F(go_near_flag)
+1102,"['bring_pear', 'withhold_apple']",at some time bring pear and whenever withhold apple,F(bring_pear)&F(withhold_apple)
+3032,"['secure_pear', 'grasp_apple']",when possible secure pear or at any time grasp apple,F(secure_pear)|F(grasp_apple)
+2928,"['proceed_to_house', 'venture_house']","when at any time proceed to house , at some time venture house",F(proceed_to_house)->F(venture_house)
+2245,"['journey_to_flag', 'haul_pear']",when possible journey to flag and at some time haul pear,F(journey_to_flag)&F(haul_pear)
+1659,"['track_towards_tree', 'grip_apple']",at some time track towards tree and grip apple,F(track_towards_tree)&grip_apple
+5523,"['go_near_pear', 'move_past_trash_can']",whenever go near pear and whenever move past trash can,F(go_near_pear)&F(move_past_trash_can)
+4640,"['touch_tree', 'pick_up_flag']",at any time touch tree and pick up flag,F(touch_tree)&pick_up_flag
+1954,"['snag_orange', 'travel_to_apple']",at some time snag orange and travel to apple,F(snag_orange)&travel_to_apple
+1243,"['hold_onto_orange', 'reach_tree']",always hold onto orange or at any time reach tree,G(hold_onto_orange)|F(reach_tree)
+1434,"['withhold_apple', 'reach_flag']",whenever withhold apple or whenever reach flag,F(withhold_apple)|F(reach_flag)
+1955,"['go_by_waste_basket', 'reach_flag']",whenever go by waste basket and at any time reach flag,F(go_by_waste_basket)&F(reach_flag)
+2248,"['drop_pear', 'move_near_tree']",drop pear and at some time move near tree,drop_pear&F(move_near_tree)
+1789,"['be_at_flag', 'going_to_house']",at any time be at flag or whenever going to house,F(be_at_flag)|F(going_to_house)
+1358,"['secure_apple', 'go_by_waste_basket']",secure apple or when possible go by waste basket,secure_apple|F(go_by_waste_basket)
+2162,"['pick_up_peach', 'collect_apple']",when possible pick up peach or at any time collect apple,F(pick_up_peach)|F(collect_apple)
+2175,"['go_to_waste_basket', 'contact_flag']",repeatedly go to waste basket or at some time contact flag,G(F(go_to_waste_basket))|F(contact_flag)
+4901,"['travel_to_trash_can', 'go_visit_house']",when possible travel to trash can or at some time go visit house,F(travel_to_trash_can)|F(go_visit_house)
+2204,"['venture_flag', 'journey_by_flag']",at any time venture flag or whenever journey by flag,F(venture_flag)|F(journey_by_flag)
+1292,"['get_near_flag', 'venture_flag']",at some time get near flag or at some time venture flag,F(get_near_flag)|F(venture_flag)
+1572,"['drop_apple', 'reach_flag']",never drop apple until whenever reach flag,G(~(drop_apple))UF(reach_flag)
+5225,"['gather_pear', 'take_possession_of_bear']",when possible gather pear can infer that when possible take possession of bear,F(gather_pear)->F(take_possession_of_bear)
+1268,"['go_to_trash_can', 'go_by_tree']",at some time go to trash can or at some time go by tree,F(go_to_trash_can)|F(go_by_tree)
+2595,"['go_to_tree', 'advance_to_house']",when possible go to tree until at some time advance to house,F(go_to_tree)UF(advance_to_house)
+3347,"['make_contact_flag', 'drop_orange']",when possible make contact flag means that never drop orange,F(make_contact_flag)->G(~(drop_orange))
+3356,"['withold_apple', 'travel_to_house']",when possible withold apple or when possible travel to house,F(withold_apple)|F(travel_to_house)
+3868,"['go_to_trash_receptacle', 'seize_apple']",at any time go to trash receptacle until seize apple,F(go_to_trash_receptacle)Useize_apple
+2917,"['collect_orange', 'go_to_trash_can']",at any time collect orange or when possible go to trash can,F(collect_orange)|F(go_to_trash_can)
+3614,"['go_to_pear', 'venture_to_trash_can']",repeatedly go to pear until venture to trash can,G(F(go_to_pear))Uventure_to_trash_can
+3735,"['gather_pear', 'contact_flag']",at any time gather pear or whenever contact flag,F(gather_pear)|F(contact_flag)
+3766,"['yield_pear', 'drop_orange']",whenever yield pear until never drop orange,F(yield_pear)UG(~(drop_orange))
+5143,"['pass_by_house', 'gather_apple']",whenever pass by house until gather apple,F(pass_by_house)Ugather_apple
+4216,"['gather_orange', 'seize_pear']",gather orange and at any time seize pear,gather_orange&F(seize_pear)
+3863,"['scoop_up_apple', 'get_pear']",whenever scoop up apple or whenever get pear,F(scoop_up_apple)|F(get_pear)
+1073,"['moving', 'come_to_tree']",forever moving or come to tree,G(moving)|come_to_tree
+1821,"['go_to_home', 'hold_orange']",when possible go to home until hold orange,F(go_to_home)Uhold_orange
+2760,"['go_by_house', 'grasp_pear']",at some time go by house and whenever grasp pear,F(go_by_house)&F(grasp_pear)
+3954,"['pick_up_anything', 'withold_apple']",don't pick up anything or when possible withold apple,~(F(pick_up_anything))|F(withold_apple)
+1843,"['withhold_apple', 'go_by_waste_basket']",at some time withhold apple means that when possible go by waste basket,F(withhold_apple)->F(go_by_waste_basket)
+4664,"['get_hold_orange', 'take_orange']",when possible get hold orange and take orange,F(get_hold_orange)&take_orange
+5598,"['take_to_tree', 'go_by_trash_can']",take to tree and always go by trash can,take_to_tree&G(go_by_trash_can)
+5330,"['grasp_apple', 'get_hold_apple']",when possible grasp apple or at some time get hold apple,F(grasp_apple)|F(get_hold_apple)
+2176,"['visit_trash_bin', 'get_to_tree']","if whenever visit trash bin , get to tree",F(visit_trash_bin)->get_to_tree
+1420,"['drop_pear', 'grab_flag']",drop pear and at some time grab flag,drop_pear&F(grab_flag)
+2461,"['venture_flag', 'withdraw_pear']",when possible venture flag or at any time withdraw pear,F(venture_flag)|F(withdraw_pear)
+1749,"['hold_orange', 'go_by_house']",hold orange and when possible go by house,hold_orange&F(go_by_house)
+2791,"['pick_up_flag', 'have_apple']","when pick up flag , forever have apple",pick_up_flag->G(have_apple)
+4025,"['approach_flag', 'have_possession_of_apple']",when possible approach flag or whenever have possession of apple,F(approach_flag)|F(have_possession_of_apple)
+3537,"['go_to_trash_bin', 'obtain_apple']",at some time go to trash bin or whenever obtain apple,F(go_to_trash_bin)|F(obtain_apple)
+3953,"['seize_apple', 'scoop_up_apple']",seize apple or at some time scoop up apple,seize_apple|F(scoop_up_apple)
+3338,"['stop_by_trash_can', 'proceed_to_house']",when possible stop by trash can and whenever proceed to house,F(stop_by_trash_can)&F(proceed_to_house)
+3352,"['contact_flag', 'get_apple']",at some time contact flag or at any time get apple,F(contact_flag)|F(get_apple)
+4754,"['go_by_flag', 'pass_by_trash_bin']",when possible go by flag can infer that when possible pass by trash bin,F(go_by_flag)->F(pass_by_trash_bin)
+2279,"['get_near_flag', 'visit_trash_bin']",at any time get near flag and at any time visit trash bin,F(get_near_flag)&F(visit_trash_bin)
+1393,"['track_towards_tree', 'go_near_house']",whenever track towards tree or when possible go near house,F(track_towards_tree)|F(go_near_house)
+5533,"['put_in_apple_bucket', 'proceed_to_house']",put in apple bucket and at some time proceed to house,put_in_apple_bucket&F(proceed_to_house)
+1785,"['proceed_to_house', 'be_at_flag']",at some time proceed to house or at any time be at flag,F(proceed_to_house)|F(be_at_flag)
+1792,"['venture_towards_house', 'venture_to_house']",venture towards house and at some time venture to house,venture_towards_house&F(venture_to_house)
+2476,"['travel_to_waste_bin', 'venture_to_flag']","when travel to waste bin , when possible venture to flag",travel_to_waste_bin->F(venture_to_flag)
+2734,"['collect_orange', 'acquire_pear']",at any time collect orange or at any time acquire pear,F(collect_orange)|F(acquire_pear)
+3732,"['move_to_house', 'go_to_trash_receptacle']","when move to house , at some time go to trash receptacle",move_to_house->F(go_to_trash_receptacle)
+1461,"['go_to_apple_trashcan', 'clutch_orange']",repeatedly go to apple trashcan or at any time clutch orange,G(F(go_to_apple_trashcan))|F(clutch_orange)
+3623,"['get_hold_orange', 'visit_waste_basket']",when possible get hold orange and whenever visit waste basket,F(get_hold_orange)&F(visit_waste_basket)
+1091,"['venture_to_house', 'go_by_waste_bin']",whenever venture to house and go by waste bin,F(venture_to_house)&go_by_waste_bin
+2006,"['tax_apple', 'get_hold_of_pear']",whenever tax apple or get hold of pear,F(tax_apple)|get_hold_of_pear
+1723,"['venture_towards_house', 'secure_apple']",venture towards house until secure apple,venture_towards_houseUsecure_apple
+3458,"['take_to_tree', 'travel_to_house']",take to tree until at any time travel to house,take_to_treeUF(travel_to_house)
+2743,"['walk', 'procure_pear']",walk and when possible procure pear,walk&F(procure_pear)
+2905,"['venture_house', 'visit_waste_basket']",at some time venture house and at some time visit waste basket,F(venture_house)&F(visit_waste_basket)
+1293,"['make_way_waste_basket', 'go_to_orange_bin']",at any time make way waste basket or go to orange bin,F(make_way_waste_basket)|go_to_orange_bin
+1480,"['walk_near_flag', 'get_orange']",at any time walk near flag or when possible get orange,F(walk_near_flag)|F(get_orange)
+5140,"['gather_orange', 'procure_pear']",gather orange or at some time procure pear,gather_orange|F(procure_pear)
+1553,"['pass_by_house', 'go_to_trash_bin']",at any time pass by house or whenever go to trash bin,F(pass_by_house)|F(go_to_trash_bin)
+2691,"['snatch_pear', 'let_go_orange']",when possible snatch pear and never let go orange,F(snatch_pear)&G(~(let_go_orange))
+2091,"['gather_pear', 'go_to_house']",at any time gather pear and at any time go to house,F(gather_pear)&F(go_to_house)
+4369,"['capture_pear', 'journey_to_flag']",at some time capture pear until at some time journey to flag,F(capture_pear)UF(journey_to_flag)
+1836,"['withhold_apple', 'go_by_waste_bin']",when possible withhold apple or go by waste bin,F(withhold_apple)|go_by_waste_bin
+4058,"['move_to_house', 'go_to_apple']",move to house or at some time go to apple,move_to_house|F(go_to_apple)
+1527,"['journey_to_flag', 'seize_pear']",at some time journey to flag or at some time seize pear,F(journey_to_flag)|F(seize_pear)
+1425,"['go_by_house', 'procure_orange']",at some time go by house or at some time procure orange,F(go_by_house)|F(procure_orange)
+1512,"['have_in_orange', 'visit_trash_bin']",always have in orange or at some time visit trash bin,G(have_in_orange)|F(visit_trash_bin)
+1412,"['track_towards_tree', 'journey_by_flag']",at any time track towards tree or whenever journey by flag,F(track_towards_tree)|F(journey_by_flag)
+2118,"['let_go', 'go_by_trash_can']",never let go and always go by trash can,G(~(let_go))&G(go_by_trash_can)
+1395,"['go_near_house', 'get_to_flag']",when possible go near house and when possible get to flag,F(go_near_house)&F(get_to_flag)
+2935,"['go_by_house', 'visit_flag']",when possible go by house and at any time visit flag,F(go_by_house)&F(visit_flag)
+1995,"['snatch_up_pear', 'get_near_flag']",snatch up pear and whenever get near flag,snatch_up_pear&F(get_near_flag)
+2458,"['get_near_flag', 'get_to_flag']",at any time get near flag and at any time get to flag,F(get_near_flag)&F(get_to_flag)
+2048,"['lay_hold_of_apple', 'be_in_houses_vicinity']",at any time lay hold of apple or at some time be in house's vicinity,F(lay_hold_of_apple)|F(be_in_houses_vicinity)
+2421,"['keep_apple', 'visit_trash_bin']",keep apple or at some time visit trash bin,keep_apple|F(visit_trash_bin)
+5600,"['drop_pear', 'be_near_tree']",never drop pear and when possible be near tree,G(~(drop_pear))&F(be_near_tree)
+2195,"['put_in_bin', 'drop_apple']",put in bin until never drop apple,put_in_binUG(~(drop_apple))
+2953,"['set_out_to_house', 'travel_by_tree']",whenever set out to house or whenever travel by tree,F(set_out_to_house)|F(travel_by_tree)
+1732,"['visit_trash_bin', 'take_to_trashcan']",at some time visit trash bin and take to trashcan,F(visit_trash_bin)&take_to_trashcan
+4350,"['go_past_flag', 'make_your_way_flag']",at some time go past flag or at some time make your way flag,F(go_past_flag)|F(make_your_way_flag)
+1214,"['venture_to_house', 'withhold_apple']",whenever venture to house or at any time withhold apple,F(venture_to_house)|F(withhold_apple)
+1374,"['venture_to_trash_can', 'hold_pear']",venture to trash can or hold pear,venture_to_trash_can|hold_pear
+1710,"['visit_waste_basket', 'visit_tree']",whenever visit waste basket or visit tree,F(visit_waste_basket)|visit_tree
+1369,"['snag_orange', 'approach_trash_can']",at any time snag orange or approach trash can,F(snag_orange)|approach_trash_can
+3591,"['steal_apple', 'move_to_flag']",at some time steal apple and when possible move to flag,F(steal_apple)&F(move_to_flag)
+1959,"['journey_by_flag', 'snag_orange']",when possible journey by flag or whenever snag orange,F(journey_by_flag)|F(snag_orange)
+3692,"['walk', 'hold_on_to_pear']",walk and hold on to pear,walk&hold_on_to_pear
+1051,"['steal_apple', 'secure_pear']",whenever steal apple or when possible secure pear,F(steal_apple)|F(secure_pear)
+1465,"['withhold_apple', 'present_at_flag']",at some time withhold apple and at some time present at flag,F(withhold_apple)&F(present_at_flag)
+1551,"['collect_pear', 'contact_house']",collect pear or at any time contact house,collect_pear|F(contact_house)
+4489,"['have_possession_of_apple', 'drop_orange']",whenever have possession of apple or drop orange,F(have_possession_of_apple)|drop_orange
+5348,"['go_to_peach', 'take_to_trash_can']",at any time go to peach or take to trash can,F(go_to_peach)|take_to_trash_can
+3443,"['proceed_to_house', 'journey_by_house']",when possible proceed to house until at some time journey by house,F(proceed_to_house)UF(journey_by_house)
+1155,"['journey_by_flag', 'get_to_tree']",whenever journey by flag until get to tree,F(journey_by_flag)Uget_to_tree
+1677,"['keep_apple', 'migrate_to_tree']",keep apple and at any time migrate to tree,keep_apple&F(migrate_to_tree)
+5178,"['visit_house', 'go_to_orange']",when possible visit house or go to orange,F(visit_house)|go_to_orange
+2258,"['go_near_flag', 'get_hold_orange']",whenever go near flag or at any time get hold orange,F(go_near_flag)|F(get_hold_orange)
+1042,"['go_by_waste_bin', 'drop_apple']",go by waste bin or never drop apple,go_by_waste_bin|G(~(drop_apple))
+1948,"['scoop_up_apple', 'travel_by_tree']",whenever scoop up apple until at some time travel by tree,F(scoop_up_apple)UF(travel_by_tree)
+2295,"['haul_pear', 'snatch_pear']",at any time haul pear or whenever snatch pear,F(haul_pear)|F(snatch_pear)
+1262,"['get_to_flag', 'keep_apple']",at some time get to flag until keep apple,F(get_to_flag)Ukeep_apple
+4004,"['hold_apple', 'grasp_pear']",hold apple or whenever grasp pear,hold_apple|F(grasp_pear)
+1855,"['go_by_waste_bin', 'venture_towards_house']",go by waste bin and venture towards house,go_by_waste_bin&venture_towards_house
+1691,"['move_forward_trash_can', 'withold_apple']",when possible move forward trash can or at any time withold apple,F(move_forward_trash_can)|F(withold_apple)
+2087,"['take_to_trash_can', 'pick_up_anything']",take to trash can or don't pick up anything,take_to_trash_can|~(F(pick_up_anything))
+4097,"['let_go_orange', 'going_to_tree']",never let go orange means that going to tree,G(~(let_go_orange))->going_to_tree
+4654,"['make_your_way_flag', 'go_by_tree']",when possible make your way flag and whenever go by tree,F(make_your_way_flag)&F(go_by_tree)
+1175,"['reach_flag', 'drop_apple']",when possible reach flag or never drop apple,F(reach_flag)|G(~(drop_apple))
+1391,"['make_to_flag', 'advance_to_tree']",at any time make to flag means that advance to tree,F(make_to_flag)->advance_to_tree
+5695,"['go_to_trash_can', 'go_to_home']",at any time go to trash can and at any time go to home,F(go_to_trash_can)&F(go_to_home)
+1373,"['go_near_house', 'keep_apple']",at some time go near house or keep apple,F(go_near_house)|keep_apple
+1323,"['move_past_trash_can', 'gather_pear']",at any time move past trash can and whenever gather pear,F(move_past_trash_can)&F(gather_pear)
+1016,"['drop_apple', 'secure_apple']","if never drop apple , secure apple",G(~(drop_apple))->secure_apple
+1005,"['take_orange', 'go_to_pear']",take orange or repeatedly go to pear,take_orange|G(F(go_to_pear))
+3310,"['travel_house', 'grab_pear']",at any time travel house or when possible grab pear,F(travel_house)|F(grab_pear)
+4099,"['visit_house', 'pick_up_flag']",at some time visit house can infer that pick up flag,F(visit_house)->pick_up_flag
+1995,"['venture_to_house', 'secure_apple']",at some time venture to house or secure apple,F(venture_to_house)|secure_apple
+2262,"['have_in_orange', 'keep_apple']",forever have in orange or keep apple,G(have_in_orange)|keep_apple
+1601,"['drop_apple', 'venture_towards_house']",never drop apple and venture towards house,G(~(drop_apple))&venture_towards_house
+1818,"['drop_pear', 'visit_trash_bin']",drop pear or when possible visit trash bin,drop_pear|F(visit_trash_bin)
+1413,"['go_by_flag', 'acquire_pear']",at some time go by flag or whenever acquire pear,F(go_by_flag)|F(acquire_pear)
+5185,"['hold_apple', 'obtain_apple']",hold apple and at any time obtain apple,hold_apple&F(obtain_apple)
+1344,"['advance_to_tree', 'got_to_house']",advance to tree until whenever got to house,advance_to_treeUF(got_to_house)
+4576,"['going_to_tree', 'pick_up_flag']",going to tree and pick up flag,going_to_tree&pick_up_flag
+2347,"['be_in_houses_vicinity', 'keep_apple']",when possible be in house's vicinity or keep apple,F(be_in_houses_vicinity)|keep_apple
+4249,"['show_yourself_near_house', 'take_apple']",at any time show yourself near house and take apple,F(show_yourself_near_house)&take_apple
+3816,"['gather_orange', 'go_to_tree']",gather orange or at some time go to tree,gather_orange|F(go_to_tree)
+5290,"['move_to_trash_can', 'go_to_house']","when move to trash can , when possible go to house",move_to_trash_can->F(go_to_house)
+3571,"['let_go', 'steal_apple']",never let go or whenever steal apple,G(~(let_go))|F(steal_apple)
+2297,"['gather_pear', 'make_your_way_flag']","if whenever gather pear , at any time make your way flag",F(gather_pear)->F(make_your_way_flag)
+1572,"['go_to_trash_bin', 'move_forward_trash_can']",at some time go to trash bin or whenever move forward trash can,F(go_to_trash_bin)|F(move_forward_trash_can)
+4784,"['obtain_pear', 'have_apple']",at any time obtain pear or forever have apple,F(obtain_pear)|G(have_apple)
+3923,"['stop_by_trash_can', 'contact_house']",at some time stop by trash can or whenever contact house,F(stop_by_trash_can)|F(contact_house)
+1248,"['grab_hold_pear', 'keep_apple']",grab hold pear and keep apple,grab_hold_pear&keep_apple
+3722,"['go_to_trash_receptacle', 'let_go_orange']",whenever go to trash receptacle and never let go orange,F(go_to_trash_receptacle)&G(~(let_go_orange))
+1129,"['venture_towards_house', 'venture_to_house']",venture towards house and whenever venture to house,venture_towards_house&F(venture_to_house)
+2082,"['go_home', 'collect_pear']","when whenever go home , collect pear",F(go_home)->collect_pear
+2014,"['scoop_up_pear', 'proceed_to_house']",whenever scoop up pear or when possible proceed to house,F(scoop_up_pear)|F(proceed_to_house)
+5721,"['obtain_orange', 'be_at_flag']",at any time obtain orange can infer that at any time be at flag,F(obtain_orange)->F(be_at_flag)
+1123,"['venture_to_house', 'present_at_flag']",at some time venture to house and at some time present at flag,F(venture_to_house)&F(present_at_flag)
+1044,"['drop_apple', 'reach_flag']",never drop apple or whenever reach flag,G(~(drop_apple))|F(reach_flag)
+1356,"['move_to_trashcan', 'come_to_tree']",move to trashcan or come to tree,move_to_trashcan|come_to_tree
+1120,"['approach_trash_can', 'grip_apple']",approach trash can or grip apple,approach_trash_can|grip_apple
+4162,"['haul_pear', 'get_to_cup']",at any time haul pear or when possible get to cup,F(haul_pear)|F(get_to_cup)
+2352,"['travel_by_tree', 'stand_by_tree']",at some time travel by tree and at any time stand by tree,F(travel_by_tree)&F(stand_by_tree)
+1087,"['go_home', 'make_contact_with_house']",whenever go home or at some time make contact with house,F(go_home)|F(make_contact_with_house)
+1601,"['let_go_orange', 'visit_trash_bin']",do not let go orange or at some time visit trash bin,~(let_go_orange)|F(visit_trash_bin)
+1146,"['go_to_trash_receptacle', 'drop_pear']",when possible go to trash receptacle or never drop pear,F(go_to_trash_receptacle)|G(~(drop_pear))
+4418,"['tax_apple', 'go_by_flag']",when possible tax apple and when possible go by flag,F(tax_apple)&F(go_by_flag)
+2115,"['touch_tree', 'pass_by_waste_receptacle']",at some time touch tree or whenever pass by waste receptacle,F(touch_tree)|F(pass_by_waste_receptacle)
+1778,"['lay_hold_of_apple', 'migrate_to_tree']",when possible lay hold of apple and at some time migrate to tree,F(lay_hold_of_apple)&F(migrate_to_tree)
+1220,"['go_by_waste_basket', 'venture_towards_house']",whenever go by waste basket or venture towards house,F(go_by_waste_basket)|venture_towards_house
+3422,"['acquire_apple', 'approach_tree']",acquire apple and approach tree,acquire_apple&approach_tree
+4055,"['get_apple', 'contact_house']",when possible get apple or at any time contact house,F(get_apple)|F(contact_house)
+4712,"['journey_to_tree', 'travel_to_waste_bin']",whenever journey to tree or travel to waste bin,F(journey_to_tree)|travel_to_waste_bin
+1040,"['obtain_pear', 'take_pear']",whenever obtain pear and take pear,F(obtain_pear)&take_pear
+2090,"['clutch_orange', 'migrate_to_tree']",when possible clutch orange and at some time migrate to tree,F(clutch_orange)&F(migrate_to_tree)
+1698,"['venture_flag', 'go_to_transh_can']",whenever venture flag until whenever go to transh can,F(venture_flag)UF(go_to_transh_can)
+2728,"['touch_flag', 'walk_to_flag']",always touch flag until when possible walk to flag,G(touch_flag)UF(walk_to_flag)
+3926,"['have_apple', 'take_pear']",always have apple or take pear,G(have_apple)|take_pear
+1847,"['come_to_tree', 'grip_apple']",come to tree until grip apple,come_to_treeUgrip_apple
+1768,"['yield_pear', 'grab_orange']",at some time yield pear or at some time grab orange,F(yield_pear)|F(grab_orange)
+1701,"['withhold_apple', 'reach_flag']",whenever withhold apple and at some time reach flag,F(withhold_apple)&F(reach_flag)
+4845,"['take_pear', 'drop_pear']",take pear or never drop pear,take_pear|G(~(drop_pear))
+1462,"['reach_flag', 'venture_to_house']",when possible reach flag means that at any time venture to house,F(reach_flag)->F(venture_to_house)
+3583,"['pick_up_apple', 'stop_by_flag']",at some time pick up apple or stop by flag,F(pick_up_apple)|stop_by_flag
+1097,"['gather_pear', 'go_to_trash_bin']",at some time gather pear and at some time go to trash bin,F(gather_pear)&F(go_to_trash_bin)
+5775,"['walk_near_flag', 'going_to_flag']",whenever walk near flag or whenever going to flag,F(walk_near_flag)|F(going_to_flag)
+2131,"['get_apple', 'reach_tree']",whenever get apple or at any time reach tree,F(get_apple)|F(reach_tree)
+3479,"['pick_up_apple', 'arrive_at_tree']",at some time pick up apple and at any time arrive at tree,F(pick_up_apple)&F(arrive_at_tree)
+4905,"['proceed_to_flag', 'go_home']","when at some time proceed to flag , whenever go home",F(proceed_to_flag)->F(go_home)
+5519,"['grab_orange', 'seize_orange']",at any time grab orange means that at any time seize orange,F(grab_orange)->F(seize_orange)
+1483,"['grab_orange', 'let_go_orange']",when possible grab orange or never let go orange,F(grab_orange)|G(~(let_go_orange))
+1666,"['stop_by_trash_can', 'go_past_house']",at any time stop by trash can or at some time go past house,F(stop_by_trash_can)|F(go_past_house)
+1476,"['let_go_pear', 'travel_to_flag']",don't let go pear or at any time travel to flag,~(let_go_pear)|F(travel_to_flag)
+1481,"['get_to_flag', 'keep_apple']",whenever get to flag and keep apple,F(get_to_flag)&keep_apple
+1268,"['go_by_waste_bin', 'reach_flag']",go by waste bin or whenever reach flag,go_by_waste_bin|F(reach_flag)
+1582,"['bring_pear', 'bring_pear']",at any time bring pear until whenever bring pear,F(bring_pear)UF(bring_pear)
+1580,"['get_to_flag', 'go_to_trashcan']",when possible get to flag and at some time go to trashcan,F(get_to_flag)&F(go_to_trashcan)
+1217,"['drop_apple', 'go_by_waste_basket']",never drop apple or at any time go by waste basket,G(~(drop_apple))|F(go_by_waste_basket)
+1229,"['haul_pear', 'obtain_pear']",whenever haul pear or at any time obtain pear,F(haul_pear)|F(obtain_pear)
+2166,"['move_near_tree', 'start_going_to_house']",at any time move near tree or when possible start going to house,F(move_near_tree)|F(start_going_to_house)
+2428,"['go_near_house', 'let_go_pear']",at some time go near house and do not let go pear,F(go_near_house)&~(let_go_pear)
+2705,"['travel_to_waste_bin', 'go_visit_flag']",travel to waste bin and go visit flag,travel_to_waste_bin&go_visit_flag
+3446,"['go_to_peach', 'venture_to_flag']",whenever go to peach or whenever venture to flag,F(go_to_peach)|F(venture_to_flag)
+1385,"['venture_flag', 'track_towards_tree']",whenever venture flag or when possible track towards tree,F(venture_flag)|F(track_towards_tree)
+2075,"['hold_onto_orange', 'go_to_waste_basket']",forever hold onto orange or repeatedly go to waste basket,G(hold_onto_orange)|G(F(go_to_waste_basket))
+1693,"['reach_tree', 'getting_pear']",when possible reach tree until whenever getting pear,F(reach_tree)UF(getting_pear)
+1187,"['present_at_flag', 'present_at_flag']",at some time present at flag or at any time present at flag,F(present_at_flag)|F(present_at_flag)
+1104,"['bring_pear', 'go_by_waste_basket']",at any time bring pear or when possible go by waste basket,F(bring_pear)|F(go_by_waste_basket)
+2018,"['pick_up_peach', 'journey_by_house']",when possible pick up peach and at some time journey by house,F(pick_up_peach)&F(journey_by_house)
+2438,"['go_visit_flag', 'going_to_house']",go visit flag or at some time going to house,go_visit_flag|F(going_to_house)
+5665,"['collect_pear', 'going_to_flag']",collect pear and at some time going to flag,collect_pear&F(going_to_flag)
+3541,"['go_by_tree', 'let_go_pear']",when possible go by tree or don't let go pear,F(go_by_tree)|~(let_go_pear)
+5881,"['be_near_tree', 'venture_to_flag']",at any time be near tree and when possible venture to flag,F(be_near_tree)&F(venture_to_flag)
+2450,"['travel_to_apple', 'visit_trash_bin']",travel to apple and when possible visit trash bin,travel_to_apple&F(visit_trash_bin)
+5736,"['go_by_house', 'procure_orange']",whenever go by house or when possible procure orange,F(go_by_house)|F(procure_orange)
+3337,"['travel_to_tree', 'scoop_up_pear']",travel to tree or at some time scoop up pear,travel_to_tree|F(scoop_up_pear)
+1630,"['procure_orange', 'move_to_house']",when possible procure orange and move to house,F(procure_orange)&move_to_house
+1427,"['bring_pear', 'bring_pear']",at some time bring pear or when possible bring pear,F(bring_pear)|F(bring_pear)
+1274,"['acquire_apple', 'acquire_apple']",acquire apple or acquire apple,acquire_apple|acquire_apple
+1401,"['withhold_apple', 'venture_towards_house']",when possible withhold apple and venture towards house,F(withhold_apple)&venture_towards_house
+1807,"['walk_to_flag', 'let_go_apple']",at any time walk to flag or never let go apple,F(walk_to_flag)|G(~(let_go_apple))
+2824,"['make_contact_with_house', 'seize_orange']",when possible make contact with house or whenever seize orange,F(make_contact_with_house)|F(seize_orange)
+1573,"['bring_pear', 'go_by_waste_basket']",when possible bring pear until whenever go by waste basket,F(bring_pear)UF(go_by_waste_basket)
+2088,"['withold_apple', 'collect_apple']",at any time withold apple means that at any time collect apple,F(withold_apple)->F(collect_apple)
+2126,"['scoop_up_apple', 'be_at_flag']",at any time scoop up apple or when possible be at flag,F(scoop_up_apple)|F(be_at_flag)
+3980,"['go_near_flag', 'hold_on_to_pear']",whenever go near flag and hold on to pear,F(go_near_flag)&hold_on_to_pear
+1671,"['make_to_flag', 'migrate_to_tree']",when possible make to flag or whenever migrate to tree,F(make_to_flag)|F(migrate_to_tree)
+4376,"['go_to_house', 'grasp_orange']",at some time go to house or grasp orange,F(go_to_house)|grasp_orange
+5929,"['reach_trash_can', 'travel_to_waste_bin']",reach trash can or travel to waste bin,reach_trash_can|travel_to_waste_bin
+1118,"['journey_by_flag', 'let_go_orange']",at some time journey by flag and do not let go orange,F(journey_by_flag)&~(let_go_orange)
+2141,"['stop_by_trash_can', 'going_to_tree']",when possible stop by trash can or going to tree,F(stop_by_trash_can)|going_to_tree
+1326,"['go_past_house', 'visit_house']",whenever go past house or when possible visit house,F(go_past_house)|F(visit_house)
+3760,"['take_orange', 'acquire_pear']","if take orange , whenever acquire pear",take_orange->F(acquire_pear)
+4044,"['seize_apple', 'go_to_bucket']",seize apple and go to bucket,seize_apple&go_to_bucket
+1585,"['bring_pear', 'venture_towards_house']",when possible bring pear or venture towards house,F(bring_pear)|venture_towards_house
+4996,"['seize_apple', 'grasp_orange']",seize apple or grasp orange,seize_apple|grasp_orange
+3822,"['make_your_way_flag', 'move_past_trash_can']",at some time make your way flag or at some time move past trash can,F(make_your_way_flag)|F(move_past_trash_can)
+2175,"['go_to_orange_bin', 'keep_apple']",go to orange bin or keep apple,go_to_orange_bin|keep_apple
+4871,"['travel_to_waste_bin', 'journey_to_tree']",travel to waste bin and at any time journey to tree,travel_to_waste_bin&F(journey_to_tree)
+4675,"['drop_orange', 'acquire_pear']",never drop orange and when possible acquire pear,G(~(drop_orange))&F(acquire_pear)
+2978,"['visit_tree', 'have_possession_of_apple']",visit tree or at any time have possession of apple,visit_tree|F(have_possession_of_apple)
+5629,"['touch_flag', 'contact_house']",forever touch flag or at any time contact house,G(touch_flag)|F(contact_house)
+1490,"['go_to_pear', 'visit_flag']",repeatedly go to pear or when possible visit flag,G(F(go_to_pear))|F(visit_flag)
+5524,"['approach_flag', 'go_to_bucket']",when possible approach flag or go to bucket,F(approach_flag)|go_to_bucket
+1942,"['venture_towards_house', 'venture_towards_house']",venture towards house or venture towards house,venture_towards_house|venture_towards_house
+5464,"['stop_by_flag', 'have_possession_of_apple']",stop by flag or at any time have possession of apple,stop_by_flag|F(have_possession_of_apple)
+5745,"['make_contact_flag', 'be_at_house']",whenever make contact flag or at some time be at house,F(make_contact_flag)|F(be_at_house)
+1600,"['journey_by_flag', 'have_in_orange']",at some time journey by flag means that forever have in orange,F(journey_by_flag)->G(have_in_orange)
+1475,"['venture_to_house', 'present_at_flag']",when possible venture to house or at some time present at flag,F(venture_to_house)|F(present_at_flag)
+3404,"['acquire_orange', 'obtain_orange']",acquire orange or whenever obtain orange,acquire_orange|F(obtain_orange)
+5452,"['grab_apple', 'have_apple']",whenever grab apple or forever have apple,F(grab_apple)|G(have_apple)
+2552,"['drop_orange', 'get_hold_orange']",drop orange and when possible get hold orange,drop_orange&F(get_hold_orange)
+5267,"['reach_tree', 'get_close_tree']",at some time reach tree or at any time get close tree,F(reach_tree)|F(get_close_tree)
+1167,"['bring_pear', 'venture_to_house']","if when possible bring pear , at some time venture to house",F(bring_pear)->F(venture_to_house)
+2231,"['get_to_cup', 'seize_orange']",whenever get to cup or at some time seize orange,F(get_to_cup)|F(seize_orange)
+2861,"['proceed_to_house', 'venture_to_flag']",when possible proceed to house can infer that at any time venture to flag,F(proceed_to_house)->F(venture_to_flag)
+2459,"['visit_tree', 'go_to_tree']",visit tree or at some time go to tree,visit_tree|F(go_to_tree)
+2009,"['drop_pear', 'get_near_flag']",drop pear and at any time get near flag,drop_pear&F(get_near_flag)
+2099,"['snag_orange', 'grip_apple']","when whenever snag orange , grip apple",F(snag_orange)->grip_apple
+5724,"['take_apple', 'travel_to_trash_can']",take apple and at some time travel to trash can,take_apple&F(travel_to_trash_can)
+1633,"['present_at_flag', 'bring_pear']",at any time present at flag can infer that whenever bring pear,F(present_at_flag)->F(bring_pear)
+2536,"['secure_pear', 'travel_to_house']",whenever secure pear and whenever travel to house,F(secure_pear)&F(travel_to_house)
+1129,"['move_around', 'hold_on_to_pear']",always move around and hold on to pear,G(move_around)&hold_on_to_pear
+1300,"['snag_orange', 'snatch_up_pear']",at some time snag orange and snatch up pear,F(snag_orange)&snatch_up_pear
+1199,"['scoop_up_apple', 'go_to_peach']",whenever scoop up apple or at some time go to peach,F(scoop_up_apple)|F(go_to_peach)
+5977,"['get_hold_apple', 'go_near_flag']",at any time get hold apple and when possible go near flag,F(get_hold_apple)&F(go_near_flag)
+4279,"['go_to_orange', 'collect_apple']",go to orange or at any time collect apple,go_to_orange|F(collect_apple)
+1436,"['go_to_apple', 'travel_to_house']",when possible go to apple or at some time travel to house,F(go_to_apple)|F(travel_to_house)
+1780,"['make_way_waste_basket', 'visit_trash_bin']",whenever make way waste basket or at some time visit trash bin,F(make_way_waste_basket)|F(visit_trash_bin)
+1538,"['let_go_pear', 'be_in_houses_vicinity']",do not let go pear or when possible be in house's vicinity,~(let_go_pear)|F(be_in_houses_vicinity)
+1992,"['grip_apple', 'go_to_apple_trashcan']","when grip apple , repeatedly go to apple trashcan",grip_apple->G(F(go_to_apple_trashcan))
+1148,"['drop_orange', 'withdraw_pear']",never drop orange and when possible withdraw pear,G(~(drop_orange))&F(withdraw_pear)
+5592,"['procure_orange', 'travel_to_house']",whenever procure orange and at some time travel to house,F(procure_orange)&F(travel_to_house)
+5748,"['pass_by_house', 'stand_by_tree']",at some time pass by house or whenever stand by tree,F(pass_by_house)|F(stand_by_tree)
+3224,"['journey_by_house', 'go_by_trash_can']",when possible journey by house or always go by trash can,F(journey_by_house)|G(go_by_trash_can)
+3746,"['go_to_home', 'journey_to_flag']",whenever go to home and when possible journey to flag,F(go_to_home)&F(journey_to_flag)
+1417,"['walk_near_flag', 'get_hold_of_pear']",at some time walk near flag or get hold of pear,F(walk_near_flag)|get_hold_of_pear
+1963,"['get_hold_apple', 'collect_orange']",when possible get hold apple or at some time collect orange,F(get_hold_apple)|F(collect_orange)
+1792,"['put_in_bin', 'let_go_pear']",put in bin until do not let go pear,put_in_binU~(let_go_pear)
+5229,"['scoop_up_apple', 'let_go_pear']",at some time scoop up apple or don't let go pear,F(scoop_up_apple)|~(let_go_pear)
+1694,"['secure_apple', 'secure_apple']",secure apple or secure apple,secure_apple|secure_apple
+2650,"['let_go_orange', 'hold_onto_orange']",never let go orange or forever hold onto orange,G(~(let_go_orange))|G(hold_onto_orange)
+1636,"['let_go_apple', 'collect_orange']",never let go apple until at some time collect orange,G(~(let_go_apple))UF(collect_orange)
+3295,"['go_to_peach', 'put_in_bin']",when possible go to peach or put in bin,F(go_to_peach)|put_in_bin
+1986,"['venture_flag', 'make_way_waste_basket']","if at any time venture flag , at any time make way waste basket",F(venture_flag)->F(make_way_waste_basket)
+1953,"['contact_flag', 'move_to_flag']",whenever contact flag and at any time move to flag,F(contact_flag)&F(move_to_flag)
+1325,"['venture_flag', 'let_go_pear']",at any time venture flag or do not let go pear,F(venture_flag)|~(let_go_pear)
+5434,"['be_near_tree', 'obtain_pear']",whenever be near tree and at some time obtain pear,F(be_near_tree)&F(obtain_pear)
+5765,"['go_to_trash_bin', 'procure_apple']",at any time go to trash bin or procure apple,F(go_to_trash_bin)|procure_apple
+5770,"['let_go_pear', 'shift_to_flag']",do not let go pear until whenever shift to flag,~(let_go_pear)UF(shift_to_flag)
+1793,"['make_way_for_tree', 'contact_house']",whenever make way for tree and whenever contact house,F(make_way_for_tree)&F(contact_house)
+1036,"['reach_tree', 'seize_orange']",when possible reach tree or whenever seize orange,F(reach_tree)|F(seize_orange)
+1766,"['bring_pear', 'go_by_waste_basket']","if when possible bring pear , when possible go by waste basket",F(bring_pear)->F(go_by_waste_basket)
+2681,"['obtain_apple', 'go_home']",at some time obtain apple or at any time go home,F(obtain_apple)|F(go_home)
+4114,"['acquire_orange', 'show_yourself_near_house']",acquire orange and at some time show yourself near house,acquire_orange&F(show_yourself_near_house)
+1745,"['have_apple', 'get_hold_orange']",forever have apple or at any time get hold orange,G(have_apple)|F(get_hold_orange)
+1637,"['go_by_waste_basket', 'venture_to_house']",at some time go by waste basket and when possible venture to house,F(go_by_waste_basket)&F(venture_to_house)
+2009,"['drop_pear', 'go_to_trash_receptacle']",never drop pear and when possible go to trash receptacle,G(~(drop_pear))&F(go_to_trash_receptacle)
+5853,"['proceed_to_flag', 'obtain_apple']",whenever proceed to flag or at some time obtain apple,F(proceed_to_flag)|F(obtain_apple)
+1025,"['grab_tree', 'get_near_flag']",repeatedly grab tree or at some time get near flag,G(F(grab_tree))|F(get_near_flag)
+4923,"['stop_by_flag', 'get_hold_apple']",stop by flag or whenever get hold apple,stop_by_flag|F(get_hold_apple)
+1389,"['drop_orange', 'drop_orange']",never drop orange or never drop orange,G(~(drop_orange))|G(~(drop_orange))
+1598,"['make_to_flag', 'get_to_tree']",at some time make to flag or get to tree,F(make_to_flag)|get_to_tree
+4691,"['go_to_orange', 'procure_orange']",go to orange can infer that at any time procure orange,go_to_orange->F(procure_orange)
+5122,"['secure_pear', 'go_near_pear']",whenever secure pear and whenever go near pear,F(secure_pear)&F(go_near_pear)
+1441,"['bring_pear', 'reach_flag']",whenever bring pear or at any time reach flag,F(bring_pear)|F(reach_flag)
+3216,"['obtain_orange', 'drop_orange']",when possible obtain orange or drop orange,F(obtain_orange)|drop_orange
+1067,"['present_at_flag', 'venture_towards_house']","if whenever present at flag , venture towards house",F(present_at_flag)->venture_towards_house
+1329,"['present_at_flag', 'secure_apple']",at some time present at flag and secure apple,F(present_at_flag)&secure_apple
+1975,"['got_to_house', 'go_to_apple_trashcan']",when possible got to house or repeatedly go to apple trashcan,F(got_to_house)|G(F(go_to_apple_trashcan))
+3836,"['walk_near_flag', 'move_to_house']",whenever walk near flag or move to house,F(walk_near_flag)|move_to_house
+1692,"['go_to_transh_can', 'travel_to_apple']",at any time go to transh can or travel to apple,F(go_to_transh_can)|travel_to_apple
+4830,"['go_to_peach', 'drop_orange']",at some time go to peach or drop orange,F(go_to_peach)|drop_orange
+5634,"['drop_by', 'go_to_flag']",drop by or whenever go to flag,drop_by|F(go_to_flag)
+4983,"['move_around', 'pass_by_waste_receptacle']",forever move around or at some time pass by waste receptacle,G(move_around)|F(pass_by_waste_receptacle)
+2257,"['go_to_home', 'pass_by_trash_bin']","when at some time go to home , at any time pass by trash bin",F(go_to_home)->F(pass_by_trash_bin)
+1074,"['have_pear', 'clutch_orange']",at any time have pear and at some time clutch orange,F(have_pear)&F(clutch_orange)
+4535,"['contact_house', 'be_at_house']",when possible contact house or when possible be at house,F(contact_house)|F(be_at_house)
+1945,"['present_at_flag', 'secure_apple']",at some time present at flag or secure apple,F(present_at_flag)|secure_apple
+3921,"['move_to_flag', 'scoop_up_apple']",at some time move to flag can infer that at any time scoop up apple,F(move_to_flag)->F(scoop_up_apple)
+1847,"['go_by_waste_bin', 'go_by_waste_bin']",go by waste bin or go by waste bin,go_by_waste_bin|go_by_waste_bin
+5820,"['move_around', 'gather_orange']",forever move around or gather orange,G(move_around)|gather_orange
+4816,"['visit_flag', 'shift_to_flag']",whenever visit flag or at any time shift to flag,F(visit_flag)|F(shift_to_flag)
+1396,"['journey_to_tree', 'shift_to_flag']",at some time journey to tree or at some time shift to flag,F(journey_to_tree)|F(shift_to_flag)
+1827,"['venture_to_house', 'present_at_flag']",whenever venture to house or at some time present at flag,F(venture_to_house)|F(present_at_flag)
+4775,"['go_past_house', 'go_to_tree']",whenever go past house until when possible go to tree,F(go_past_house)UF(go_to_tree)
+1616,"['bring_pear', 'reach_flag']",at some time bring pear until when possible reach flag,F(bring_pear)UF(reach_flag)
+5275,"['visit_tree', 'pass_by_house']",visit tree can infer that at some time pass by house,visit_tree->F(pass_by_house)
+4593,"['proceed_to_flag', 'acquire_apple']","if when possible proceed to flag , acquire apple",F(proceed_to_flag)->acquire_apple
+4570,"['let_go_apple', 'move_forward_trash_can']",never let go apple or when possible move forward trash can,G(~(let_go_apple))|F(move_forward_trash_can)
+1057,"['secure_apple', 'present_at_flag']",secure apple or at some time present at flag,secure_apple|F(present_at_flag)
+4981,"['approach_flag', 'put_in_bucket']",when possible approach flag or put in bucket,F(approach_flag)|put_in_bucket
+2338,"['go_to_apple', 'go_to_flag']",when possible go to apple or when possible go to flag,F(go_to_apple)|F(go_to_flag)
+2192,"['move_near_tree', 'get_to_tree']",when possible move near tree and get to tree,F(move_near_tree)&get_to_tree
+4953,"['journey_to_flag', 'grasp_orange']",whenever journey to flag and grasp orange,F(journey_to_flag)&grasp_orange
+1189,"['let_go_orange', 'hold_on_pear']",do not let go orange and always hold on pear,~(let_go_orange)&G(hold_on_pear)
+1016,"['move_around', 'drop_orange']",forever move around or never drop orange,G(move_around)|G(~(drop_orange))
+2277,"['withdraw_pear', 'move_near_tree']",when possible withdraw pear or at some time move near tree,F(withdraw_pear)|F(move_near_tree)
+1316,"['let_go_orange', 'get_to_cup']",never let go orange and at some time get to cup,G(~(let_go_orange))&F(get_to_cup)
+1720,"['moving', 'move_near_tree']",always moving and at some time move near tree,G(moving)&F(move_near_tree)
+2829,"['pass_by_waste_receptacle', 'grab_orange']","if whenever pass by waste receptacle , when possible grab orange",F(pass_by_waste_receptacle)->F(grab_orange)
+2239,"['reach_tree', 'let_go_apple']",whenever reach tree and never let go apple,F(reach_tree)&G(~(let_go_apple))
+1424,"['drop_orange', 'take_to_trashcan']",never drop orange or take to trashcan,G(~(drop_orange))|take_to_trashcan
+3942,"['travel_by_tree', 'get_hold_orange']",when possible travel by tree or at some time get hold orange,F(travel_by_tree)|F(get_hold_orange)
+1007,"['go_by_waste_bin', 'go_by_waste_bin']",go by waste bin or go by waste bin,go_by_waste_bin|go_by_waste_bin
+4529,"['seize_pear', 'gather_apple']",at any time seize pear and gather apple,F(seize_pear)&gather_apple
+2072,"['venture_flag', 'let_go_orange']",whenever venture flag and don't let go orange,F(venture_flag)&~(let_go_orange)
+2783,"['move_past_trash_can', 'capture_pear']",at some time move past trash can and whenever capture pear,F(move_past_trash_can)&F(capture_pear)
+4532,"['grasp_apple', 'secure_pear']",when possible grasp apple means that at any time secure pear,F(grasp_apple)->F(secure_pear)
+3193,"['pass_by_trash_bin', 'journey_by_house']",at any time pass by trash bin until when possible journey by house,F(pass_by_trash_bin)UF(journey_by_house)
+2445,"['make_contact_flag', 'get_hold_of_pear']",whenever make contact flag or get hold of pear,F(make_contact_flag)|get_hold_of_pear
+3087,"['start_going_to_tree', 'gather_pear']",at any time start going to tree means that when possible gather pear,F(start_going_to_tree)->F(gather_pear)
+1809,"['withhold_apple', 'withhold_apple']",at any time withhold apple or whenever withhold apple,F(withhold_apple)|F(withhold_apple)
+4789,"['show_yourself_near_house', 'shift_to_flag']",when possible show yourself near house or at any time shift to flag,F(show_yourself_near_house)|F(shift_to_flag)
+1679,"['go_near_pear', 'start_going_to_tree']",at some time go near pear and at any time start going to tree,F(go_near_pear)&F(start_going_to_tree)
+1640,"['move_near_tree', 'start_going_to_house']",at some time move near tree or whenever start going to house,F(move_near_tree)|F(start_going_to_house)
+2635,"['acquire_apple', 'grab_apple']",acquire apple means that when possible grab apple,acquire_apple->F(grab_apple)
+3519,"['tax_apple', 'get_close_tree']",at any time tax apple and when possible get close tree,F(tax_apple)&F(get_close_tree)
+1144,"['clutch_orange', 'spend_time_at_tree']",when possible clutch orange or at any time spend time at tree,F(clutch_orange)|F(spend_time_at_tree)
+2900,"['acquire_apple', 'visit_flag']",acquire apple or whenever visit flag,acquire_apple|F(visit_flag)
+1380,"['stay', 'keep_apple']",forever stay and keep apple,G(stay)&keep_apple
+1516,"['make_way_to_house', 'drop_orange']",repeatedly make way to house or drop orange,G(F(make_way_to_house))|drop_orange
+4065,"['drop_apple', 'put_in_bucket']",never drop apple means that put in bucket,G(~(drop_apple))->put_in_bucket
+2203,"['hold_onto_orange', 'drop_orange']",always hold onto orange or drop orange,G(hold_onto_orange)|drop_orange
+1997,"['go_by_waste_basket', 'drop_apple']",whenever go by waste basket or never drop apple,F(go_by_waste_basket)|G(~(drop_apple))
+5670,"['drop_orange', 'go_by_flag']",never drop orange and whenever go by flag,G(~(drop_orange))&F(go_by_flag)
+2202,"['go_to_trashcan', 'grab_hold_pear']",at some time go to trashcan and grab hold pear,F(go_to_trashcan)&grab_hold_pear
+1440,"['obtain_orange', 'go_near_pear']",when possible obtain orange and when possible go near pear,F(obtain_orange)&F(go_near_pear)
+1584,"['start_going_to_house', 'go_near_house']",at any time start going to house or at any time go near house,F(start_going_to_house)|F(go_near_house)
+3587,"['take_to_trash_can', 'advance_to_house']",take to trash can and at any time advance to house,take_to_trash_can&F(advance_to_house)
+3498,"['acquire_pear', 'journey_by_house']",at some time acquire pear or at any time journey by house,F(acquire_pear)|F(journey_by_house)
+2948,"['reach_tree', 'make_contact_with_house']",at any time reach tree or at any time make contact with house,F(reach_tree)|F(make_contact_with_house)
+1495,"['let_go_orange', 'go_to_orange_bin']",do not let go orange until go to orange bin,~(let_go_orange)Ugo_to_orange_bin
+1891,"['grasp_apple', 'start_going_to_tree']",at any time grasp apple until when possible start going to tree,F(grasp_apple)UF(start_going_to_tree)
+1073,"['be_near_tree', 'go_past_flag']",when possible be near tree or at some time go past flag,F(be_near_tree)|F(go_past_flag)
+2038,"['track_towards_tree', 'travel_to_apple']",at any time track towards tree or travel to apple,F(track_towards_tree)|travel_to_apple
+1185,"['shift_to_flag', 'take_to_tree']",at some time shift to flag or take to tree,F(shift_to_flag)|take_to_tree
+4009,"['hold_apple', 'stop_by_flag']",hold apple or stop by flag,hold_apple|stop_by_flag
+1485,"['present_at_flag', 'secure_apple']",when possible present at flag and secure apple,F(present_at_flag)&secure_apple
+1358,"['take_to_tree', 'pass_by_house']",take to tree or at any time pass by house,take_to_tree|F(pass_by_house)
+1684,"['go_to_trashcan', 'keep_apple']",at some time go to trashcan or keep apple,F(go_to_trashcan)|keep_apple
+1341,"['journey_by_flag', 'move_to_trashcan']",at any time journey by flag or move to trashcan,F(journey_by_flag)|move_to_trashcan
+1638,"['withdraw_pear', 'let_go_pear']",when possible withdraw pear or do not let go pear,F(withdraw_pear)|~(let_go_pear)
+1046,"['drop_apple', 'withhold_apple']",never drop apple or when possible withhold apple,G(~(drop_apple))|F(withhold_apple)
+3141,"['going_to_flag', 'put_in_bucket']",at some time going to flag and put in bucket,F(going_to_flag)&put_in_bucket
+1227,"['travel_to_flag', 'venture_to_trash_can']",at some time travel to flag until venture to trash can,F(travel_to_flag)Uventure_to_trash_can
+3044,"['put_in_apple_bucket', 'go_visit_house']","when put in apple bucket , at some time go visit house",put_in_apple_bucket->F(go_visit_house)
+1828,"['journey_to_tree', 'travel_to_house']",at some time journey to tree or at some time travel to house,F(journey_to_tree)|F(travel_to_house)
+1701,"['snag_orange', 'lay_hold_of_apple']",when possible snag orange and when possible lay hold of apple,F(snag_orange)&F(lay_hold_of_apple)
+3612,"['let_go', 'walk_near_flag']",never let go and at any time walk near flag,G(~(let_go))&F(walk_near_flag)
+1327,"['venture_to_house', 'drop_apple']",at some time venture to house or never drop apple,F(venture_to_house)|G(~(drop_apple))
+3453,"['pick_up_apple', 'put_in_bucket']",at any time pick up apple or put in bucket,F(pick_up_apple)|put_in_bucket
+3059,"['withold_apple', 'proceed_to_house']",whenever withold apple until at any time proceed to house,F(withold_apple)UF(proceed_to_house)
+1582,"['spend_time_at_tree', 'take_to_trashcan']",whenever spend time at tree or take to trashcan,F(spend_time_at_tree)|take_to_trashcan
+1778,"['reach_flag', 'go_by_waste_bin']",when possible reach flag and go by waste bin,F(reach_flag)&go_by_waste_bin
+1103,"['snag_orange', 'journey_by_flag']","if whenever snag orange , when possible journey by flag",F(snag_orange)->F(journey_by_flag)
+1872,"['steal_apple', 'move_to_house']","if at some time steal apple , move to house",F(steal_apple)->move_to_house
+2268,"['keep_apple', 'start_going_to_house']",keep apple or when possible start going to house,keep_apple|F(start_going_to_house)
+3992,"['stand_by_tree', 'go_by_house']",at any time stand by tree and at any time go by house,F(stand_by_tree)&F(go_by_house)
+5617,"['approach_flag', 'put_in_apple_bucket']",at any time approach flag or put in apple bucket,F(approach_flag)|put_in_apple_bucket
+5376,"['go_visit_house', 'go_to_apple']",at some time go visit house and when possible go to apple,F(go_visit_house)&F(go_to_apple)
+1394,"['walk_to_flag', 'pass_by_trash_bin']",at some time walk to flag or at any time pass by trash bin,F(walk_to_flag)|F(pass_by_trash_bin)
+3403,"['drop_by', 'drop_orange']","when drop by , never drop orange",drop_by->G(~(drop_orange))
+1977,"['drop_apple', 'go_by_waste_basket']",never drop apple or at any time go by waste basket,G(~(drop_apple))|F(go_by_waste_basket)
+2153,"['go_to_apple_trashcan', 'clutch_orange']",repeatedly go to apple trashcan and whenever clutch orange,G(F(go_to_apple_trashcan))&F(clutch_orange)
+1690,"['venture_flag', 'stop_by_house']",at some time venture flag or whenever stop by house,F(venture_flag)|F(stop_by_house)
+2621,"['make_your_way_flag', 'get_orange']",at any time make your way flag and whenever get orange,F(make_your_way_flag)&F(get_orange)
+2119,"['show_yourself_near_house', 'make_way_to_house']",whenever show yourself near house or repeatedly make way to house,F(show_yourself_near_house)|G(F(make_way_to_house))
+4491,"['go_to', 'pear_bin', 'let_go_pear']",at any time go to pear bin and do not let go pear,F(go_topear_bin)&~(let_go_pear)
+3006,"['capture_pear', 'obtain_orange']",whenever capture pear can infer that when possible obtain orange,F(capture_pear)->F(obtain_orange)
+2240,"['acquire_apple', 'stop_by_trash_can']",acquire apple until at some time stop by trash can,acquire_appleUF(stop_by_trash_can)
+4226,"['approach_tree', 'obtain_orange']","when approach tree , at some time obtain orange",approach_tree->F(obtain_orange)
+2225,"['put_in_bucket', 'obtain_orange']",put in bucket until at some time obtain orange,put_in_bucketUF(obtain_orange)
+1219,"['make_way_waste_basket', 'grab_flag']",when possible make way waste basket until at any time grab flag,F(make_way_waste_basket)UF(grab_flag)
+3761,"['pass_by_waste_receptacle', 'go_to_tree']",when possible pass by waste receptacle can infer that when possible go to tree,F(pass_by_waste_receptacle)->F(go_to_tree)
+1282,"['be_in_houses_vicinity', 'advance_to_tree']",whenever be in house's vicinity and advance to tree,F(be_in_houses_vicinity)&advance_to_tree
+3169,"['contact_flag', 'approach_flag']",whenever contact flag and at any time approach flag,F(contact_flag)&F(approach_flag)
+3685,"['come_home', 'go_by_flag']",at any time come home or at any time go by flag,F(come_home)|F(go_by_flag)
+1828,"['moving', 'stop_by_house']","if forever moving , at some time stop by house",G(moving)->F(stop_by_house)
+2016,"['venture_to_flag', 'procure_orange']","if whenever venture to flag , whenever procure orange",F(venture_to_flag)->F(procure_orange)
+1888,"['be_in_houses_vicinity', 'got_to_house']",at any time be in house's vicinity or at any time got to house,F(be_in_houses_vicinity)|F(got_to_house)
+2034,"['drop_apple', 'approach_tree']",never drop apple and approach tree,G(~(drop_apple))&approach_tree
+1617,"['travel_by_tree', 'touch_tree']",at some time travel by tree means that at any time touch tree,F(travel_by_tree)->F(touch_tree)
+1654,"['make_your_way_flag', 'make_way_to_house']",at some time make your way flag and repeatedly make way to house,F(make_your_way_flag)&G(F(make_way_to_house))
+5172,"['visit_flag', 'go_past_flag']",whenever visit flag or at some time go past flag,F(visit_flag)|F(go_past_flag)
+1114,"['drop_orange', 'move_past_trash_can']",never drop orange and at some time move past trash can,G(~(drop_orange))&F(move_past_trash_can)
+1749,"['reach_flag', 'go_by_waste_bin']",whenever reach flag and go by waste bin,F(reach_flag)&go_by_waste_bin
+2461,"['drop_orange', 'reach_trash_can']",never drop orange and reach trash can,G(~(drop_orange))&reach_trash_can
+4565,"['get_close_flag', 'travel_to_tree']","if when possible get close flag , travel to tree",F(get_close_flag)->travel_to_tree
+1072,"['snag_orange', 'go_to_transh_can']",at any time snag orange until at some time go to transh can,F(snag_orange)UF(go_to_transh_can)
+3257,"['hold_onto_orange', 'touch_tree']",always hold onto orange or at any time touch tree,G(hold_onto_orange)|F(touch_tree)
+4700,"['collect_apple', 'make_way_to_house']",at some time collect apple or repeatedly make way to house,F(collect_apple)|G(F(make_way_to_house))
+2605,"['collect_orange', 'go_by_tree']",at any time collect orange until at any time go by tree,F(collect_orange)UF(go_by_tree)
+2636,"['get_close_tree', 'travel_to_tree']",at some time get close tree or travel to tree,F(get_close_tree)|travel_to_tree
+4006,"['drop_apple', 'touch_house']",never drop apple or whenever touch house,G(~(drop_apple))|F(touch_house)
+5609,"['procure_pear', 'drop_orange']",at some time procure pear and drop orange,F(procure_pear)&drop_orange
+5469,"['move_to_house', 'stop_by_flag']",move to house or stop by flag,move_to_house|stop_by_flag
+4892,"['take_possession_of_bear', 'proceed_to_house']",whenever take possession of bear or at some time proceed to house,F(take_possession_of_bear)|F(proceed_to_house)
+5872,"['hold_onto_orange', 'get_close_tree']",always hold onto orange until when possible get close tree,G(hold_onto_orange)UF(get_close_tree)
+4692,"['go_to', 'pear_bin', 'go_to_waste_basket']",whenever go to pear bin or repeatedly go to waste basket,F(go_topear_bin)|G(F(go_to_waste_basket))
+2190,"['get_to_tree', 'come_to_tree']",get to tree or come to tree,get_to_tree|come_to_tree
+2997,"['grab_apple', 'tax_apple']",whenever grab apple and at some time tax apple,F(grab_apple)&F(tax_apple)
+3780,"['go_near_flag', 'go_to_home']",at any time go near flag or at any time go to home,F(go_near_flag)|F(go_to_home)
+1004,"['go_by_waste_bin', 'venture_to_house']",go by waste bin and when possible venture to house,go_by_waste_bin&F(venture_to_house)
+3974,"['grasp_apple', 'going_to_tree']",at some time grasp apple and going to tree,F(grasp_apple)&going_to_tree
+1466,"['have_in_orange', 'have_in_orange']",forever have in orange or forever have in orange,G(have_in_orange)|G(have_in_orange)
+5090,"['let_go', 'journey_to_flag']",never let go and whenever journey to flag,G(~(let_go))&F(journey_to_flag)
+4211,"['take_apple', 'proceed_to_tree']",take apple and at some time proceed to tree,take_apple&F(proceed_to_tree)
+2246,"['approach_flag', 'going_to_flag']","when when possible approach flag , when possible going to flag",F(approach_flag)->F(going_to_flag)
+4900,"['put_in_bin', 'get_apple']",put in bin or when possible get apple,put_in_bin|F(get_apple)
+2964,"['go_to_trash_bin', 'take_pear']",at any time go to trash bin or take pear,F(go_to_trash_bin)|take_pear
+2107,"['journey_by_flag', 'go_to_trashcan']",when possible journey by flag or whenever go to trashcan,F(journey_by_flag)|F(go_to_trashcan)
+2417,"['snatch_up_pear', 'make_way_waste_basket']",snatch up pear until at any time make way waste basket,snatch_up_pearUF(make_way_waste_basket)
+2683,"['go_to_flag', 'acquire_pear']",at any time go to flag or when possible acquire pear,F(go_to_flag)|F(acquire_pear)
+5648,"['hold_on_to_pear', 'let_go_apple']",hold on to pear and never let go apple,hold_on_to_pear&G(~(let_go_apple))
+3805,"['drop_pear', 'put_in_bin']",never drop pear and put in bin,G(~(drop_pear))&put_in_bin
+3752,"['go_home', 'move_to_house']",at some time go home or move to house,F(go_home)|move_to_house
+1352,"['collect_apple', 'let_go_apple']",at any time collect apple or never let go apple,F(collect_apple)|G(~(let_go_apple))
+1386,"['bring_pear', 'withhold_apple']",at any time bring pear or when possible withhold apple,F(bring_pear)|F(withhold_apple)
+1373,"['contact_flag', 'proceed_to_tree']",when possible contact flag and when possible proceed to tree,F(contact_flag)&F(proceed_to_tree)
+1433,"['reach_flag', 'go_by_waste_bin']",at any time reach flag or go by waste bin,F(reach_flag)|go_by_waste_bin
+1387,"['withhold_apple', 'venture_to_house']",at some time withhold apple or whenever venture to house,F(withhold_apple)|F(venture_to_house)
+1639,"['reach_flag', 'go_by_waste_bin']",at any time reach flag until go by waste bin,F(reach_flag)Ugo_by_waste_bin
+3853,"['travel_house', 'approach_house']",whenever travel house or whenever approach house,F(travel_house)|F(approach_house)
+1050,"['go_by_waste_bin', 'venture_towards_house']",go by waste bin means that venture towards house,go_by_waste_bin->venture_towards_house
+2103,"['migrate_to_tree', 'snag_orange']",at some time migrate to tree until at any time snag orange,F(migrate_to_tree)UF(snag_orange)
+2010,"['go_near_house', 'withdraw_pear']",at any time go near house or when possible withdraw pear,F(go_near_house)|F(withdraw_pear)
+5132,"['collect_orange', 'reach_tree']",when possible collect orange or when possible reach tree,F(collect_orange)|F(reach_tree)
+1943,"['stop_by_house', 'venture_flag']",when possible stop by house and whenever venture flag,F(stop_by_house)&F(venture_flag)
+4183,"['drop_pear', 'journey_to_flag']",never drop pear and whenever journey to flag,G(~(drop_pear))&F(journey_to_flag)
+2227,"['grab_tree', 'drop_orange']",repeatedly grab tree or never drop orange,G(F(grab_tree))|G(~(drop_orange))
+2706,"['travel_to_house', 'let_go_pear']",when possible travel to house can infer that do not let go pear,F(travel_to_house)->~(let_go_pear)
+1862,"['venture_towards_house', 'withhold_apple']",venture towards house or whenever withhold apple,venture_towards_house|F(withhold_apple)
+4708,"['hold_on_to_pear', 'let_go_apple']",hold on to pear or never let go apple,hold_on_to_pear|G(~(let_go_apple))
+5580,"['go_by_trash_can', 'come_home']",forever go by trash can and when possible come home,G(go_by_trash_can)&F(come_home)
+2029,"['withold_apple', 'walk_to_flag']",at any time withold apple or whenever walk to flag,F(withold_apple)|F(walk_to_flag)
+4704,"['journey_by_house', 'capture_orange']",at some time journey by house or capture orange,F(journey_by_house)|capture_orange
+5788,"['grab_orange', 'drop_apple']",whenever grab orange or never drop apple,F(grab_orange)|G(~(drop_apple))
+3263,"['go_by_house', 'scoop_up_pear']",whenever go by house and at some time scoop up pear,F(go_by_house)&F(scoop_up_pear)
+2388,"['snag_orange', 'go_to_orange_bin']","when at any time snag orange , go to orange bin",F(snag_orange)->go_to_orange_bin
+3510,"['get_close_tree', 'take_pear']",at some time get close tree and take pear,F(get_close_tree)&take_pear
+2286,"['go_to_peach', 'advance_to_house']",at any time go to peach means that at any time advance to house,F(go_to_peach)->F(advance_to_house)
+1396,"['secure_apple', 'go_by_waste_bin']","when secure apple , go by waste bin",secure_apple->go_by_waste_bin
+2693,"['make_way_to_house', 'make_contact_with_house']",repeatedly make way to house and at some time make contact with house,G(F(make_way_to_house))&F(make_contact_with_house)
+1177,"['get_to_flag', 'go_to_trashcan']",at some time get to flag or at some time go to trashcan,F(get_to_flag)|F(go_to_trashcan)
+1036,"['clutch_orange', 'drop_pear']",at some time clutch orange or drop pear,F(clutch_orange)|drop_pear
+1672,"['go_by_waste_bin', 'present_at_flag']",go by waste bin or whenever present at flag,go_by_waste_bin|F(present_at_flag)
+1522,"['go_to_flag', 'venture_to_trash_can']",at some time go to flag or venture to trash can,F(go_to_flag)|venture_to_trash_can
+2838,"['journey_to_tree', 'take_to_tree']",at any time journey to tree or take to tree,F(journey_to_tree)|take_to_tree
+3952,"['collect_orange', 'reach_tree']",whenever collect orange can infer that whenever reach tree,F(collect_orange)->F(reach_tree)
+4526,"['move_to_tree', 'going_to_house']",move to tree or at some time going to house,move_to_tree|F(going_to_house)
+1709,"['gather_apple', 'drop_orange']",gather apple and never drop orange,gather_apple&G(~(drop_orange))
+5170,"['let_go_orange', 'show_yourself_near_house']",never let go orange and at any time show yourself near house,G(~(let_go_orange))&F(show_yourself_near_house)
+2749,"['go_to_flag', 'seize_pear']",when possible go to flag and at some time seize pear,F(go_to_flag)&F(seize_pear)
+5787,"['travel_to_house', 'put_in_apple_bucket']",at some time travel to house and put in apple bucket,F(travel_to_house)&put_in_apple_bucket
+5513,"['go_near_flag', 'go_near_pear']",whenever go near flag and whenever go near pear,F(go_near_flag)&F(go_near_pear)
+5941,"['have_apple', 'grasp_pear']",forever have apple or at some time grasp pear,G(have_apple)|F(grasp_pear)
+2394,"['go_past_house', 'get_hold_of_orange']",at any time go past house and at some time get hold of orange,F(go_past_house)&F(get_hold_of_orange)
+1005,"['lay_hold_of_apple', 'go_to_transh_can']",at some time lay hold of apple or when possible go to transh can,F(lay_hold_of_apple)|F(go_to_transh_can)
+4671,"['haul_pear', 'take_pear']",at some time haul pear and take pear,F(haul_pear)&take_pear
+2890,"['procure_pear', 'reach_tree']",at any time procure pear and at any time reach tree,F(procure_pear)&F(reach_tree)

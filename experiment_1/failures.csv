@@ -1,0 +1,10 @@
+id,propositions,nl_sentence,dataset_tl
+1172,"['let_go_pear', 'drop_pear']",do not let go pear or drop pear,~(let_go_pear) | drop_pear
+5242,"['take_to_tree', 'drop_apple']",take to tree until never drop apple,take_to_tree U G(~(drop_apple))
+2290,"['pick_up_anything', 'journey_by_house']",do not pick up anything and at any time journey by house,~(F(pick_up_anything)) & F(journey_by_house)
+1667,"['go_by_trash_can', 'walk_near_flag']",always go by trash can and at any time walk near flag,G(go_by_trash_can) & F(walk_near_flag)
+1692,"['go_to_transh_can', 'travel_to_apple']",at any time go to transh can or travel to apple,F(go_to_transh_can) | travel_to_apple
+2414,"['drop_by', 'go_to_peach']",drop by and at some time go to peach,drop_by & F(go_to_peach)
+5039,"['get_apple', 'pick_up_fruit']",at some time get apple until pick up fruit,F(get_apple) U pick_up_fruit
+1790,"['migrate_to_tree', 'let_go_pear']",whenever migrate to tree or don't let go pear,F(migrate_to_tree) | ~(let_go_pear)
+2907,"['let_go_apple', 'contact_flag']",never let go apple and at any time contact flag,G(~(let_go_apple)) & F(contact_flag)

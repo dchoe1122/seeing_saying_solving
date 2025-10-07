@@ -44,6 +44,8 @@ def validate_with_gbnf(tl_formula, propositions):
             text=True
         )
         
+        print(f"gbnfm out: {result.stdout}")
+
         # Check if the validation was successful
         is_valid = "Input string is valid according to the grammar." in result.stdout
         return is_valid
@@ -56,6 +58,20 @@ def validate_with_gbnf(tl_formula, propositions):
         # Clean up temporary files
         os.unlink(grammar_path)
         os.unlink(input_path)
+
+def validate_with_lark(tl_formula, propositions):
+    """
+    Validate a TL formula using the Lark parser.
+    Returns True if valid, False if invalid.
+    """
+    try:
+        grammar = parse_ebnf(get_llama_bnf_spec(propositions=propositions))
+        recognizer = StringRecognizer(grammar.grammar_encoding, grammar.symbol_table["root"])
+        is_valid = recognizer._accept_prefix(tl_formula.replace('_','-'))
+        return is_valid
+    except Exception as e:
+        print(f"Error during Lark validation: {e}")
+        return False
 
 def analyze_constrained_loss(exp_df):
     # This function is meant to analyze the loss in accuracy due to constrained generation
@@ -118,15 +134,21 @@ def generate_containment_stats(exp_df):
     ablations.pop(ablations.index('dataset'))  # remove the dataset column
 
     for ablation in ablations:
-        inaccurate_rows = exp_df[~exp_df[f'{ablation}_equivalence']]
-        num_inaccurate = len(inaccurate_rows)
-        num_llm_in_true = inaccurate_rows.apply(lambda row: spot.contains(spot.formula(row['dataset_tl']), spot.formula(row[f'{ablation}_tl'])), axis=1).sum()
-        num_true_in_llm = inaccurate_rows.apply(lambda row: spot.contains(spot.formula(row[f'{ablation}_tl']), spot.formula(row['dataset_tl'])), axis=1).sum()
+        
+        # Filter to rows where equivalence is not Invalid LLM formula or Invalid data entry for all ablations
+        valid_equivalence_mask = exp_df[[f'{ablation}_equivalence'] + [f'{other}_equivalence' for other in ablations if other != ablation]].apply(
+            lambda row: all(val not in ["Invalid LLM formula", "Invalid data entry"] for val in row), axis=1)
+        parsable_rows = exp_df[valid_equivalence_mask]
+        
+        num_parsable = len(parsable_rows)
+
+        num_llm_in_true = parsable_rows.apply(lambda row: spot.contains(spot.formula(row['dataset_tl']), spot.formula(row[f'{ablation}_tl'])), axis=1).sum()
+        num_true_in_llm = parsable_rows.apply(lambda row: spot.contains(spot.formula(row[f'{ablation}_tl']), spot.formula(row['dataset_tl'])), axis=1).sum()
 
         containment_results.append({
             'ablation': ablation,
-            'LLM_in_true': num_llm_in_true / num_inaccurate if num_inaccurate > 0 else 0,
-            'true_in_LLM': num_true_in_llm / num_inaccurate if num_inaccurate > 0 else 0
+            'LLM_in_true': num_llm_in_true / num_parsable if num_parsable > 0 else 0,
+            'true_in_LLM': num_true_in_llm / num_parsable if num_parsable > 0 else 0
         })
 
     #summarize containment results
@@ -135,6 +157,24 @@ def generate_containment_stats(exp_df):
 
     return containment_df
 
+def generate_grammar_validity_stats(exp_df):
+    validity_results = []
+    ablations = [col[:-3] for col in exp_df.columns if col.endswith('_tl')]
+    ablations.pop(ablations.index('dataset'))  # remove the dataset column
+
+    for ablation in ablations:
+        total_rows = len(exp_df)
+        valid_count = exp_df.apply(lambda row: validate_with_lark(row[f'{ablation}_tl'], eval(row['propositions'])), axis=1).sum()
+
+        validity_results.append({
+            'ablation': ablation,
+            'validity': valid_count / total_rows if total_rows > 0 else 0
+        })
+
+    validity_df = pd.DataFrame(validity_results)
+    validity_df.set_index('ablation', inplace=True)
+
+    return validity_df
 
 if __name__ == "__main__":
     args = parse_args()
@@ -146,5 +186,8 @@ if __name__ == "__main__":
     extract_failures_to_csv(exp_df)
 
     analyze_constrained_loss(exp_df)
-    #containment_df = generate_containment_stats(exp_df)
-    #print(containment_df)
+    containment_df = generate_containment_stats(exp_df)
+    print(containment_df)
+
+    validity_df = generate_grammar_validity_stats(exp_df)
+    print(validity_df)

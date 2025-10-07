@@ -4,7 +4,9 @@ import time
 import os
 import re
 import argparse
+import backoff
 
+from openai import RateLimitError
 from prompt_utils import get_prompt, get_llama_bnf_spec
 
 _openai_client = None
@@ -178,7 +180,7 @@ def nl2tl_gemma(nl_sentence, propositions, few_shot_examples, grammar_constraint
     
     return response.strip()
 
-
+@backoff.on_exception(backoff.expo, RateLimitError, max_time=60, max_tries=10)
 def nl2tl_gpt4(nl_sentence, propositions, few_shot_examples, grammar_prompt):
     prompt = get_prompt(propositions=propositions, task=nl_sentence,
                         bnf_spec=get_llama_bnf_spec(propositions),
@@ -192,7 +194,8 @@ def nl2tl_gpt4(nl_sentence, propositions, few_shot_examples, grammar_prompt):
     out = get_openai_client().chat.completions.create(
         model="gpt-4.1",
         messages=messages,
-        response_format={"type": "text"}
+        response_format={"type": "text"},
+        temperature=0
     )
 
     response = out.choices[0].message.content
@@ -254,30 +257,30 @@ if __name__ == "__main__":
     experiment_dir_name = f"trials_{num_dataset_entries}entries_{num_trials}trials_{num_examples}examples"
     os.makedirs(experiment_dir_name, exist_ok=True)
 
-   # ablations = [
-   #     {'name': 'gemma_Pc', 'function': lambda row: nl2tl_gemma(row['nl_sentence'], eval(row['propositions']), few_shot_examples, False, True)},
-   #     {'name': 'gemma_PC', 'function': lambda row: nl2tl_gemma(row['nl_sentence'], eval(row['propositions']), few_shot_examples, True, True)},
-   # ]
-
-
     ablations = [
-        {
-            'name': 'gemma_Pc',
-            'function': lambda row: nl2tl_gemma(row['nl_sentence'], eval(row['propositions']), few_shot_examples, grammar_constraint=False, grammar_prompt=True)
-        },
-        {
-            'name': 'gemma_PC',
-            'function': lambda row: nl2tl_gemma(row['nl_sentence'], eval(row['propositions']), few_shot_examples, grammar_constraint=True, grammar_prompt=True)
-        },
-    #    {
-    #        'name': 'gemma_pc',
-    #        'function': lambda row: nl2tl_gemma(row['nl_sentence'], eval(row['propositions']), few_shot_examples, grammar_constraint=False, grammar_prompt=False)
-    #    },
-    #    {
-    #        'name': 'gemma_pC',
-    #        'function': lambda row: nl2tl_gemma(row['nl_sentence'], eval(row['propositions']), few_shot_examples, grammar_constraint=True, grammar_prompt=False)
-    #    },
+        {'name': 'gpt4_Pc', 'function': lambda row: nl2tl_gpt4(row['nl_sentence'], eval(row['propositions']), few_shot_examples, grammar_prompt=True)}
+        #    {'name': 'gemma_PC', 'function': lambda row: nl2tl_gemma(row['nl_sentence'], eval(row['propositions']), few_shot_examples, True, True)},
     ]
+
+
+    # ablations = [
+    #     {
+    #         'name': 'gemma_Pc',
+    #         'function': lambda row: nl2tl_gemma(row['nl_sentence'], eval(row['propositions']), few_shot_examples, grammar_constraint=False, grammar_prompt=True)
+    #     },
+    #     {
+    #         'name': 'gemma_PC',
+    #         'function': lambda row: nl2tl_gemma(row['nl_sentence'], eval(row['propositions']), few_shot_examples, grammar_constraint=True, grammar_prompt=True)
+    #     },
+    #     {
+    #         'name': 'gemma_pc',
+    #         'function': lambda row: nl2tl_gemma(row['nl_sentence'], eval(row['propositions']), few_shot_examples, grammar_constraint=False, grammar_prompt=False)
+    #     },
+    # #    {
+    # #        'name': 'gemma_pC',
+    # #        'function': lambda row: nl2tl_gemma(row['nl_sentence'], eval(row['propositions']), few_shot_examples, grammar_constraint=True, grammar_prompt=False)
+    # #    },
+    # ]
 
     for i in range(num_trials):
         print(f"Trial {i+1}:")
@@ -286,14 +289,47 @@ if __name__ == "__main__":
         df = full_dataset.sample(n=num_dataset_entries).reset_index(drop=True)
 
         for ablation in ablations:
-            tqdm.pandas(desc=ablation['name'])
             start_time = time.time()
-            df[ablation['name'] + '_tl'] = df.progress_apply(ablation['function'], axis=1)
+
+            # Initialize columns for results
+            df[ablation['name'] + '_tl'] = None
+            df[ablation['name'] + '_equivalence'] = None
+
+            # Create progress bar for this ablation
+            pbar = tqdm(total=len(df), desc=f"{ablation['name']} - Acc: 0.00%")
+
+            correct_count = 0
+            valid_count = 0
+            processed_count = 0
+
+            # Process each row individually to update accuracy in real-time
+            for idx, row in df.iterrows():
+                # Generate prediction
+                prediction = ablation['function'](row)
+                df.at[idx, ablation['name'] + '_tl'] = prediction
+
+                # Check equivalence
+                equivalence = safe_are_equivalent(row['dataset_tl'], prediction)
+                df.at[idx, ablation['name'] + '_equivalence'] = equivalence
+
+                # Update counters
+                processed_count += 1
+                if equivalence not in ["Invalid data entry", "Invalid LLM formula"]:
+                    valid_count += 1
+                    if equivalence == True:
+                        correct_count += 1
+
+                # Calculate current accuracy (only for valid entries)
+                current_accuracy = correct_count / valid_count if valid_count > 0 else 0.0
+
+                # Update progress bar with live accuracy
+                pbar.set_description(f"{ablation['name']} - Acc: {current_accuracy:.2%}")
+                pbar.update(1)
+
+            pbar.close()
             total_time = time.time() - start_time
 
-            df[ablation['name'] + '_equivalence'] = df.apply(lambda row: safe_are_equivalent(row['dataset_tl'], row[ablation['name'] + '_tl']), axis=1)
             equivalence_counts = df[ablation['name'] + '_equivalence'].value_counts()
-
             accuracy = equivalence_counts.get(True, 0) / (num_dataset_entries - equivalence_counts.get("Invalid data entry", 0) - equivalence_counts.get("Invalid LLM formula", 0))
             validity = 1 - equivalence_counts.get("Invalid LLM formula", 0) / (num_dataset_entries - equivalence_counts.get("Invalid data entry", 0))
             inference_time = total_time / num_dataset_entries

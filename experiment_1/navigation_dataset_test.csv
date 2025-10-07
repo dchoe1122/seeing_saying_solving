@@ -99,7 +99,6 @@ id,propositions,nl_sentence,dataset_tl
 2999,"['drop_orange', 'visit_waste_basket']",drop orange and whenever visit waste basket,drop_orange&F(visit_waste_basket)
 1187,"['go_to_house', 'make_way_for_tree']",whenever go to house or whenever make way for tree,F(go_to_house)|F(make_way_for_tree)
 1592,"['make_way_waste_basket', 'grip_apple']",at any time make way waste basket or grip apple,F(make_way_waste_basket)|grip_apple
-5546,"['go_to', 'pear_bin', 'seize_pear']",when possible go to pear bin and when possible seize pear,F(go_topear_bin)&F(seize_pear)
 3378,"['take_to_trash_can', 'seize_orange']",take to trash can and whenever seize orange,take_to_trash_can&F(seize_orange)
 4330,"['drop_apple', 'walk_near_flag']",never drop apple or at any time walk near flag,G(~(drop_apple))|F(walk_near_flag)
 3661,"['get_hold_orange', 'grab_pear']",when possible get hold orange and at some time grab pear,F(get_hold_orange)&F(grab_pear)
@@ -373,7 +372,6 @@ id,propositions,nl_sentence,dataset_tl
 1513,"['go_by_waste_basket', 'secure_apple']","if when possible go by waste basket , secure apple",F(go_by_waste_basket)->secure_apple
 1927,"['procure_apple', 'gather_apple']",procure apple and gather apple,procure_apple&gather_apple
 2210,"['migrate_to_tree', 'go_near_house']",when possible migrate to tree or when possible go near house,F(migrate_to_tree)|F(go_near_house)
-1360,"['go_to', 'pear_bin', 'grasp_pear']",when possible go to pear bin and whenever grasp pear,F(go_topear_bin)&F(grasp_pear)
 1971,"['touch_tree', 'drop_apple']",when possible touch tree or never drop apple,F(touch_tree)|G(~(drop_apple))
 5588,"['go_near_flag', 'venture_house']",at any time go near flag or at some time venture house,F(go_near_flag)|F(venture_house)
 1330,"['grip_apple', 'let_go_pear']","when grip apple , don't let go pear",grip_apple->~(let_go_pear)
@@ -790,7 +788,6 @@ id,propositions,nl_sentence,dataset_tl
 1219,"['venture_to_house', 'secure_apple']",when possible venture to house and secure apple,F(venture_to_house)&secure_apple
 2707,"['go_past_flag', 'travel_to_waste_bin']",at some time go past flag and travel to waste bin,F(go_past_flag)&travel_to_waste_bin
 5749,"['gather_orange', 'venture_to_flag']",gather orange or at some time venture to flag,gather_orange|F(venture_to_flag)
-1437,"['go_to', 'pear_bin', 'shift_to_flag']",when possible go to pear bin or at some time shift to flag,F(go_topear_bin)|F(shift_to_flag)
 2887,"['go_home', 'go_home']",whenever go home and when possible go home,F(go_home)&F(go_home)
 2794,"['going_to_flag', 'make_way_to_house']",at any time going to flag and repeatedly make way to house,F(going_to_flag)&G(F(make_way_to_house))
 3809,"['gather_orange', 'go_by_tree']",gather orange and when possible go by tree,gather_orange&F(go_by_tree)
@@ -1007,7 +1004,6 @@ id,propositions,nl_sentence,dataset_tl
 5804,"['be_at_house', 'be_at_flag']",at some time be at house can infer that whenever be at flag,F(be_at_house)->F(be_at_flag)
 5992,"['move_past_trash_can', 'scoop_up_apple']",when possible move past trash can or when possible scoop up apple,F(move_past_trash_can)|F(scoop_up_apple)
 2842,"['move_forward_trash_can', 'let_go_orange']",at any time move forward trash can and never let go orange,F(move_forward_trash_can)&G(~(let_go_orange))
-5276,"['go_to', 'pear_bin', 'going_to_flag']",at some time go to pear bin or at any time going to flag,F(go_topear_bin)|F(going_to_flag)
 1884,"['secure_apple', 'drop_apple']",secure apple and never drop apple,secure_apple&G(~(drop_apple))
 2060,"['proceed_to_house', 'visit_house']",at some time proceed to house until at any time visit house,F(proceed_to_house)UF(visit_house)
 1297,"['go_by_waste_basket', 'go_by_waste_basket']",at any time go by waste basket or at some time go by waste basket,F(go_by_waste_basket)|F(go_by_waste_basket)
@@ -1438,7 +1434,6 @@ id,propositions,nl_sentence,dataset_tl
 1690,"['venture_flag', 'stop_by_house']",at some time venture flag or whenever stop by house,F(venture_flag)|F(stop_by_house)
 2621,"['make_your_way_flag', 'get_orange']",at any time make your way flag and whenever get orange,F(make_your_way_flag)&F(get_orange)
 2119,"['show_yourself_near_house', 'make_way_to_house']",whenever show yourself near house or repeatedly make way to house,F(show_yourself_near_house)|G(F(make_way_to_house))
-4491,"['go_to', 'pear_bin', 'let_go_pear']",at any time go to pear bin and do not let go pear,F(go_topear_bin)&~(let_go_pear)
 3006,"['capture_pear', 'obtain_orange']",whenever capture pear can infer that when possible obtain orange,F(capture_pear)->F(obtain_orange)
 2240,"['acquire_apple', 'stop_by_trash_can']",acquire apple until at some time stop by trash can,acquire_appleUF(stop_by_trash_can)
 4226,"['approach_tree', 'obtain_orange']","when approach tree , at some time obtain orange",approach_tree->F(obtain_orange)
@@ -1469,7 +1464,6 @@ id,propositions,nl_sentence,dataset_tl
 5469,"['move_to_house', 'stop_by_flag']",move to house or stop by flag,move_to_house|stop_by_flag
 4892,"['take_possession_of_bear', 'proceed_to_house']",whenever take possession of bear or at some time proceed to house,F(take_possession_of_bear)|F(proceed_to_house)
 5872,"['hold_onto_orange', 'get_close_tree']",always hold onto orange until when possible get close tree,G(hold_onto_orange)UF(get_close_tree)
-4692,"['go_to', 'pear_bin', 'go_to_waste_basket']",whenever go to pear bin or repeatedly go to waste basket,F(go_topear_bin)|G(F(go_to_waste_basket))
 2190,"['get_to_tree', 'come_to_tree']",get to tree or come to tree,get_to_tree|come_to_tree
 2997,"['grab_apple', 'tax_apple']",whenever grab apple and at some time tax apple,F(grab_apple)&F(tax_apple)
 3780,"['go_near_flag', 'go_to_home']",at any time go near flag or at any time go to home,F(go_near_flag)|F(go_to_home)
